@@ -8,5 +8,8 @@ https://github.com/Yue-plus/hexo-theme-arknights
 
 ~~~
 npm install hexo-server hexo-browsersync hexo-renderer-pug --save
+~~~
+
+~~~
 yarn add hexo-server hexo-browsersync hexo-renderer-pug
 ~~~
