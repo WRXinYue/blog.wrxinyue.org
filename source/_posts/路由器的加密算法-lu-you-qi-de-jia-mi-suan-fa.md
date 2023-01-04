@@ -1,0 +1,79 @@
+---
+title: 路由器的加密算法
+date: 2022-08-29 17:39:01.0
+updated: 2022-10-27 00:08:12.266
+url: /archives/lu-you-qi-de-jia-mi-suan-fa
+categories: 
+- 网络安全
+tags: 
+---
+
+# **路由器的加密算法**
+
+目前路由器的加破解途径主要有三种，WEP破解、WPA/WPA2、WPS
+
+![image-20220828211646977](https://cdn.jsdelivr.net/gh/WRXinYue/PictureCDN/img/image-20220828211646977.png)
+
+### 有线等效加密WEP（pre-RSNA）
+
+WEP（Wired Equivalent Privacy）加密是最早在无线加密中使用的技术。
+
+因为WEP出现了非常严重的漏洞，所以Wi-Fi协会于2004年宣布WEP正式退役。
+
+### Wi-Fi保护设置WPA(TKIP)
+
+WPA采用TKIP协议（temporal key integrity protocol）作为加密协议。
+
+TKIP 是 WPA 的核心组件，设计初衷是全为对现有 WEP 设备进行固件升级。因此， WPA 必须重复利用 WEP 系统中的某些元素，最终也被黑客利用。
+
+### Wi-Fi保护设置ⅡWPA2(CCMP-AES)
+
+Wi-Fi Protected Access II (WPA2)。WPA 标准于2006年正式被 WPA2 取代。 WPA 和 WPA2 之间最显着的变化之一是强制使用 AES 算法和引入 CCMP （计数器模式密码块链消息完整码协议）替代 TKIP 。
+
+- KRACK攻击（Key Reinstallation Attacks，密钥重装攻击）：WPA2在2017年被发现存在安全漏洞，采用WPA2进行加密的Wi-Fi网络可能会遭受KRACK攻击，攻击者利用这个漏洞诱导用户重新安装已使用过的密钥，并通过一系列手段破解用户密钥，从而实现用户网络的完全访问。
+- 离线字典或[暴力破解](https://info.support.huawei.com/info-finder/encyclopedia/zh/暴力破解.html)攻击：WPA2采用的密钥复杂度和被破解的难度呈正相关，尤其是个人或者家庭Wi-Fi网络经常采用一个比较简单的密钥，这样的Wi-Fi网络很容遭受离线字典（根据用户自定义词典中可能的密码逐一尝试）或者暴力破解攻击（又称穷举法，逐一尝试所有可能组合的密码）轻松破解。
+-  **Wi-Fi 保护设置（ WPS ）**的攻击向量。攻击带有WPS的WPA/WPA2网络，现代计算机需要花费1至2小时持续攻击。防御方法：禁用 WPS。
+
+### Wi-Fi保护设置ⅢWPA3
+
+WPA3（[Wi-Fi](https://info.support.huawei.com/info-finder/encyclopedia/zh/WiFi.html) Protected Access 3，第三代Wi-Fi访问保护）是Wi-Fi联盟组织于2018年发布的新一代Wi-Fi（[WiFi](https://info.support.huawei.com/info-finder/encyclopedia/zh/WiFi.html)）加密协议，它对WPA2进行了改进，增加了许多新的功能，为用户和Wi-Fi网络之间的数据传输提供更加强大的加密保护
+
+2017年10月份，有安全研究者公布了WPA2协议的一个弱点，会遭受到KRACK（ Key Reinstallation AttaCK）攻击；攻击者可以获取STA和AP之间传输的数据，许多厂家已经发布相关补丁修复此漏洞；但是WPA2的形象和名声还是受到损害，因而WIFI联盟迅速推出了WPA3
+
+### 无线局域网鉴别和保密基础结构（WAPI）
+
+WAPI （WLAN Authentication and Privacy Infrastructure）。是国内自主研发的无线网络WLAN安全标准.
+
+### WPA-PSK/WPA2-PSK
+
+ WPA和WPA2衍生出来的两种加密方式WPA-PSK和WPA2-PSK，他们之间的区别在于使用的加密算法。WPA-PSK和WPA2-PSK既可以使用TKIP加密算法也可以使用AES加密算法。
+
+WPA3对于个人和企业网络提供不同模式
+
+- WPA3-SAE 个人网络
+- WPA3-Enterprise 企业网络
+
+WPA3优势：
+
+- 加密一致性：通过强制执行同时使用“先进加密标准（Advanced Encryption Standard，简称AES）”和传统协议（例如“临时密钥完整性协议（Temporal Key Integrity Protocol，简称TKIP）”）的政策，降低了网络遭受攻击的可能性；
+- 网络弹性：通过启用受保护的管理帧（Protected Management Frames，简称PMF）机制，防止窃听和假冒管理帧的行为，提供了可靠的保护。一致地使用这类保护措施可提高关键任务型网络的弹性。
+
+## Wi-Fi保护设置（WPS）
+
+WPS（Wi-Fi Protected Setup）。旨在让家庭用户使用无线网络时简化加密步骤。此标准由Wi-Fi联盟（Wi-Fi Alliance）于2006年制定。
+
+作用：WPS的目的是简化用户输入密码的步骤；在某个设备连接wifi，需要输入密码时，只要按一下无线路由器上的wps按钮就可以了。
+
+漏洞：在2011年12月28日安全专家Stefan Viehbock报出此标准的一个重大安全漏洞，此漏洞允许远程攻击者使用暴力攻击在几小时内就能获取WPS的PIN码和WPA/WPA2的PSK码。一些新出产的无线路默认启动WPS功能，所以现在建议用户关闭无线路由器上的WPS一键加密功能，有些无线器上无法关闭此功能。
+
+破解原理：当路由器开了WPS功能，支持PIN码进行连接的时候，它的PIN码在机器里面是用的一组序列号保存的，写在router里面，一般从一般可以从router的标签上可以看到，它是"external registrar"的验证模式，仅需路由器的PIN，此模式的设计存在问题允许对PIN进行暴力猜测攻击。
+
+## 无线网标准
+
+**IEEE802.11标准**
+
+- IEEE802.11a，速率最高可达54Mbps
+- IEEE802.11b，速率最高可达11Mbps
+- IEEE802.11g，速率最高可达54Mbps
+- IEEE802.11n，速率最高可达108Mbps
+- IEEE802.11ac，速率最高可达600Mbps
