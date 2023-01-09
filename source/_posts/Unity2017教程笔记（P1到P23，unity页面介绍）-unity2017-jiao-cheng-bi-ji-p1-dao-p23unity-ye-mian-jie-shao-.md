@@ -2,7 +2,7 @@
 title: Unity2017教程笔记（P1到P23，unity页面介绍）
 date: 2022-07-24 19:54:17.0
 updated: 2022-10-26 22:42:42.724
-url: /archives/unity2017-jiao-cheng-bi-ji-p1-dao-p23unity-ye-mian-jie-shao-
+url: /archives/Unity2017教程笔记
 categories: 
 - Unity/虚幻
 tags: 

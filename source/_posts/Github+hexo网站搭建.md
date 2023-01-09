@@ -1,8 +1,8 @@
 ---
-title: Github+hexo 网站搭建
+title: Github+hexo网站搭建
 date: 2021-11-10 18:30:00.0
 updated: 2022-10-26 15:40:04.75
-url: /archives/githubhexo-wang-zhan-da-jian
+url: /archives/Github+hexo网站搭建
 categories: 
 - 博客搭建
 tags: 
