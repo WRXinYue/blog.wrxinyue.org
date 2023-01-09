@@ -1,0 +1,91 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Linux备忘录 | WRXinYue's Blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search the blog","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search the blog" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1>Linux备忘录</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2022-10-17T15:59:52.000Z" id="date"> 2022-10-17</time></div></span><br><span>Last Update: <div class="control"><time datetime="2022-10-26T16:04:01.879Z" id="updated"> 2022-10-27</time></div></span></div></div><hr><div id="post-content"><h1 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h1><h2 id="解压"><a href="#解压" class="headerlink" title="解压"></a>解压</h2><h3 id="deb包"><a href="#deb包" class="headerlink" title="deb包"></a>deb包</h3><p>进入到tools根目录下的终端，输入下面命令创建文件夹extract，并在extract文件夹下创建DEBIAN文件夹</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">mkdir -p extract/DEBIAN<br></code></pre></td></tr></table></figure>
+
+<p>将deb包解压到extract文件夹下</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dpkg -X ./xxx.deb extract<br></code></pre></td></tr></table></figure>
+
+
+
+<p>dpkg解压：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">dpkg -X ../openssh-client_6.1p1_i386.deb extract/<br></code></pre></td></tr></table></figure>
+
+
+
+<p>ar解压：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs shell">ar -x fileName.deb<br>tar -zxvf data.tar.gz<br></code></pre></td></tr></table></figure>
+
+
+
+<h3 id="ar-命令安装"><a href="#ar-命令安装" class="headerlink" title="ar 命令安装"></a>ar 命令安装</h3><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><code class="hljs shell">-bash: ar: command not found<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Debian</span><br>apt-get install binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Ubuntu</span><br>apt-get install binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Arch Linux</span><br>pacman -S binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Kali Linux</span><br>apt-get install binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">CentOS</span><br>yum install binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Fedora</span><br>dnf install binutils-aarch64-linux-gnu<br><span class="hljs-meta prompt_"> </span><br><span class="hljs-meta prompt_">#</span><span class="language-bash">Raspbian</span><br>apt-get install binutils-aarch64-linux-gnu<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">wget<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="VI编辑器"><a href="#VI编辑器" class="headerlink" title="VI编辑器"></a>VI编辑器</h2><p>vi保存命令。</p>
+<blockquote>
+<p>按ESC键 跳到命令模式，然后：</p>
+<p>:w 保存文件但不退出vi</p>
+<p>:w file 将修改另外保存到file中，不退出vi</p>
+<p>:w! 强制保存，不推出vi</p>
+<p>:wq 保存文件并退出vi</p>
+<p>:wq! 强制保存文件，并退出vi</p>
+<p>q: 不保存文件，退出vi</p>
+<p>:q! 不保存文件，强制退出vi</p>
+<p>:e! 放弃所有修改，从上次保存文件开始再编辑。</p>
+</blockquote>
+<h1 id="查询指令"><a href="#查询指令" class="headerlink" title="查询指令"></a>查询指令</h1><h2 id="查看框架版本"><a href="#查看框架版本" class="headerlink" title="查看框架版本"></a>查看框架版本</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">node -e &quot;console.log(process.arch)&quot;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>x32: 386</li>
+<li>x64: amd64</li>
+<li>arm64: arm64</li>
+<li>arm: armv7</li>
+</ul>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><h2 id="gcc和g-安装"><a href="#gcc和g-安装" class="headerlink" title="gcc和g++安装"></a>gcc和g++安装</h2><p>gcc：C编译器</p>
+<p>g++：C++编译器</p>
+<p><strong>gcc版本检查：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">gcc -v<br></code></pre></td></tr></table></figure>
+
+<p><strong>g++版本检查：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">g++ -v<br></code></pre></td></tr></table></figure>
+
+
+
+<p><strong>gcc安装：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">yum install gcc<br></code></pre></td></tr></table></figure>
+
+<p><strong>g++安装：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">yum install gcc-c++ libstdc++-devel<br></code></pre></td></tr></table></figure>
+
+
+
+<p>切换root用户执行</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">yum install gcc -c++<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="yarn安装"><a href="#yarn安装" class="headerlink" title="yarn安装"></a>yarn安装</h2><p>Node.js 自带名为 <a target="_blank" rel="noopener" href="https://www.npmjs.com/">npm</a> 的包管理器，我们可以直接使用它,<a target="_blank" rel="noopener" href="https://classic.yarnpkg.com/">yarn</a> 是功能非常强大的一个包管理器。</p>
+<p><strong>安装yarn：</strong></p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">npm i -g yarn<br></code></pre></td></tr></table></figure>
+
+<p>查看版本：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">yarn -v<br></code></pre></td></tr></table></figure>
+
+
+
+<h2 id="git安装"><a href="#git安装" class="headerlink" title="git安装"></a>git安装</h2><p>git:分布式版本管理系统</p>
+<p>安装：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs shell">yum install git -y<br></code></pre></td></tr></table></figure><div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2022/10/21/Hello%20Halo-hello-halo/">← Next Hello Halo</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2022/10/17/JS%20Promise-jspromise/">JS Promise Prev →</a></div></div></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="Catalog">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">WRXinYue</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4"><span class="toc-number">1.</span> <span class="toc-text">常用命令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%A3%E5%8E%8B"><span class="toc-number">1.1.</span> <span class="toc-text">解压</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#deb%E5%8C%85"><span class="toc-number">1.1.1.</span> <span class="toc-text">deb包</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#ar-%E5%91%BD%E4%BB%A4%E5%AE%89%E8%A3%85"><span class="toc-number">1.1.2.</span> <span class="toc-text">ar 命令安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E8%BD%BD"><span class="toc-number">1.2.</span> <span class="toc-text">下载</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#VI%E7%BC%96%E8%BE%91%E5%99%A8"><span class="toc-number">1.3.</span> <span class="toc-text">VI编辑器</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%9F%A5%E8%AF%A2%E6%8C%87%E4%BB%A4"><span class="toc-number">2.</span> <span class="toc-text">查询指令</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E6%A1%86%E6%9E%B6%E7%89%88%E6%9C%AC"><span class="toc-number">2.1.</span> <span class="toc-text">查看框架版本</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">3.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#gcc%E5%92%8Cg-%E5%AE%89%E8%A3%85"><span class="toc-number">3.1.</span> <span class="toc-text">gcc和g++安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#yarn%E5%AE%89%E8%A3%85"><span class="toc-number">3.2.</span> <span class="toc-text">yarn安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#git%E5%AE%89%E8%A3%85"><span class="toc-number">3.3.</span> <span class="toc-text">git安装</span></a></li></ol></li></ol></div></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>
