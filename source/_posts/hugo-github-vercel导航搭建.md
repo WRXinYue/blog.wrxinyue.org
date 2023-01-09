@@ -1,13 +1,11 @@
 ---
-title: Mysql OF CodeWithMosh
-date: 2022-12-01 20:02:26.992
-updated: 2022-12-06 15:44:14.883
-url: /archives/mysql-of-codewithmosh
+title: hugo+github+vercel导航搭建
+date: 2023-01-09 23:51:12
 categories: 
-- WEBbackend
+- 博客搭建
 tags: 
-- mysql
-- sql
+- 博客
+- github
 ---
 
 ## 安装hugo
