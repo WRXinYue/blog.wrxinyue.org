@@ -1,0 +1,24 @@
+## 控制角色的移动方向
+
+* 在Graph inspector 里创建一个object 下的Vector3类型的速度变量，命名为MotionSpeed；
+* 创建一个Input.GetAxis节点； 节点的Axios name我写上Horizontal；
+* 创建一个Input.GetAxis姐姐二点； 节点的Axis name我写上Vertical。
+
+```
+public float m_speed =5f;
+
+void MoveControlByTranslateGetAxis()
+{
+	float horizontal = Input.GetAxis("Horizontal");  //A D 左 右
+	float vertical = Input.GetAxis("Vertical");		//W S 上 下
+	
+	//A D 左 右
+	transform.Tramslate(Vector3.right * horizontal * m-speed *Time.deltTime);
+	//W S 上 下
+	transform.Tramslate(Vector3.forward * vertical * m-speed *Time.deltTime);
+}
+```
+
+## 控制角色的移动速度大小
+
+* 创建一个Float类型的变量名字为MotionMultiplier，这里我们给他初始值为1；将其拖入到我们的节点编辑页面这样的话我们就会得到一个GetVariable 的节点获取 MotionMultiplier的值

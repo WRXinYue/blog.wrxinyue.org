@@ -1,0 +1,88 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WRXinYue's Blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search the blog","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search the blog" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1></h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2022-08-25T07:26:16.244Z" id="date"> 2022-08-25</time></div></span><br><span>Last Update: <div class="control"><time datetime="2022-06-05T16:23:37.000Z" id="updated"> 2022-06-06</time></div></span></div></div><hr><div id="post-content"><p>原文：<a target="_blank" rel="noopener" href="https://www.jianshu.com/p/d57628df2793">Unity 动画系列二 导入外部动画 - 简书 (jianshu.com)</a></p>
+<h1 id="动画模型"><a href="#动画模型" class="headerlink" title="动画模型"></a>动画模型</h1><p>常见游戏动画一般分为两种：</p>
+<ul>
+<li>in place 动画（不带位的移动画）</li>
+<li>root motion动画（自带“跟位移”的动画）</li>
+</ul>
+<p>好处：有效地避免了动画动画和实际位移不同步的现象</p>
+<p>在Unity中只能制作比较简单的动画，要想要复杂的动画，比如人物跳舞的动画，那就得在外部的软件中制作并且导入到Unity中使用，那这个过程是什么呢？</p>
+<h2 id="Model页签"><a href="#Model页签" class="headerlink" title="Model页签"></a>Model页签</h2><h3 id="1-Scene部分"><a href="#1-Scene部分" class="headerlink" title="1.Scene部分"></a>1.Scene部分</h3><p><img src="https://upload-images.jianshu.io/upload_images/2354823-9e6fd82d9da77772.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/267/format/webp" alt="img"></p>
+<ul>
+<li>Scale Factor：调整模型在场景中的比例。</li>
+</ul>
+<blockquote>
+<p>Unity3D中默认 1单位距离 &#x3D; 1米。由于Maya中默认设置为 1单位距离 &#x3D; 1厘米，所以Maya模型导出成.fbx以后再导入Unity3D，要设置scale为0.01，否则就会变得超级大。</p>
+</blockquote>
+<ul>
+<li><p>Convert Units：可以将模型中定义的单位转换为Unity中的单位。</p>
+</li>
+<li><p>Import BlendShapes：导入Mesh上的BlendShapes。对于一些细微的表情等动作，使用骨骼有点过于复杂和浪费，可以预先设计几张表情，然后通过BlendShape来进行表情的过渡。</p>
+</li>
+<li><p>Import Visibility：导入可见属性用以保证可以读取FBX中的可见属性来禁用或启用unity中的MeshRender组件去渲染物体。模型动画如果涉及了模型可见属性的改变则需要勾选，来保证unity正常读取可见属性。</p>
+</li>
+<li><p>Import Cameras&#x2F;Import Lights：是否导入摄像机&#x2F;灯光。unity可以直接导入Fbx上的相机和灯光的参数。不推荐从3dMax中导入摄像机与灯光，而使用unity中创建的摄像机，灯光，来完成渲染。</p>
+</li>
+<li><p>Preserve Hierarchy：如果不勾选，则unity会自行剔除模型中的所有空节点，对于那些只包含空节点用以表现模型动画的FBX文件来说，这会导致动画Rig不匹配。如果勾选，即使只有Root节点unity也会创建一个显示的预制根节点作为父物体。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2354823-9d3ace40b0f7b550.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/720/format/webp" alt="img"></p>
+<p>勾选后unity为FBX中的模型创建了预制父物体，并自行添加了一个Animation组件用以记录模型动画，因为大多数情况勾选Preserve Hierarchy意味着这是一个只含动画的FBX模型</p>
+</li>
+</ul>
+<blockquote>
+<p>并且我们发现3dMax中导出时的自动轴转转化设置在勾选了之后Preserve Hierarchy才会生效，但我们更推荐按3中提到的，来手动设置出合适轴向，<strong>一般我们保持这一项不勾选</strong>，所以导出时也不必在意是否勾选了自动轴转化，而使用我们手动旋转好的轴向。</p>
+</blockquote>
+<h3 id="2-Meshes"><a href="#2-Meshes" class="headerlink" title="2.Meshes"></a>2.Meshes</h3><p><img src="https://upload-images.jianshu.io/upload_images/2354823-04d1230b09632592.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/290/format/webp" alt="img"></p>
+<ul>
+<li>MeshCompression:网格压缩，不建议开启。</li>
+<li>Read&#x2F;Write Enabled：开启Read&#x2F;Write Enabled一般是用于运行时修改Mesh的顶点数据，开启这个选项会导致Mesh的内存占用翻倍。<strong>因此如果项目中不需要在运行时修改这些Mesh数据的话，我们建议把这个选项关闭。</strong></li>
+<li>Optimize Mesh:优化网格，如果开启，网格的定点和三角形会按照U3D既定的一套规则重新排序用以提高GPU性能。<strong>看样子可以开启</strong></li>
+<li>Generate Collider 如果开启时，Mesh导入时会自动生成MeshCollider，这个比较适合环境中静态的物体，不适合那些有动作形变的物体。<strong>人物模型不适合开启，建筑模型合适。</strong></li>
+</ul>
+<h3 id="3-Geometry"><a href="#3-Geometry" class="headerlink" title="3.Geometry"></a>3.Geometry</h3><p><img src="https://upload-images.jianshu.io/upload_images/2354823-bcd817fbc9a15e5b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/284/format/webp" alt="img"></p>
+<ul>
+<li>KeepQuads 保持四边形，不转换为三角形。我们在U3D中使用的网格，大部分是把所有的面都转换成了三角形，但是某些特定的需求下，四边形会得到更好的效果，例如Tessellation shaders（细分曲面着色器）。</li>
+<li>Weld Vertices 顶点焊接，合并处于同一位置的顶点，这样可以整体减少mesh的顶点数。通过顶点焊接可以优化顶点数量，获得更好的渲染性能。但如果需要脚本中动态控制网格，模型故意设有位置相同的顶点时应取消勾选</li>
+<li>Index Format unity在导入网格时使用的索引表示长度。通常Auto，在使用基于GPU的渲染管线编程时，通常使用32位。Auto时将取决于网格的大小；16bit时若网格顶点较多将进行顶点分块，分块后每个顶点块&lt;64k个顶点，这是unity 2017.2或之前版本的设置；32bit时可确保所有网格使用相同的索引格式，这可以降低着色器顶点处理的复杂性。</li>
+<li>Swap uvs  这个选项只能交换第一套和第二套uv，如果导入的模型uv混乱可以试着勾选一下，如果fbx上有更多套uv，可能得通过代码来控制了。</li>
+<li>Generate LightMap Uvs 为模型展开一道UV以接受unity中的光照烘焙（非实时的渲染光照）效果，从而将烘焙光照以光照贴图的形式表现在模型表面。注意！！！场景中的静态物体模型，需要接受Unity光照烘焙的物体模型，一定要进行这个UV展开</li>
+<li>Normals：法线定义<ul>
+<li>Import：从模型中导入法线，如果模型不包含法线则会计算法线，这是默认选项</li>
+<li>Caculate：根据 Normals Mode、Smoothness Source 和 Smoothing Angle属性来计算法线。</li>
+<li>None:如果网格不需要法线贴图，也不受实时光照影响（各光照模型的计算都需要法线数据）应选择此项</li>
+</ul>
+</li>
+</ul>
+<blockquote>
+<p>导入模型时，可以选择直接导入模型中的法线和切线、也可以选择使用unity自动计算法线和切线、也可以不导入法线和切线。具体的参数，不太懂，如果美术资源提供了法线和切线、直接import就行了。</p>
+</blockquote>
+<h2 id="Rig页签"><a href="#Rig页签" class="headerlink" title="Rig页签"></a>Rig页签</h2><p><img src="https://upload-images.jianshu.io/upload_images/2354823-bba4dff27b85f444.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/394/format/webp" alt="img"></p>
+<h3 id="1-Animation-Tyoe"><a href="#1-Animation-Tyoe" class="headerlink" title="1.Animation Tyoe"></a>1.Animation Tyoe</h3><ul>
+<li><p>None不导入动画。</p>
+</li>
+<li><p>Legacy是4.0版本以前的动画系统，是比较老比较保险的动画系统，提供的功能比较少，但是也不会出什么错误，适合非常简单的游戏。<strong>为了兼容Unity3.x旧版本，不建议使用</strong></p>
+</li>
+<li><p>Generic和Humanoid是在4.0版本时同时推出的两套动画系统，他们有很多共性，比如都有自带的状态机、自带动画融合、自带Avatar等。<strong>比较大的区别就是Humanoid这个动画系统是专门用来做类人型两足生物的，它提供了动画的重定向，就是说它提供了一套动画赋予给多个体型不同的模型的解决方案。</strong></p>
+</li>
+</ul>
+<h3 id="2-Avatar-Definition"><a href="#2-Avatar-Definition" class="headerlink" title="2.Avatar Definition"></a>2.Avatar Definition</h3><p><img src="https://upload-images.jianshu.io/upload_images/2354823-194b1ae574dea319.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/371/format/webp" alt="img"></p>
+<p><img src="https://upload-images.jianshu.io/upload_images/2354823-0a4a87645b2349c5.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/251/format/webp" alt="img"></p>
+<p><strong>Avatar替身是unity为管理骨骼动画所创建的一种保持节点信息的文件</strong>，通过在Animator中指定所需要用到的Avatar,Animator动画状态机在运行时就能根据Avatai中提供的节点信息，寻找子物体中的对应节点并对其赋予动画的控制，完成骨骼动画与含骨骼绑定的模型的适配。</p>
+<p>这里的替身来源主要有两个，</p>
+<ul>
+<li>从该模型创建出一个Avatar替身</li>
+<li>使用其他模型配置好的Avatar替身</li>
+</ul>
+<p>创建出的Avatat替身文件，尤其是人形骨骼的Avatar替身需要进行配置工作，绑定骨骼，设置初始T-Pos，通过复用其他模型创建好的Avatar替身可以减少繁杂的配置操作，尤其是我们导入只包含骨骼动画的FBX时，复用角色模型的Avatar替身就可以快速完成骨骼动画于人物模型的适配。</p>
+<h2 id="Format格式"><a href="#Format格式" class="headerlink" title="Format格式"></a>Format格式</h2><p>通用保存FBX格式</p>
+<h3 id="Skin"><a href="#Skin" class="headerlink" title="Skin"></a>Skin</h3><p>下载模型的外观，还仅仅是动画</p>
+<h3 id="Frames-per-Second动画的帧率"><a href="#Frames-per-Second动画的帧率" class="headerlink" title="Frames per Second动画的帧率"></a>Frames per Second动画的帧率</h3><h3 id="Keyframe-Reduction帧压缩"><a href="#Keyframe-Reduction帧压缩" class="headerlink" title="Keyframe Reduction帧压缩"></a>Keyframe Reduction帧压缩</h3><h3 id="Pose"><a href="#Pose" class="headerlink" title="Pose"></a>Pose</h3><p>下载模型</p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2022/08/25/Unity%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/DarkSowls%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0/">← Next </a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2022/08/25/Unity%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/Unity3D/"> Prev →</a></div></div></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="Catalog">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">WRXinYue</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8A%A8%E7%94%BB%E6%A8%A1%E5%9E%8B"><span class="toc-number">1.</span> <span class="toc-text">动画模型</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#Model%E9%A1%B5%E7%AD%BE"><span class="toc-number">1.1.</span> <span class="toc-text">Model页签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Scene%E9%83%A8%E5%88%86"><span class="toc-number">1.1.1.</span> <span class="toc-text">1.Scene部分</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Meshes"><span class="toc-number">1.1.2.</span> <span class="toc-text">2.Meshes</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-Geometry"><span class="toc-number">1.1.3.</span> <span class="toc-text">3.Geometry</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Rig%E9%A1%B5%E7%AD%BE"><span class="toc-number">1.2.</span> <span class="toc-text">Rig页签</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Animation-Tyoe"><span class="toc-number">1.2.1.</span> <span class="toc-text">1.Animation Tyoe</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-Avatar-Definition"><span class="toc-number">1.2.2.</span> <span class="toc-text">2.Avatar Definition</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Format%E6%A0%BC%E5%BC%8F"><span class="toc-number">1.3.</span> <span class="toc-text">Format格式</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Skin"><span class="toc-number">1.3.1.</span> <span class="toc-text">Skin</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Frames-per-Second%E5%8A%A8%E7%94%BB%E7%9A%84%E5%B8%A7%E7%8E%87"><span class="toc-number">1.3.2.</span> <span class="toc-text">Frames per Second动画的帧率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Keyframe-Reduction%E5%B8%A7%E5%8E%8B%E7%BC%A9"><span class="toc-number">1.3.3.</span> <span class="toc-text">Keyframe Reduction帧压缩</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Pose"><span class="toc-number">1.3.4.</span> <span class="toc-text">Pose</span></a></li></ol></li></ol></li></ol></div></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>

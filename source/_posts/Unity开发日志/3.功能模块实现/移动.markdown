@@ -1,0 +1,1291 @@
+Unity3D
+
+技术学习之自由视角下的角色控制
+
+今天呢，我们继续来探讨
+
+Unity3D
+
+角色控制的内容，今天博主将解决在上一篇文章中
+
+没有解决的问题，即自由视角下的角色控制。如图是博主非常喜欢的《古剑奇谭》游戏截
+
+图，在这款游戏中就使用了博主今天要讲解的自由视角，所谓自由视角是指玩家可以按照
+
+自身坐标系向着四个不同的方向移动，当玩家按下鼠标右键时，可以绕
+
+Y
+
+轴按照一定的角
+
+度旋转摄像机，在旋转的过程中，角色将旋转相应的角度。在移动的过程中，摄像机会保
+
+持与玩家间的一定距离，然后跟随角色进行移动。好了，下面我们正式开始今天的内容吧！
+
+在开始今天的内容前，首先让我们来学习下
+
+Unity3D
+
+中较为重要的一部分知识，理解这
+
+些知识是我们开始学习今天内容的基础。
+
+@宫古s驰月资料
+
+@宫古s驰月资料
+
+Unity3D
+
+技术学习之自由视角下的角色控制
+
+今天呢，我们继续来探讨
+
+Unity3D
+
+角色控制的内容，今天博主将解决在上一篇文章中
+
+没有解决的问题，即自由视角下的角色控制。如图是博主非常喜欢的《古剑奇谭》游戏截
+
+图，在这款游戏中就使用了博主今天要讲解的自由视角，所谓自由视角是指玩家可以按照
+
+自身坐标系向着四个不同的方向移动，当玩家按下鼠标右键时，可以绕
+
+Y
+
+轴按照一定的角
+
+度旋转摄像机，在旋转的过程中，角色将旋转相应的角度。在移动的过程中，摄像机会保
+
+持与玩家间的一定距离，然后跟随角色进行移动。好了，下面我们正式开始今天的内容吧！
+
+在开始今天的内容前，首先让我们来学习下
+
+Unity3D
+
+中较为重要的一部分知识，理解这
+
+些知识是我们开始学习今天内容的基础。
+
+@宫古s驰月资料
+
+1
+
+、
+
+Input.GetAxis():
+
+该方法用于在
+
+Unity3D
+
+中根据坐标轴名称返回虚拟坐标系中的值，
+
+通常情况下，使用控制器和键盘输入时此值范围在
+
+-1
+
+到
+
+1
+
+之间。这段话怎么理解呢？我们
+
+来看下面这段脚本：
+
+using UnityEngine;
+
+using System.Collections;
+
+public class example : MonoBehaviour {
+
+//
+
+水平速度
+
+public float HorizontalSpeed = 2.0F;
+
+//
+
+垂直速度
+
+public float VerticalSpeed = 2.0F;
+
+void Update()
+
+{
+
+//
+
+水平方向
+
+float h = HorizontalSpeed * Input.GetAxis("Mouse X");
+
+//
+
+垂直方向
+
+float v = VerticalSpeed * Input.GetAxis("Mouse Y");
+
+//
+
+旋转
+
+transform.Rotate(v, h, 0);
+
+}
+
+}
+
+这段脚本呢是根据鼠标的位置来旋转物体从而实现对物体的观察，从这段脚本中我们可
+
+以看出，通过获取输入轴的办法，我们可以获得鼠标移动的方向进而实现对于物体的旋转
+
+控制。在
+
+Unity3D
+
+中我们可以通过
+
+Edit->Project Setting->Input
+
+来查看项目中的坐标轴名
+
+称：
+
+@宫古s驰月资料
+
+@宫古s驰月资料
+
+1
+
+、
+
+Input.GetAxis():
+
+该方法用于在
+
+Unity3D
+
+中根据坐标轴名称返回虚拟坐标系中的值，
+
+通常情况下，使用控制器和键盘输入时此值范围在
+
+-1
+
+到
+
+1
+
+之间。这段话怎么理解呢？我们
+
+来看下面这段脚本：
+
+using UnityEngine;
+
+using System.Collections;
+
+public class example : MonoBehaviour {
+
+//
+
+水平速度
+
+public float HorizontalSpeed = 2.0F;
+
+//
+
+垂直速度
+
+public float VerticalSpeed = 2.0F;
+
+void Update()
+
+{
+
+//
+
+水平方向
+
+float h = HorizontalSpeed * Input.GetAxis("Mouse X");
+
+//
+
+垂直方向
+
+float v = VerticalSpeed * Input.GetAxis("Mouse Y");
+
+//
+
+旋转
+
+transform.Rotate(v, h, 0);
+
+}
+
+}
+
+这段脚本呢是根据鼠标的位置来旋转物体从而实现对物体的观察，从这段脚本中我们可
+
+以看出，通过获取输入轴的办法，我们可以获得鼠标移动的方向进而实现对于物体的旋转
+
+控制。在
+
+Unity3D
+
+中我们可以通过
+
+Edit->Project Setting->Input
+
+来查看项目中的坐标轴名
+
+称：
+
+@宫古s驰月资料
+
+在后面，我们还将使用这种方式，大家可以对这个方法有进一步的了解。
+
+文章出处【狗刨学习网】
+
+2
+
+、欧拉角
+
+eulerAngles
+
+：
+
+该值是
+
+Vector3
+
+类型的值，
+
+x
+
+、
+
+y
+
+、
+
+z
+
+分别代表绕
+
+x
+
+轴
+
+旋
+
+转
+
+x
+
+度，绕
+
+y
+
+轴
+
+旋
+
+转
+
+y
+
+度
+
+，
+
+绕
+
+z
+
+轴旋转
+
+z
+
+度。因此，该值最为直观的形式是可以允许我们直接
+
+以一个三维向量的形式来修改一个物体的角度，例如下面的脚本：
+
+float mY = 5.0;
+
+void Update ()
+
+{
+
+mY += Input.GetAxis("Horizontal");
+
+transform.eulerAngles =new Vector3(0,mY, 0);
+
+}
+
+@宫古s驰月资料
+
+@宫古s驰月资料
+
+在后面，我们还将使用这种方式，大家可以对这个方法有进一步的了解。
+
+文章出处【狗刨学习网】
+
+2
+
+、欧拉角
+
+eulerAngles
+
+：
+
+该值是
+
+Vector3
+
+类型的值，
+
+x
+
+、
+
+y
+
+、
+
+z
+
+分别代表绕
+
+x
+
+轴
+
+旋
+
+转
+
+x
+
+度，绕
+
+y
+
+轴
+
+旋
+
+转
+
+y
+
+度
+
+，
+
+绕
+
+z
+
+轴旋转
+
+z
+
+度。因此，该值最为直观的形式是可以允许我们直接
+
+以一个三维向量的形式来修改一个物体的角度，例如下面的脚本：
+
+float mY = 5.0;
+
+void Update ()
+
+{
+
+mY += Input.GetAxis("Horizontal");
+
+transform.eulerAngles =new Vector3(0,mY, 0);
+
+}
+
+@宫古s驰月资料
+
+如果你已经理解了上面的话，那么不出意外的，这段脚本会如你所愿的，按照鼠标在
+
+水平方向上移动的方向绕
+
+Y
+
+轴旋转。通常情况下，我们不会单独设置欧拉角其中一个轴，
+
+例如
+
+eulerAngles.x = 10
+
+，因为这将导致偏移和不希望的旋转。当设置它们一个新的值时，
+
+要同时设置全部。好在我们可以通过
+
+Quaternion.Euler()
+
+方法将一个
+
+Vector3
+
+类型的值转
+
+化为一个四元数，进而通过修改
+
+Transform.Rotation
+
+来实现相同的目的。
+
+3
+
+、插值：
+
+所谓插值是指在离散数据的基础上补插连续函数，使得这条连续曲线通过
+
+全部给定的离散数据点。插值是离散函数逼近的重要方法，利用它可通过函数在有限个点
+
+处的取值状况，估算出函数在其他点处的近似值。在某些情况下，如果我们希望过程中处
+
+理得较为平滑，此时我们就可以使用插值的方法来实现对中间过程的模拟。在
+
+Unity3D
+
+中
+
+我们可以使用两种插值方法，即线性插值
+
+Lerp
+
+，球形插值
+
+SLerp
+
+。我们来看下面的脚本：
+
+void Rotating (float horizontal, float vertical)
+
+{
+
+// Create a new vector of the horizontal and vertical inpu
+
+ts.
+
+Vector3 targetDirection = new Vector3(horizontal, 0f, vert
+
+ical);
+
+// Create a rotation based on this new vector assuming tha
+
+t up is the global y axis.
+
+Quaternion targetRotation = Quaternion.LookRotation(target
+
+Direction, Vector3.up);
+
+// Create a rotation that is an increment closer to the ta
+
+rget rotation from the player's rotation.
+
+Quaternion newRotation = Quaternion.Lerp(rigidbody.rotatio
+
+n, targetRotation, turnSmoothing * Time.deltaTime);
+
+// Change the players rotation to this new rotation.
+
+rigidbody.MoveRotation(newRotation);
+
+}
+
+插值的方法很简单，只要我们给出初始和结束的状态、时间就可以了，大家可以自己看
+
+API
+
+。
+
+好了，有了这三部分的基础，我们就可以开始今天的内容了，今天的脚本分为两个部
+
+分，第一部分是角色控制的部分，主要负责的角色在场景中的移动、转身和动画处理。第
+
+二部分是相机控制的部分，主要涉及相机旋转、相机缩放的相关内容。下面，我们分别来
+
+讲这两个部分，场景依然是博主自己在做的小游戏：
+
+@宫古s驰月资料
+
+如果你已经理解了上面的话，那么不出意外的，这段脚本会如你所愿的，按照鼠标在
+
+水平方向上移动的方向绕
+
+Y
+
+轴旋转。通常情况下，我们不会单独设置欧拉角其中一个轴，
+
+例如
+
+eulerAngles.x = 10
+
+，因为这将导致偏移和不希望的旋转。当设置它们一个新的值时，
+
+要同时设置全部。好在我们可以通过
+
+Quaternion.Euler()
+
+方法将一个
+
+Vector3
+
+类型的值转
+
+化为一个四元数，进而通过修改
+
+Transform.Rotation
+
+来实现相同的目的。
+
+3
+
+、插值：
+
+所谓插值是指在离散数据的基础上补插连续函数，使得这条连续曲线通过
+
+全部给定的离散数据点。插值是离散函数逼近的重要方法，利用它可通过函数在有限个点
+
+处的取值状况，估算出函数在其他点处的近似值。在某些情况下，如果我们希望过程中处
+
+理得较为平滑，此时我们就可以使用插值的方法来实现对中间过程的模拟。在
+
+Unity3D
+
+中
+
+我们可以使用两种插值方法，即线性插值
+
+Lerp
+
+，球形插值
+
+SLerp
+
+。我们来看下面的脚本：
+
+void Rotating (float horizontal, float vertical)
+
+{
+
+// Create a new vector of the horizontal and vertical inpu
+
+ts.
+
+Vector3 targetDirection = new Vector3(horizontal, 0f, vert
+
+ical);
+
+// Create a rotation based on this new vector assuming tha
+
+t up is the global y axis.
+
+Quaternion targetRotation = Quaternion.LookRotation(target
+
+Direction, Vector3.up);
+
+// Create a rotation that is an increment closer to the ta
+
+rget rotation from the player's rotation.
+
+Quaternion newRotation = Quaternion.Lerp(rigidbody.rotatio
+
+n, targetRotation, turnSmoothing * Time.deltaTime);
+
+// Change the players rotation to this new rotation.
+
+rigidbody.MoveRotation(newRotation);
+
+}
+
+插值的方法很简单，只要我们给出初始和结束的状态、时间就可以了，大家可以自己看
+
+API
+
+。
+
+好了，有了这三部分的基础，我们就可以开始今天的内容了，今天的脚本分为两个部
+
+分，第一部分是角色控制的部分，主要负责的角色在场景中的移动、转身和动画处理。第
+
+二部分是相机控制的部分，主要涉及相机旋转、相机缩放的相关内容。下面，我们分别来
+
+讲这两个部分，场景依然是博主自己在做的小游戏：
+
+@宫古s驰月资料
+
+如果你已经理解了上面的话，那么不出意外的，这段脚本会如你所愿的，按照鼠标在
+
+水平方向上移动的方向绕
+
+Y
+
+轴旋转。通常情况下，我们不会单独设置欧拉角其中一个轴，
+
+例如
+
+eulerAngles.x = 10
+
+，因为这将导致偏移和不希望的旋转。当设置它们一个新的值时，
+
+要同时设置全部。好在我们可以通过
+
+Quaternion.Euler()
+
+方法将一个
+
+Vector3
+
+类型的值转
+
+化为一个四元数，进而通过修改
+
+Transform.Rotation
+
+来实现相同的目的。
+
+3
+
+、插值：
+
+所谓插值是指在离散数据的基础上补插连续函数，使得这条连续曲线通过
+
+全部给定的离散数据点。插值是离散函数逼近的重要方法，利用它可通过函数在有限个点
+
+处的取值状况，估算出函数在其他点处的近似值。在某些情况下，如果我们希望过程中处
+
+理得较为平滑，此时我们就可以使用插值的方法来实现对中间过程的模拟。在
+
+Unity3D
+
+中
+
+我们可以使用两种插值方法，即线性插值
+
+Lerp
+
+，球形插值
+
+SLerp
+
+。我们来看下面的脚本：
+
+void Rotating (float horizontal, float vertical)
+
+{
+
+// Create a new vector of the horizontal and vertical inpu
+
+ts.
+
+Vector3 targetDirection = new Vector3(horizontal, 0f, vert
+
+ical);
+
+// Create a rotation based on this new vector assuming tha
+
+t up is the global y axis.
+
+Quaternion targetRotation = Quaternion.LookRotation(target
+
+Direction, Vector3.up);
+
+// Create a rotation that is an increment closer to the ta
+
+rget rotation from the player's rotation.
+
+Quaternion newRotation = Quaternion.Lerp(rigidbody.rotatio
+
+n, targetRotation, turnSmoothing * Time.deltaTime);
+
+// Change the players rotation to this new rotation.
+
+rigidbody.MoveRotation(newRotation);
+
+}
+
+插值的方法很简单，只要我们给出初始和结束的状态、时间就可以了，大家可以自己看
+
+API
+
+。
+
+好了，有了这三部分的基础，我们就可以开始今天的内容了，今天的脚本分为两个部
+
+分，第一部分是角色控制的部分，主要负责的角色在场景中的移动、转身和动画处理。第
+
+二部分是相机控制的部分，主要涉及相机旋转、相机缩放的相关内容。下面，我们分别来
+
+讲这两个部分，场景依然是博主自己在做的小游戏：
+
+@宫古s驰月资料
+
+如果你已经理解了上面的话，那么不出意外的，这段脚本会如你所愿的，按照鼠标在
+
+水平方向上移动的方向绕
+
+Y
+
+轴旋转。通常情况下，我们不会单独设置欧拉角其中一个轴，
+
+例如
+
+eulerAngles.x = 10
+
+，因为这将导致偏移和不希望的旋转。当设置它们一个新的值时，
+
+要同时设置全部。好在我们可以通过
+
+Quaternion.Euler()
+
+方法将一个
+
+Vector3
+
+类型的值转
+
+化为一个四元数，进而通过修改
+
+Transform.Rotation
+
+来实现相同的目的。
+
+3
+
+、插值：
+
+所谓插值是指在离散数据的基础上补插连续函数，使得这条连续曲线通过
+
+全部给定的离散数据点。插值是离散函数逼近的重要方法，利用它可通过函数在有限个点
+
+处的取值状况，估算出函数在其他点处的近似值。在某些情况下，如果我们希望过程中处
+
+理得较为平滑，此时我们就可以使用插值的方法来实现对中间过程的模拟。在
+
+Unity3D
+
+中
+
+我们可以使用两种插值方法，即线性插值
+
+Lerp
+
+，球形插值
+
+SLerp
+
+。我们来看下面的脚本：
+
+void Rotating (float horizontal, float vertical)
+
+{
+
+// Create a new vector of the horizontal and vertical inpu
+
+ts.
+
+Vector3 targetDirection = new Vector3(horizontal, 0f, vert
+
+ical);
+
+// Create a rotation based on this new vector assuming tha
+
+t up is the global y axis.
+
+Quaternion targetRotation = Quaternion.LookRotation(target
+
+Direction, Vector3.up);
+
+// Create a rotation that is an increment closer to the ta
+
+rget rotation from the player's rotation.
+
+Quaternion newRotation = Quaternion.Lerp(rigidbody.rotatio
+
+n, targetRotation, turnSmoothing * Time.deltaTime);
+
+// Change the players rotation to this new rotation.
+
+rigidbody.MoveRotation(newRotation);
+
+}
+
+插值的方法很简单，只要我们给出初始和结束的状态、时间就可以了，大家可以自己看
+
+API
+
+。
+
+好了，有了这三部分的基础，我们就可以开始今天的内容了，今天的脚本分为两个部
+
+分，第一部分是角色控制的部分，主要负责的角色在场景中的移动、转身和动画处理。第
+
+二部分是相机控制的部分，主要涉及相机旋转、相机缩放的相关内容。下面，我们分别来
+
+讲这两个部分，场景依然是博主自己在做的小游戏：
+
+@宫古s驰月资料
+
+本次的主角呢，是博主非常喜欢的角色谢沧行，好了，我们回到今天的内容里吧！在
+
+第一部分，主要的是完成角色向各个方向的转身，这里博主定义四个方向
+
+(
+
+其实八个方向是
+
+一样的！
+
+)
+
+，脚本如下：
+
+using UnityEngine;
+
+using System.Collections;
+
+public class NoLockiVew_Player : MonoBehaviour {
+
+/*
+
+自由视角下的角色控制
+
+*
+
+/
+
+/*
+
+作者：秦元培
+
+*/
+
+//
+
+玩家的行走速度
+
+@宫古s驰月资料
+
+public float WalkSpeed=1.5F;
+
+//
+
+重力
+
+public float Gravity=20;
+
+//
+
+角色控制器
+
+private CharacterController mController;
+
+//
+
+动画组件
+
+private Animation mAnim;
+
+//
+
+玩家方向，默认向前
+
+private DirectionType mType=DirectionType.Direction_Forward;
+
+[HideInInspector]
+
+//
+
+玩家状态，默认为
+
+Idle
+
+public PlayerState State=PlayerState.Idle;
+
+//
+
+定义玩家的状态枚举
+
+public enum PlayerState
+
+{
+
+Idle,
+
+Walk
+
+}
+
+//
+
+定义四个方向的枚举值，按照逆时针方向计算
+
+protected enum DirectionType
+
+{
+
+Direction_Forward=90,
+
+Direction_Backward=270,
+
+Direction_Left=180,
+
+Direction_Right=0
+
+}
+
+void Start ()
+
+{
+
+//
+
+获取角色控制器
+
+mController=GetComponent();
+
+@宫古s驰月资料
+
+//
+
+获取动画组件
+
+mAnim=GetComponentInChildren();
+
+}
+
+void Update ()
+
+{
+
+MoveManager();
+
+//MouseEvent();
+
+}
+
+//
+
+玩家移动控制
+
+void MoveManager()
+
+{
+
+//
+
+移动方向
+
+Vector3 mDir=Vector3.zero;
+
+if(mController.isGrounded)
+
+{
+
+//
+
+将角色旋转到对应的方向
+
+if(Input.GetAxis("Vertical")==1)
+
+{
+
+SetDirection(DirectionType.Direction_Forwa
+
+rd);
+
+mDir=Vector3.forward * Time.deltaTime * Wa
+
+lkSpeed;
+
+mAnim.CrossFade("Walk",0.25F);
+
+State=PlayerState.Walk;
+
+}
+
+if(Input.GetAxis("Vertical")==-1)
+
+{
+
+SetDirection(DirectionType.Direction_Backw
+
+ard);
+
+mDir=Vector3.forward * Time.deltaTime * Wa
+
+lkSpeed;
+
+mAnim.CrossFade("Walk",0.25F);
+
+State=PlayerState.Walk;
+
+}
+
+@宫古s驰月资料
+
+if(Input.GetAxis("Horizontal")==-1)
+
+{
+
+SetDirection(DirectionType.Direction_Lef
+
+t);
+
+mDir=Vector3.forward * Time.deltaTime * Wa
+
+lkSpeed;
+
+mAnim.CrossFade("Walk",0.25F);
+
+State=PlayerState.Walk;
+
+}
+
+if(Input.GetAxis("Horizontal")==1)
+
+{
+
+SetDirection(DirectionType.Direction_Righ
+
+t);
+
+mDir=Vector3.forward * Time.deltaTime * Wa
+
+lkSpeed;
+
+mAnim.CrossFade("Walk",0.25F);
+
+State=PlayerState.Walk;
+
+}
+
+//
+
+角色的
+
+Idle
+
+动画
+
+if(Input.GetAxis("Vertical")==0 && Input.GetAxis("
+
+Horizontal")==0)
+
+{
+
+mAnim.CrossFade("Idle",0.25F);
+
+State=PlayerState.Idle;
+
+}
+
+}
+
+//
+
+考虑重力因素
+
+mDir=transform.TransformDirection(mDir);
+
+float y=mDir.y-Gravity *Time.deltaTime;
+
+mDir=new Vector3(mDir.x,y,mDir.z);
+
+mController.Move(mDir);
+
+}
+
+//
+
+设置角色的方向，有问题
+
+void SetDirection(DirectionType mDir)
+
+{
+
+if(mType!=mDir)
+
+@宫古s驰月资料
+
+{
+
+transform.Rotate(Vector3.up*(mType-mDir));
+
+mType=mDir;
+
+}
+
+}
+
+}
+
+这里定义四个方向，是按照逆时针方向转的，相邻的两个方向间相差
+
+90
+
+度，所以我们
+
+只需要将当前的角度和目标角度相减就可以转到目标角度的方向
+
+(
+
+其实这是以前写的代码，
+
+现在回头再看，直接用欧拉角似乎更为简单啊，呵呵
+
+)
+
+。这里主要的内容就是这样了。下面
+
+我们来看相机控制部分的代码吧，这里的代码参考了
+
+MouseOrbit
+
+脚本，主要完成了鼠标
+
+右键旋转控制，博主在此基础上增加了相机缩放的代码。提到相机缩放，其实就是根据鼠
+
+标滚轮滚动的方向和大小重新计算角色与相机的距离，与之类似地还有小地图的放缩，其
+
+实同样是通过修改距离来实现的。博主今天的一个体会是官方的代码能自己写一遍的最好
+
+自己写一遍，这样好多东西就能在这个过程中给理解了。我们一起来看脚本
+
+using UnityEngine;
+
+using System.Collections;
+
+public class NoLockView_Camera : MonoBehaviour
+
+{
+
+//
+
+观察目标
+
+public Transform Target;
+
+//
+
+观察距离
+
+public float Distance = 5F;
+
+//
+
+旋转速度
+
+private float SpeedX=240;
+
+private float SpeedY=120;
+
+//
+
+角度限制
+
+private float MinLimitY = 5;
+
+private float MaxLimitY = 180;
+
+//
+
+旋转角度
+
+private float mX = 0.0F;
+
+private float mY = 0.0F;
+
+//
+
+鼠标缩放距离最值
+
+private float MaxDistance=10;
+
+private float MinDistance=1.5F;
+
+@宫古s驰月资料
+
+//
+
+鼠标缩放速率
+
+private float ZoomSpeed=2F;
+
+//
+
+是否启用差值
+
+public bool isNeedDamping=true;
+
+//
+
+速度
+
+public float Damping=2.5F;
+
+void Start ()
+
+{
+
+//
+
+初始化旋转角度
+
+mX=transform.eulerAngles.x;
+
+mY=transform.eulerAngles.y;
+
+}
+
+void LateUpdate ()
+
+{
+
+//
+
+鼠标右键旋转
+
+if(Target!=null && Input.GetMouseButton(1))
+
+{
+
+//
+
+获取鼠标输入
+
+mX += Input.GetAxis("Mouse X") * SpeedX * 0.02F;
+
+mY -= Input.GetAxis("Mouse Y") * SpeedY * 0.02F;
+
+//
+
+范围限制
+
+mY = ClampAngle(mY,MinLimitY,MaxLimitY);
+
+}
+
+//
+
+鼠标滚轮缩放
+
+Distance-=Input.GetAxis("Mouse ScrollWheel") * ZoomSpeed;
+
+Distance=Mathf.Clamp(Distance,MinDistance,MaxDistance);
+
+//
+
+重新计算位置和角度
+
+Quaternion mRotation = Quaternion.Euler(mY, mX, 0);
+
+Vector3 mPosition = mRotation * new Vector3(0.0F, 0.0F, -D
+
+istance) + Target.position;

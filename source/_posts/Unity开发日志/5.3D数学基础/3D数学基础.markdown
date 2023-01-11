@@ -1,0 +1,152 @@
+# 3D数学基础
+
+![image-20220628105359460](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628105359460.png)
+
+## 坐标系
+
+https://fujiwaratko.sakura.ne.jp/infosci/modeling1_e.html
+
+### 2d
+
+数学：笛卡尔坐标系，也称为直角坐标系 。一般在数学中用的比较多。
+
+计算机：一般以屏幕左上角或者屏幕左下角为原点。
+
+### 3d
+
+* 左手系
+
+* 右手系
+
+![右左](https://fujiwaratko.sakura.ne.jp/infosci/l-r.gif)
+
+* Y UP
+
+* Z UP
+
+![对](https://fujiwaratko.sakura.ne.jp/infosci/y-up.gif)
+
+## 向量
+
+### 什么是向量
+
+![image-20220628152745010](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628152745010.png)
+
+* 一个数字列表。表示各个维度上的有向位移。
+* 一个有大小有方向的物理量。
+  * 大小就是向量的模长。
+  * 方向描述了空间中向量的指向。
+* 可以表示物体的位置和方向。
+
+### 向量的数学定义
+
+* 一个数字列表，数组
+
+* 向量、标量(一个数)
+
+*  向量的维数：2维、3维、4维，标量是1维向量
+
+* 行向量、列向量
+
+  [1,2,3] 几个数就是几维向量
+
+### 向量的几何定义
+
+* 向量是有大小和方向的有向线段
+* 向量没有位置，只有大小和方向
+* “点”描述位置，“向量”描述位移
+
+![image-20220628151931699](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628151931699.png)
+
+* 线的长度是向量大小
+
+* 线的箭头是向量方向
+
+* 向量没有位置，只有大小和方向
+
+* 向量（vector）和点（point）的关系在数学上是完全一致的
+
+  <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628154908681.png" alt="image-20220628154908681" style="zoom: 50%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628155126600.png" alt="image-20220628155126600" style="zoom: 50%;" />
+
+ > ####  向量的大小（长度、模）
+>
+> * 向量各分量平方和的平方根。
+> * <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628121324243.png" alt="image-20220628121324243" style="zoom:67%;" />
+> * API ： float dis = vector.magnitude；
+  * 模的平方 vector.sqrMagnitude
+  * 因为平访问的计算耗时长，所以效率高于 magnitude。
+
+>#### 向量的方向
+>
+>* 获取向量方向也称“标准化向量”，或“归一化向量”；即获取该向量的单位向量。
+>* 单位向量：大小为1的向量。
+>* 公式：V / |V|
+>* 几何意义：将该向量拉长或者缩短，使模长等于1.
+>* API：Vector3 vector2=vector1.normalized;
+>* vector2为vector1的单位向量
+  * vecotr1.Normalize();将vector1自身设置为单位向量
+
+### 向量运算
+
+* 零向量
+
+  * 长度为0
+
+  * 唯一一个没有方向的方向（没有方向）
+
+    <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161023415.png" alt="image-20220628161023415" style="zoom:50%;" />
+
+* 负向量
+
+  <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161109859.png" alt="image-20220628161109859" style="zoom: 67%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161157046.png" alt="image-20220628161157046" style="zoom:50%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161252272.png" alt="image-20220628161252272" style="zoom: 50%;" />
+
+* 向量大小、长度、模
+
+  ![image-20220628161509405](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161509405.png)
+
+  * 二维向量
+
+    <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161613213.png" alt="image-20220628161613213" style="zoom:50%;" />
+
+* 标量与向量的乘法
+
+* 标准化向量
+
+* 向量的加法和减法
+
+* 距离公式
+
+* 向量点乘
+
+* 向量投影
+
+* 向量叉乘
+
+## 四元数
+
+### 四元数记法
+
+一个四元数包括一个标量分量和一个3D向量分量。经常标记量分量为w，记向量分量为单一的v或分开的x，y，z，两只记法如下：
+
+q = [ w v ]
+
+q = [ w ( x y z) ] 
+
+### 四元数与复数
+
+复数对（a，b）定义了数a+bi，i是所谓的虚数（irrational number），满足i² = -1 ：a称作实部：b称作虚部。任意实数 k都能表示为复数（k，0）=k+0i。
+
+<img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629092753812.png" alt="image-20220629092753812" style="zoom:50%;" />
+
+
+
+#### 复数
+
+##### 定义
+
+任意一个复数 𝑧 ∈ C 都可以表示为 𝑧 = 𝑎 + 𝑏𝑖 的形式，其中 𝑎, 𝑏 ∈ R 而且 𝑖 2 = −1．我们将 𝑎 称之为这个复数的实部（Real Part），𝑏 称之为这个复数的虚部（Imaginary Part）.
+
+因为 𝑧 = 𝑎 + 𝑏𝑖 其实就是对于 {1, 𝑖} 这个基（Basis）的线性组合（Linear Combination），我们也可以用向量来表示一个复数： ![image-20220629111515858](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629111515858.png)
+
+因为这个向量有两个元素，我们可以使用复平面上的一个点来表示一个复数． 复平面的横坐标 𝑅𝑒 代表它的实部，纵坐标 𝐼𝑚 代表它的虚部：![image-20220629111620327](C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629111620327.png)
+

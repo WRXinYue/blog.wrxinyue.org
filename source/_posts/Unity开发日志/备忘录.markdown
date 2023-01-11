@@ -1,0 +1,213 @@
+# 我好像一直在等你，又好像一直在忘记你
+
+
+
+参考：[(43条消息) time、deltaTime、fixedTime、fixedDeltatime的区别_qq_39887964的博客-CSDN博客_deltatime和fixeddeltatime](https://blog.csdn.net/qq_39887964/article/details/79627838)
+
+deltaTlme代表两帧之间的间隔时间
+
+应该是fixedDeltaTime
+
+## 资源网站
+
+[推荐一些不错的Unity游戏开发素材资源 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/360452175)
+
+[收藏必看！Unity游戏开发素材资源合集 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/444084617)
+
+
+
+Unity里一般用Shader来做，常用的有ShaderGraph和AES
+
+
+
+Time.timeScale = 0f;	//游戏暂停函数
+
+快捷键V 网格吸附
+
+选中main camera按下 ctrl+shfit+f 变成当前场景的角度坐标
+
+
+
+## 编程方法
+
+~~~c#
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.Events;
+
+[System.Serializable]
+public class EventVector3 : UnityEvent<Vector3>{ }
+public class MouseManager : MonoBehaviour
+{
+    public EventVector3 OnMouseClicked;
+}
+~~~
+
+得到了用[序列化](https://so.csdn.net/so/search?q=序列化&spm=1001.2101.3001.7020)存储的解决办法，在类前写上 [System.Serializable]就解决了问题，下面介绍一下 序列化的作用。
+
+序列化是指将对象实例的状态存储到存储媒体的过程。在此过程中，先将对象的公共字段和私有字段以及类的名称（包括类所在的程序集）转换为[字节流](https://so.csdn.net/so/search?q=字节流&spm=1001.2101.3001.7020)，然后再把字节流写入数据流。在随后对对象进行反序列化时，将创建出与原对象完全相同的副本。
+
+### 跳跃代码3D
+
+~~~c#
+if (Input.GetKeyDown(KeyCode.Space))
+        {
+            GetComponent<Rigidbody>().AddForce(Vector3.up * 5, ForceMode.VelocityChange);
+        }
+~~~
+
+Update中检查按键和输入 然后在FixedUpdate中施加力量
+
+### 是否启用组件
+
+~~~
+ disColl.enabled = false;
+~~~
+
+### 获得layer
+
+```
+coll.IsTouchingLayers(ground))
+```
+
+
+
+
+
+## 命名规则
+
+### 术语
+
+Z-Fighting（深度缓冲）模型太近冲突
+
+AsyncOperation异步操作
+
+*** Prefabs 预制件 **
+
+预制游戏的对象 
+
+### 编辑器
+
+**编辑器有很多类：[编辑器类](http://www.ceeger.com/Script/Editor.Classes.html)。例如：EditorGUI（编辑器界面）,\**EditorGUILayout（编辑器界面布局）,\*\*EditorGUIUtility（编辑器界面工具）等等这些，都是编辑器对界面进行编辑。\*\**\***
+
+Inspector面板
+
+### 变量
+
+MoveToTarget 移动到目标
+
+MonoBehaviour 单体行为
+
+### Project 项目
+
+Assets Pack包文件夹（用来存放游戏资源）
+
+Materials（材料）
+
+Prefabs(预制体)
+
+Scripts (存放脚本文件)
+
+
+
+- cursor 光标
+
+Physic Material(物理材料)
+
+
+
+Environment场景文件夹-Hierarchy
+
+--- Character --- 不成为他的子集
+
+Plugins&Addons 存放package插件类型
+
+Materials 存放材质文件夹
+
+#### Manager 代理
+
+mouse manager 鼠标管理器
+
+#### Characters 控制器
+
+* palyer controller人物的控制器
+
+* enemy  controller 敌人的控制器
+
+### 名称
+
+FloorTile(地板)
+
+# Unity项目目录架构和命名规则
+
+## 文件夹命名规则
+
+参考[Special folder names](https://link.jianshu.com/?t=https://docs.unity3d.com/Manual/SpecialFolders.html)和[Special Folders and Script Compilation Order](https://link.jianshu.com/?t=http://docs.unity3d.com/Manual/ScriptCompileOrderFolders.html)
+
+### Assets
+
+主文件夹，包含所有工程需要用到的资源。
+
+#### Editor
+
+所有在Editor和它的子文件夹的脚本，都不会作为运行期脚本被编译，而是作为动态添加Unity编译器功能的脚本来编译。在该文件夹和其子文件夹的脚本不能被添加到GameObject上。
+Editor文件夹可以被放置在`Standard Assets` `Pro Standard Assets` `Plugins`的任意一个子文件夹下。
+
+#### Editor default resources
+
+必须作为Assets的子文件夹，作为Editor脚本的资源使用，使用方式是通过函数`EditorGUIUtility.Load`来使用。
+
+#### Gizmos
+
+场景面板中的图标图片资源，使用`Gizmos.DrawIcon`函数在场景面板新建图标，图标的图片资源必须位于这个文件夹内。(比如Unity的各种插件)
+
+#### Plugins
+
+所有的插件资源，包括用C/C++编写的Dll库。
+
+#### Resources
+
+**一般用来存放需要通过代码初始化/使用的资源**，可以放在工程中的任意文件夹中，在Resources文件夹中的文件可以通过`Resources.Load`来读取，像下面这样。
+
+
+
+```c
+rend.material.mainTexture = Resources.Load("glass") as Texture;
+GameObject instance = Instantiate(Resources.Load("enemy", typeof(GameObject))) as GameObject;
+```
+
+#### Standard Assets
+
+导入标准材质包时新建的，拥有自己的编译顺序。
+
+#### StreamingAssets
+
+通过`Application.streamingAssetsPath`获取目录路径，该目录中的文件将会原封不动的被拷贝到不同的平台上，每个平台对应的目录不一致，但是都可以通过上述方法获得。**一般用来存放视频等资源文件**。
+
+#### WebPlayerTemplates
+
+存放网页相关文件。
+
+#### 隐藏文件
+
+一般用来存放README以及一些操作系统生成的临时文件，这些文件/文件夹一般以`.` `~` 或者名为`cvs`或者扩展名是`tmp`。
+
+## 文件夹编译顺序
+
+在Assents中的脚本会按照以下顺序编译。
+
+1. `Standard Assets` `Pro Standard Assets` `Plugins`中的运行期脚本(包括MonoBehaviour和ScriptableObject等)。
+2. 工程目录中的各种`Editor`文件夹中的Editor脚本。
+3. `Editor`文件夹之外的其他脚本(非运行期脚本)。
+4. `Editor`文件夹之内的其他脚本(非Editor脚本)。
+
+> 编译顺序在后面的脚本不可以被编译顺序在前面的脚本引用。
+
+## 工程文件目录架构
+
+可以如下图设置文件目录
+
+其中`GameAssets`为美术人员维护，美术人员使用Unity新建简单的空白工程，里面只有GameAssets的资源文件夹，这样每次制作完都可以`Export UnityPockage`，将其打包成`UnityPackage`给开发人员导入，好处是可以单独工程编辑，每次需要导入新的资源只要`Import`美术给的UnityPackage。
+
+![img](https://upload-images.jianshu.io/upload_images/1863913-4e8acf1ff9db29a9.png?imageMogr2/auto-orient/strip|imageView2/2/format/webp)

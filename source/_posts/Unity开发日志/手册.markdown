@@ -1,0 +1,14 @@
+# 手册
+变量.enabled.false\true  获得他的参数是否被启动
+
+所有的UI必须有Canvas画布
+
+
+
+turnSpeed旋转速度
+
+
+
+Scripts代码文件夹
+
+Zombue文件夹用来装model和animation

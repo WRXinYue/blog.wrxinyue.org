@@ -1,0 +1,136 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>WRXinYue's Blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search the blog","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search the blog" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1></h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2022-08-25T07:26:16.247Z" id="date"> 2022-08-25</time></div></span><br><span>Last Update: <div class="control"><time datetime="2022-06-29T03:18:12.000Z" id="updated"> 2022-06-29</time></div></span></div></div><hr><div id="post-content"><h1 id="3D数学基础"><a href="#3D数学基础" class="headerlink" title="3D数学基础"></a>3D数学基础</h1><p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628105359460.png" alt="image-20220628105359460"></p>
+<h2 id="坐标系"><a href="#坐标系" class="headerlink" title="坐标系"></a>坐标系</h2><p><a target="_blank" rel="noopener" href="https://fujiwaratko.sakura.ne.jp/infosci/modeling1_e.html">https://fujiwaratko.sakura.ne.jp/infosci/modeling1_e.html</a></p>
+<h3 id="2d"><a href="#2d" class="headerlink" title="2d"></a>2d</h3><p>数学：笛卡尔坐标系，也称为直角坐标系 。一般在数学中用的比较多。</p>
+<p>计算机：一般以屏幕左上角或者屏幕左下角为原点。</p>
+<h3 id="3d"><a href="#3d" class="headerlink" title="3d"></a>3d</h3><ul>
+<li><p>左手系</p>
+</li>
+<li><p>右手系</p>
+</li>
+</ul>
+<p><img src="https://fujiwaratko.sakura.ne.jp/infosci/l-r.gif" alt="右左"></p>
+<ul>
+<li><p>Y UP</p>
+</li>
+<li><p>Z UP</p>
+</li>
+</ul>
+<p><img src="https://fujiwaratko.sakura.ne.jp/infosci/y-up.gif" alt="对"></p>
+<h2 id="向量"><a href="#向量" class="headerlink" title="向量"></a>向量</h2><h3 id="什么是向量"><a href="#什么是向量" class="headerlink" title="什么是向量"></a>什么是向量</h3><p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628152745010.png" alt="image-20220628152745010"></p>
+<ul>
+<li>一个数字列表。表示各个维度上的有向位移。</li>
+<li>一个有大小有方向的物理量。<ul>
+<li>大小就是向量的模长。</li>
+<li>方向描述了空间中向量的指向。</li>
+</ul>
+</li>
+<li>可以表示物体的位置和方向。</li>
+</ul>
+<h3 id="向量的数学定义"><a href="#向量的数学定义" class="headerlink" title="向量的数学定义"></a>向量的数学定义</h3><ul>
+<li><p>一个数字列表，数组</p>
+</li>
+<li><p>向量、标量(一个数)</p>
+</li>
+<li><p>向量的维数：2维、3维、4维，标量是1维向量</p>
+</li>
+<li><p>行向量、列向量</p>
+<p>[1,2,3] 几个数就是几维向量</p>
+</li>
+</ul>
+<h3 id="向量的几何定义"><a href="#向量的几何定义" class="headerlink" title="向量的几何定义"></a>向量的几何定义</h3><ul>
+<li>向量是有大小和方向的有向线段</li>
+<li>向量没有位置，只有大小和方向</li>
+<li>“点”描述位置，“向量”描述位移</li>
+</ul>
+<p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628151931699.png" alt="image-20220628151931699"></p>
+<ul>
+<li><p>线的长度是向量大小</p>
+</li>
+<li><p>线的箭头是向量方向</p>
+</li>
+<li><p>向量没有位置，只有大小和方向</p>
+</li>
+<li><p>向量（vector）和点（point）的关系在数学上是完全一致的</p>
+<p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628154908681.png" alt="image-20220628154908681" style="zoom: 50%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628155126600.png" alt="image-20220628155126600" style="zoom: 50%;" /></p>
+</li>
+</ul>
+<blockquote>
+<h4 id="向量的大小（长度、模）"><a href="#向量的大小（长度、模）" class="headerlink" title="向量的大小（长度、模）"></a>向量的大小（长度、模）</h4><ul>
+<li>向量各分量平方和的平方根。</li>
+<li><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628121324243.png" alt="image-20220628121324243" style="zoom:67%;" /></li>
+<li>API ： float dis &#x3D; vector.magnitude；</li>
+</ul>
+</blockquote>
+<ul>
+<li>模的平方 vector.sqrMagnitude</li>
+<li>因为平访问的计算耗时长，所以效率高于 magnitude。</li>
+</ul>
+<blockquote>
+<h4 id="向量的方向"><a href="#向量的方向" class="headerlink" title="向量的方向"></a>向量的方向</h4><ul>
+<li>获取向量方向也称“标准化向量”，或“归一化向量”；即获取该向量的单位向量。</li>
+<li>单位向量：大小为1的向量。</li>
+<li>公式：V &#x2F; |V|</li>
+<li>几何意义：将该向量拉长或者缩短，使模长等于1.</li>
+<li>API：Vector3 vector2&#x3D;vector1.normalized;</li>
+<li>vector2为vector1的单位向量</li>
+</ul>
+</blockquote>
+<ul>
+<li>vecotr1.Normalize();将vector1自身设置为单位向量</li>
+</ul>
+<h3 id="向量运算"><a href="#向量运算" class="headerlink" title="向量运算"></a>向量运算</h3><ul>
+<li><p>零向量</p>
+<ul>
+<li><p>长度为0</p>
+</li>
+<li><p>唯一一个没有方向的方向（没有方向）</p>
+<img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161023415.png" alt="image-20220628161023415" style="zoom:50%;" /></li>
+</ul>
+</li>
+<li><p>负向量</p>
+<p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161109859.png" alt="image-20220628161109859" style="zoom: 67%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161157046.png" alt="image-20220628161157046" style="zoom:50%;" /><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161252272.png" alt="image-20220628161252272" style="zoom: 50%;" /></p>
+</li>
+<li><p>向量大小、长度、模</p>
+<p><img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161509405.png" alt="image-20220628161509405"></p>
+<ul>
+<li><p>二维向量</p>
+<img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220628161613213.png" alt="image-20220628161613213" style="zoom:50%;" /></li>
+</ul>
+</li>
+<li><p>标量与向量的乘法</p>
+</li>
+<li><p>标准化向量</p>
+</li>
+<li><p>向量的加法和减法</p>
+</li>
+<li><p>距离公式</p>
+</li>
+<li><p>向量点乘</p>
+</li>
+<li><p>向量投影</p>
+</li>
+<li><p>向量叉乘</p>
+</li>
+</ul>
+<h2 id="四元数"><a href="#四元数" class="headerlink" title="四元数"></a>四元数</h2><h3 id="四元数记法"><a href="#四元数记法" class="headerlink" title="四元数记法"></a>四元数记法</h3><p>一个四元数包括一个标量分量和一个3D向量分量。经常标记量分量为w，记向量分量为单一的v或分开的x，y，z，两只记法如下：</p>
+<p>q &#x3D; [ w v ]</p>
+<p>q &#x3D; [ w ( x y z) ] </p>
+<h3 id="四元数与复数"><a href="#四元数与复数" class="headerlink" title="四元数与复数"></a>四元数与复数</h3><p>复数对（a，b）定义了数a+bi，i是所谓的虚数（irrational number），满足i² &#x3D; -1 ：a称作实部：b称作虚部。任意实数 k都能表示为复数（k，0）&#x3D;k+0i。</p>
+<img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629092753812.png" alt="image-20220629092753812" style="zoom:50%;" />
+
+
+
+<h4 id="复数"><a href="#复数" class="headerlink" title="复数"></a>复数</h4><h5 id="定义"><a href="#定义" class="headerlink" title="定义"></a>定义</h5><p>任意一个复数 𝑧 ∈ C 都可以表示为 𝑧 &#x3D; 𝑎 + 𝑏𝑖 的形式，其中 𝑎, 𝑏 ∈ R 而且 𝑖 2 &#x3D; −1．我们将 𝑎 称之为这个复数的实部（Real Part），𝑏 称之为这个复数的虚部（Imaginary Part）.</p>
+<p>因为 𝑧 &#x3D; 𝑎 + 𝑏𝑖 其实就是对于 {1, 𝑖} 这个基（Basis）的线性组合（Linear Combination），我们也可以用向量来表示一个复数： <img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629111515858.png" alt="image-20220629111515858"></p>
+<p>因为这个向量有两个元素，我们可以使用复平面上的一个点来表示一个复数． 复平面的横坐标 𝑅𝑒 代表它的实部，纵坐标 𝐼𝑚 代表它的虚部：<img src="C:\Users\33225\AppData\Roaming\Typora\typora-user-images\image-20220629111620327.png" alt="image-20220629111620327"></p>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2022/08/25/Unity%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/%E8%B5%84%E6%BA%90/Home/">← Next </a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2022/08/25/Unity%E5%BC%80%E5%8F%91%E6%97%A5%E5%BF%97/DarkSowls%E6%95%99%E7%A8%8B%E7%AC%94%E8%AE%B0/"> Prev →</a></div></div></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="Catalog">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">WRXinYue</a></h1><div id="description"><p></p></div></div><div id="aside-block"><div id="toc-div"><h1>Catalog</h1><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#3D%E6%95%B0%E5%AD%A6%E5%9F%BA%E7%A1%80"><span class="toc-number">1.</span> <span class="toc-text">3D数学基础</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9D%90%E6%A0%87%E7%B3%BB"><span class="toc-number">1.1.</span> <span class="toc-text">坐标系</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2d"><span class="toc-number">1.1.1.</span> <span class="toc-text">2d</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3d"><span class="toc-number">1.1.2.</span> <span class="toc-text">3d</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F"><span class="toc-number">1.2.</span> <span class="toc-text">向量</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%80%E4%B9%88%E6%98%AF%E5%90%91%E9%87%8F"><span class="toc-number">1.2.1.</span> <span class="toc-text">什么是向量</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E6%95%B0%E5%AD%A6%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.2.</span> <span class="toc-text">向量的数学定义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E5%87%A0%E4%BD%95%E5%AE%9A%E4%B9%89"><span class="toc-number">1.2.3.</span> <span class="toc-text">向量的几何定义</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E5%A4%A7%E5%B0%8F%EF%BC%88%E9%95%BF%E5%BA%A6%E3%80%81%E6%A8%A1%EF%BC%89"><span class="toc-number">1.2.3.1.</span> <span class="toc-text">向量的大小（长度、模）</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E7%9A%84%E6%96%B9%E5%90%91"><span class="toc-number">1.2.3.2.</span> <span class="toc-text">向量的方向</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E8%BF%90%E7%AE%97"><span class="toc-number">1.2.4.</span> <span class="toc-text">向量运算</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0"><span class="toc-number">1.3.</span> <span class="toc-text">四元数</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0%E8%AE%B0%E6%B3%95"><span class="toc-number">1.3.1.</span> <span class="toc-text">四元数记法</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%9B%9B%E5%85%83%E6%95%B0%E4%B8%8E%E5%A4%8D%E6%95%B0"><span class="toc-number">1.3.2.</span> <span class="toc-text">四元数与复数</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%A4%8D%E6%95%B0"><span class="toc-number">1.3.2.1.</span> <span class="toc-text">复数</span></a><ol class="toc-child"><li class="toc-item toc-level-5"><a class="toc-link" href="#%E5%AE%9A%E4%B9%89"><span class="toc-number">1.3.2.1.1.</span> <span class="toc-text">定义</span></a></li></ol></li></ol></li></ol></li></ol></li></ol></div></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>

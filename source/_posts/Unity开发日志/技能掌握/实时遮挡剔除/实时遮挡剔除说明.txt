@@ -1,0 +1,9 @@
+三个脚本：IOCEditor、IOCcom、IOClod
+1、将IOCEditor放到Editor文件夹
+2、IOCcam、IOClod随意放置
+3、每个模型的标签Tga设置为统一Tag
+4、IOCcam挂到摄像机身上不激活，在所有模型都存在时激活
+   IOCcam属性设置：
+	Layermask:需要受影响的对象类别
+	IOCTag:设置为受影响模型的标签Tag
+	下面三个属性数值随意大小
