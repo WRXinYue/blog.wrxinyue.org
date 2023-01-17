@@ -63,6 +63,34 @@ Mybatis安装方式有很多种，其中最简单一种就是直接下载MyBatis
 
 ![image-20230115190035491](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230115190035491.png)
 
+~~~xml
+<configuration>
+
+   <typeAliases>
+      <typeAlias alias = "类名" type = "类的全限定名"/>
+   </typeAliases>
+
+   <environments default = "环境默认名称">
+      <environment id = "环境ID">
+         <transactionManager type = "JDBC/MANAGED"/>  
+
+            <dataSource type = "UNPOOLED/POOLED/JNDI">
+               <property name = "driver" value = "数据库驱动程序名"/>
+               <property name = "url" value = "数据库网址/url"/>
+               <property name = "username" value = "数据库用户名"/>
+               <property name = "password" value = "数据库密码"/>
+            </dataSource>        
+
+      </environment>
+   </environments>
+
+   <mappers>
+      <mapper resource = "映射文件路径"/>
+   </mappers>
+    
+</configuration>
+~~~
+
 ### environments标签
 
 .....
@@ -89,6 +117,10 @@ MyBatis支持两个事物管理器，即JDBC和MANAGED
 ### mappers标签
 
 
+
+### 其他标签
+
+> 除了这些重要标签，还有其他标签可用，可参考MyBatis官方文档。
 
 ## 公共类
 
@@ -143,3 +175,5 @@ MyBatis支持两个事物管理器，即JDBC和MANAGED
 [2] [Mybatis - C语言中文网](http://c.biancheng.net/mybatis/)
 
 [3] [MyBatis教程 - 蝴蝶教程](https://www.jc2182.com/mybatis/)
+
+[4] [MYBATIS 教程 - 奇客谷教程 💯](https://www.qikegu.com/docs/1868)
