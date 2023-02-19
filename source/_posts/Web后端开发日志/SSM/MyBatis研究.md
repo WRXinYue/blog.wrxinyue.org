@@ -32,7 +32,7 @@ MyBatis是一个开源、轻量级的持久层框架，它内部封装了JDBC，
 
 Mybatis安装方式有很多种，其中最简单一种就是直接下载MyBatis的jar包，然后导入到项目中。
 
-* **下载MyBatis jar包：**可以从[MyBatis官网]( http://mybatis.org)或者[Github](https://github.com/mybatis/mybatis-3/releases)上下载最新版本的jar包。
+* **下载MyBatis jar包：**可以从[MyBatis官网](http://mybatis.org)或者[Github](https://github.com/mybatis/mybatis-3/releases)上下载最新版本的jar包。
 * **将jar包导入到项目中：**将下载下来的jar包文件导入到项目中即可。
 
 ### maven构建：
@@ -51,84 +51,83 @@ Mybatis安装方式有很多种，其中最简单一种就是直接下载MyBatis
 
 这是常用的目录结构，但是和Maven项目的目录结构会有所不同。
 
+![image-20230113152144935](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230113152144935.png)
+
 * dao：数据访问对象。用于存放与数据库交互的类，负责数据访问层的实现。
 * factory：工厂。用于存放工厂类，这些类用于创建其他对象。
 * mapper：映射器。用于存放于数据库表之间的映射关系。
 * model：模型。用于存放项目中的实体类，这些类用于表示数据库中的表。
 * test：测试。用于存放单元测试代码。
 
-![image-20230113152144935](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230113152144935.png)
-
 ## 主配置文件
 
 ![image-20230115190035491](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230115190035491.png)
 
-~~~xml
-<configuration>
+* `<configuration>`是**配置**文件的根标签，里面包含了Mybatis的各种配置信息。
+* `<properties>`标签用于配置Mybatis使用的**属性**文件。
+* `<settings>`标签用于配置Mybatis的运行时**设置**。
+* `<typeAliases>`标签用于配置**类型别名**。
+* `<typeHandlers>`标签用于配置**类型处理器**。
+* <u>`<objectFactory>`标签用于配置**对象工厂**。</u>
+* <u>`<plugins>`标签用于配置**插件**。</u>
+* `<environments>`标签用于配置环境变量(**环境配置**)，里面包含`<environment>`标签。
+* `<environment>`标签用于配置单个**环境变量**，里面包含:
+  * `<transactionManager>`用于配置**事物管理器**。
+  * `<dataSource>`用于配置**数据源**。
+* <u>`<databaseIdProvider>`标签用于配置**数据库厂商标识**。</u>
+* `<mappers>`标签用于配置**映射器**。
 
-   <typeAliases>
-      <typeAlias alias = "类名" type = "类的全限定名"/>
-   </typeAliases>
-
-   <environments default = "环境默认名称">
-      <environment id = "环境ID">
-         <transactionManager type = "JDBC/MANAGED"/>  
-
-            <dataSource type = "UNPOOLED/POOLED/JNDI">
-               <property name = "driver" value = "数据库驱动程序名"/>
-               <property name = "url" value = "数据库网址/url"/>
-               <property name = "username" value = "数据库用户名"/>
-               <property name = "password" value = "数据库密码"/>
-            </dataSource>        
-
-      </environment>
-   </environments>
-
-   <mappers>
-      <mapper resource = "映射文件路径"/>
-   </mappers>
-    
-</configuration>
-~~~
-
-### environments标签
-
-.....
-
-### transactionManager标签
-
-MyBatis支持两个事物管理器，即JDBC和MANAGED
-
-* 如果我们使用JDBC类型的事物管理器，则应用程序负责事务管理操作，例如，提交，回滚等。
-* 如果我们使用MANAGED类型的事物管理器，则应用程序服务器负责管理连接生命周期。它通常与Web应用程序一起使用。
-
-### dataSource标签
-
-用于配置数据库连接属性，例如我们要连接的数据库的驱动程序名称，URL，用户名和密码。它有三种类型。
-
-- **UNPOOLED** - 对于UNPOOLED数据源类型，MyBatis只需打开和关闭每个数据库操作的连接即可。它有点慢，通常用于简单的应用程序。
-- **POOLED** - 对于POOLED数据源的类型，MyBatis将维护一个数据库连接池。并且，对于每个数据库操作，MyBatis使用这些连接之一，并在操作完成后将它们返回到池中。它减少了创建新连接所需的初始连接和身份验证时间。
-- **JNDI** - 对于JNDI数据源类型，MyBatis将从JNDI数据源获取连接。
-
-### typeAliases标签
-
-......
-
-### mappers标签
-
-
-
-### 其他标签
-
-> 除了这些重要标签，还有其他标签可用，可参考MyBatis官方文档。
+> PS：除了这些重要标签，还有其他标签可用。具体方式可参考[MyBatis官方文档](https://mybatis.net.cn/configuration.html)。阅读官方文档是一个非常高效的学习方式。
 
 ## 公共类
 
+* 构建sqlSessionFactory
+* 打开sqlSession会话，并执行sql
+
 ![image-20230115190026118](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230115190026118.png)
 
-## Mapper
+~~~java
+public class MybatisTest {
+   public static void main(String[] args) throws Exception {
+      // 指定全局配置文件
+      String resource = "mybatis-config.xml";
+      // 读取配置文件
+      InputStream inputStream = Resources.getResourceAsStream(resource);
+      // 构建sqlSessionFactory
+      SqlSessionFactory sqlSessionFactory = new SqlSessionFactoryBuilder().build(inputStream);
+      // 获取sqlSession
+      SqlSession sqlSession = sqlSessionFactory.openSession();
+      try {
+         // 操作CRUD，第一个参数：指定statement，规则：命名空间+“.”+statementId
+         // 第二个参数：指定传入sql的参数：这里是用户id
+         User user = sqlSession.selectOne("MyMapper.selectUser", 1);
+         System.out.println(user);
+      } finally {
+         sqlSession.close();
+      }
+   }
+}
+~~~
+
+## Mapper.xml
 
 ![image-20230115190017708](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20230115190017708.png)
+
+~~~xml
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- mapper:根标签，namespace：命名空间，随便写，一般保证命名空间唯一 -->
+<mapper namespace="MyMapper">
+   <!-- statement，内容：sql语句。id：唯一标识，随便写，在同一个命名空间下保持唯一
+      resultType：sql语句查询结果集的封装类型,tb_user即为数据库中的表
+    -->
+   <select id="selectUser" resultType="com.zpc.mybatis.User">
+      select * from tb_user where id = #{id}
+   </select>
+</mapper>
+~~~
 
 ## 执行
 
@@ -174,6 +173,8 @@ MyBatis支持两个事物管理器，即JDBC和MANAGED
 
 [2] [Mybatis - C语言中文网](http://c.biancheng.net/mybatis/)
 
-[3] [MyBatis教程 - 蝴蝶教程](https://www.jc2182.com/mybatis/)
+[3] [MyBatis 教程 - 蝴蝶教程](https://www.jc2182.com/mybatis/mybatis-jiaocheng.html)
 
 [4] [MYBATIS 教程 - 奇客谷教程 💯](https://www.qikegu.com/docs/1868)
+
+[5] [MyBatis中文网](https://mybatis.net.cn/)
