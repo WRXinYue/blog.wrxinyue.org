@@ -1,0 +1,200 @@
+{
+  "main": {
+    "id": "ce7f45101559b49b",
+    "type": "split",
+    "children": [
+      {
+        "id": "bdd71833ed4a2bdf",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "016293d2d15bd397",
+            "type": "leaf",
+            "state": {
+              "type": "canvas",
+              "state": {
+                "file": "其它/chatgpt/六步提问法.canvas",
+                "viewState": {
+                  "x": 0,
+                  "y": 0,
+                  "zoom": 0
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38b1d81626cb0f94",
+    "type": "split",
+    "children": [
+      {
+        "id": "509c78d1312eac7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9ebe5d959100313",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "99c2fc3c663f41e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eaf96fd7658bdbb9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 212.5
+  },
+  "right": {
+    "id": "6c0cfb67854d1c5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac6c3efed7ad8176",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "429e238bf90bc078",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "其它/chatgpt/六步提问法.canvas",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "06bcc84dbcc2e979",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "其它/chatgpt/六步提问法.canvas",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c387f4eee5761e59",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5ae8c145263fd83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "其它/chatgpt/六步提问法.canvas"
+              }
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false
+    }
+  },
+  "active": "016293d2d15bd397",
+  "lastOpenFiles": [
+    "其它/chatgpt/六部提问发.canvas",
+    "其它/chatgpt/六步提问法.canvas",
+    "其它/NAS.md",
+    "笔记文档.md",
+    "六步提问法.md",
+    "其它/chatgpt",
+    "其它/chatgpt/绕过GPT安全限制.md",
+    "其它/研究cgi-bin.md",
+    "Web前端开发日志/vue/Vue3常用技巧.md",
+    "Web前端开发日志/vue/Vue项目初始化.md",
+    "Web前端开发日志/移动应用/APP 常用开发模式.md",
+    "Web前端开发日志/移动应用/Hybrid技术-Flutter介绍.md",
+    "Vite大坑.md",
+    "Web前端开发日志/JavaScript/Web学习日志(office).md",
+    "Web前端开发日志/小程序/微信小程序Uni-app笔记.md",
+    "Web前端开发日志/小程序",
+    "未整理/执行流程.md",
+    "未整理/时间管理.md",
+    "未整理/目录结构实例.md",
+    "Web前端开发日志/Node.js/nodejs初识.md",
+    "Web前端开发日志/Node.js/node.js包管理器-npm.md",
+    "Web前端开发日志/Node.js/node.js(学习日志).md",
+    "Web前端开发日志/Node.js/node.js global.md",
+    "Web前端开发日志/Node.js/node.js fs模块.md",
+    "Web前端开发日志/jQuery/jQuery.md",
+    "Web前端开发日志/CSS/BootStrap.md",
+    "Web前端开发日志/CSS/CSS3笔记.md",
+    "玩转服务器/面板.md",
+    "代理设置.md",
+    "Web前端开发日志/vue",
+    "学习路线.canvas",
+    "玩转服务器/img/Pasted image 20230410111801.png",
+    "玩转服务器/img/Pasted image 20230410111439.png",
+    "玩转服务器/img/Pasted image 20230410111435.png",
+    "玩转服务器/img/Pasted image 20230410111356.png",
+    "玩转服务器/img/Pasted image 20230403143045.png",
+    "玩转服务器/img",
+    "玩转服务器",
+    "海外直聘系统操作说明书.doc",
+    "天巳业务管理系统代理操作手册v1.0.docx",
+    "~$业务人员操作手册v1.0.docx",
+    "天巳业务人员操作手册v1.0.docx",
+    "测试用例.pdf",
+    "df25b0a47e347526054bdf4674dc46a.png",
+    "未命名 1.canvas"
+  ]
+}
