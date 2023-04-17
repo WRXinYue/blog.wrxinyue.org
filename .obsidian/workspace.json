@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Hexo + OBSIDIAN 插件配置.md",
+                "file": "source/_posts/Web前端开发日志/CSS/CSS备忘录.md",
                 "mode": "source",
                 "source": false
               }
@@ -64,8 +64,17 @@
               "type": "starred",
               "state": {}
             }
+          },
+          {
+            "id": "a4d40791d948cca9",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -85,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/Hexo + OBSIDIAN 插件配置.md",
+                "file": "source/_posts/Web前端开发日志/CSS/CSS备忘录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/Hexo + OBSIDIAN 插件配置.md",
+                "file": "source/_posts/Web前端开发日志/CSS/CSS备忘录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/Hexo + OBSIDIAN 插件配置.md"
+                "file": "source/_posts/Web前端开发日志/CSS/CSS备忘录.md"
               }
             }
           }
@@ -144,19 +153,22 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
   "active": "f56e19b0663f34ce",
   "lastOpenFiles": [
+    "hexo - 快捷方式.lnk",
+    "_posts - 快捷方式.lnk",
+    "Template/Template MOC.md",
+    "Template/Templater Plugin.md",
+    "博客/Hexo + OBSIDIAN 插件配置.md",
     "博客/hugo&github&vercel导航搭建.md",
     "博客/Markdown语法.md",
     "博客/WordPress博客搭建.md",
     "博客/使用PicGo&Github&jsDelivr搭建图床（扩展Typora）.md",
     "玩转服务器/面板.md",
-    "Template/Templater Plugin.md",
-    "Template/Template MOC.md",
-    "博客/Hexo + OBSIDIAN 插件配置.md",
     "未命名 1.canvas",
     "未命名.canvas",
     "博客/mo、po、pot文件和wordpress汉化.md",
@@ -183,7 +195,6 @@
     "Web前端开发日志/vue/Vue项目初始化.md",
     "其它/关于 GIt、GitHub和GitLab.md",
     "Web前端开发日志/vue/Vue.md",
-    "Web前端开发日志/CSS/CSS备忘录.md",
     "Scripts/get_guid.js",
     "Scripts/New Text Document.txt",
     "Scripts",
@@ -192,7 +203,6 @@
     "Template",
     "玩转服务器/img/Pasted image 20230410111439.png",
     "玩转服务器/img/Pasted image 20230410111801.png",
-    "科学/自然科学",
     "其它/chatgpt/六步提问法.canvas",
     "其它/chatgpt/六部提问发.canvas",
     "df25b0a47e347526054bdf4674dc46a.png"
