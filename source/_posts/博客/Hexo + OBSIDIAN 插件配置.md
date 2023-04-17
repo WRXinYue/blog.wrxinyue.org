@@ -36,8 +36,44 @@ updated: 2023-04-17 15:56:04
 
 根据喜好可以设置自动git推送
 
-> Ctrl + P 快捷键输入命令，
+> Ctrl + P 快捷键输入命令，如 输入git可以看到所有命令
 ![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417184729.png)
+
+#### 文件元数据模板
+
+安装插件：Templater
+
+这个是自动配置模板的，要开始使用 Templator，必须创建一个目录来存储模板的 markdown 文件，如 Templator 文件夹位置中所述。
+![63a78a3dd59149e65b5b0dbe.jpg](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/63a78a3dd59149e65b5b0dbe.jpg)
+
+在我的环境中，还存放了核心插件的模板，所以目录结构如下。
+
+```bash
+Templates/
+├── Template MOC.md # 手册
+├── Template/ # 核心插件的模板
+└── Templater Plugin/ # 社区插件的模板
+```
+
+`Template MOC.md`描述了模板文件以及如何使用它。 `Templater Plugin`将模板文件移动到目录后，在Template Plugin设置画面的Template Folder Location项目中输入路径。
+![50537c20f0744f1ba8edffd4.jpg](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/50537c20f0744f1ba8edffd4.jpg)
+
+我的 
+
+```yarm
+---
+title: <% tp.file.title %>
+categories:
+ - <% tp.file.folder(relative=true) %>
+tags:
+ - ''
+data: <% tp.date.now(format="YYYY-MM-DD HH:mm:ss") %>
+updated: 2023-04-17 15:56:04
+---
+```
+
+
+详细配置可以看[官方文档](https://silentvoid13.github.io/Templater/introduction.html)
 
 
 ### 下一步打算
