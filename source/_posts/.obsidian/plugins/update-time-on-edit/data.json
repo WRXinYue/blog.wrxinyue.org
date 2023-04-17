@@ -7,5 +7,7 @@
   "headerCreated": "data",
   "minMinutesBetweenSaves": 1,
   "ignoreGlobalFolder": [],
-  "ignoreCreatedFolder": []
+  "ignoreCreatedFolder": [
+    "Templates"
+  ]
 }
