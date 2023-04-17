@@ -58,9 +58,9 @@ Templates/
 `Template MOC.md`描述了模板文件以及如何使用它。 `Templater Plugin`将模板文件移动到目录后，在Template Plugin设置画面的Template Folder Location项目中输入路径。
 ![50537c20f0744f1ba8edffd4.jpg](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/50537c20f0744f1ba8edffd4.jpg)
 
-我的 
+我的 Templater Plugin 配置如下：
 
-```yarm
+```
 ---
 title: <% tp.file.title %>
 categories:
@@ -72,14 +72,21 @@ updated: 2023-04-17 15:56:04
 ---
 ```
 
-
 详细配置可以看[官方文档](https://silentvoid13.github.io/Templater/introduction.html)
+
+#### 自动更新时间
+
+安装插件：Update time on edit
+
+![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417190820.png)
+
 
 
 ### 下一步打算
 
 当然是写一个自己的博客系统了，最重要的实现和hexo博客实时同步功能，这样就可以实现一个博客编写多个博客同步了
 
-### 相关连接
+### 相关链接
 
 1. [Obsidian中文教程](https://publish.obsidian.md/chinesehelp/)
+2. [プラグインを導入しよう｜Obsidian.Zenn](https://zenn.dev/estra/books/obsidian-dot-zenn/viewer/a-oz-add-plugins)
