@@ -34,10 +34,16 @@ updated: 2023-04-17 15:56:04
 
 安装插件：Obsidian Git
 
-根据喜好可以设置自动git推送
+根据喜好可以设置自动git推送 (推荐手动)
 
-> Ctrl + P 快捷键输入命令，如 输入git可以看到所有命令
 ![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417184729.png)
+
+
+Ctrl + P 快捷键输入命令，如 输入git可以看到所有命令
+
+![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417191104.png)
+
+
 
 #### 文件元数据模板
 
