@@ -103,3 +103,10 @@ theme: arknights
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+skip_render: 
+# 这里排除的是obsidian编辑器需要的文件
+  - '_posts/.obsidian/*'
+  - '_posts/Scripts/*'
+  - '_posts/Templates/*'
+  - '**/README.md'

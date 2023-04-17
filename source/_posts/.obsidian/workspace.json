@@ -8,24 +8,12 @@
         "type": "tabs",
         "children": [
           {
-            "id": "016293d2d15bd397",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "玩转服务器/面板.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
             "id": "8278ca0055fb9c9d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其它/chatgpt/GPT工作原理.md",
+                "file": "pnpm.md",
                 "mode": "source",
                 "source": false
               }
@@ -109,7 +97,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "玩转服务器/面板.md",
+                "file": "pnpm.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -126,7 +114,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "玩转服务器/面板.md",
+                "file": "pnpm.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -149,7 +137,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "玩转服务器/面板.md"
+                "file": "pnpm.md"
               }
             }
           }
@@ -167,14 +155,30 @@
       "canvas:新建白板": false,
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
-      "command-palette:打开命令面板": false
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "016293d2d15bd397",
+  "active": "8278ca0055fb9c9d",
   "lastOpenFiles": [
+    "其它/chatgpt/GPT工作原理.md",
+    "未命名.canvas",
+    "Scripts/get_guid.js",
+    "Scripts/New Text Document.txt",
+    "Scripts",
+    "New folder",
+    "Template/Front-matter.md",
+    "Template/New Text Document.txt",
+    "Template",
+    "其它/关于 GIt、GitHub和GitLab.md",
+    "其它/NAS.md",
+    "其它/Linux备忘录.md",
+    "大前端和全栈(GPT).md",
+    "代理设置.md",
+    "pnpm.md",
+    "玩转服务器/面板.md",
     "玩转服务器/img/Pasted image 20230410111439.png",
     "玩转服务器/img/Pasted image 20230410111801.png",
-    "玩转服务器/面板.md",
     "玩转服务器/img/Pasted image 20230410111356.png",
     "玩转服务器/img/Pasted image 20230403143045.png",
     "Web前端开发日志/移动应用/APP 常用开发模式.md",
@@ -189,32 +193,18 @@
     "快速翻墙命令.md",
     "xie1997.blog.csdn.net/article/details/83316451.md",
     "xie1997.blog.csdn.net/article/details",
-    "xie1997.blog.csdn.net/article",
-    "xie1997.blog.csdn.net",
     "Web前端开发日志/CSS/CSS备忘录.md",
-    "代理设置.md",
     "rustdesk中继服务器的docker镜像.md",
     "Web前端开发日志/CSS/CSS3笔记.md",
     "Dokcer 安装.md",
     "笔记文档.md",
     "服务器备忘.md",
     "安装nvm方式.md",
-    "其它/Linux备忘录.md",
     "其它/chatgpt/绕过GPT安全限制.md",
-    "其它/chatgpt/GPT工作原理.md",
     "其它/chatgpt/六步提问法.canvas",
-    "Web前端开发日志/vue/Vite框架常用.md",
-    "Web前端开发日志/vue/Vue.md",
     "其它/chatgpt/六部提问发.canvas",
-    "其它/NAS.md",
-    "六步提问法.md",
-    "其它/chatgpt",
-    "其它/研究cgi-bin.md",
-    "Web前端开发日志/小程序",
-    "Web前端开发日志/vue",
     "学习路线.canvas",
     "玩转服务器/img/Pasted image 20230410111435.png",
-    "玩转服务器/img",
     "df25b0a47e347526054bdf4674dc46a.png",
     "未命名 1.canvas"
   ]
