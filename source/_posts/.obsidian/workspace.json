@@ -4,21 +4,39 @@
     "type": "split",
     "children": [
       {
-        "id": "bdd71833ed4a2bdf",
+        "id": "ceddf47d19af8ec7",
         "type": "tabs",
         "children": [
           {
-            "id": "8278ca0055fb9c9d",
+            "id": "324fc0d9a6319dcc",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "pnpm.md",
+                "file": "未命名.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
+          {
+            "id": "e916084df580e57f",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "其它/关于 GIt、GitHub和GitLab.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "bdd71833ed4a2bdf",
+        "type": "tabs",
+        "children": [
           {
             "id": "79a3a11aea8837d5",
             "type": "leaf",
@@ -97,7 +115,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "pnpm.md",
+                "file": "未命名.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -114,7 +132,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "pnpm.md",
+                "file": "未命名.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -137,7 +155,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "pnpm.md"
+                "file": "未命名.md"
               }
             }
           }
@@ -159,23 +177,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8278ca0055fb9c9d",
+  "active": "324fc0d9a6319dcc",
   "lastOpenFiles": [
+    "Web前端开发日志/CSS/CSS备忘录.md",
+    "未命名.md",
+    "Template/Templater Plugin.md",
+    "其它/关于 GIt、GitHub和GitLab.md",
+    "笔记文档.md",
+    "Template/Template MOC.md",
+    "Template/Front-matter.md",
+    "Dokcer 安装.md",
+    "其它/NAS.md",
+    "Templater Plugin.md",
+    "快速翻墙命令.md",
+    "Untitled.md",
+    "阿里云/ACA/从传统数据库到云数据库演进.md",
+    "科学/人文社会科学/日语.md",
+    "pnpm.md",
     "其它/chatgpt/GPT工作原理.md",
     "未命名.canvas",
     "Scripts/get_guid.js",
     "Scripts/New Text Document.txt",
     "Scripts",
     "New folder",
-    "Template/Front-matter.md",
     "Template/New Text Document.txt",
     "Template",
-    "其它/关于 GIt、GitHub和GitLab.md",
-    "其它/NAS.md",
     "其它/Linux备忘录.md",
     "大前端和全栈(GPT).md",
     "代理设置.md",
-    "pnpm.md",
     "玩转服务器/面板.md",
     "玩转服务器/img/Pasted image 20230410111439.png",
     "玩转服务器/img/Pasted image 20230410111801.png",
@@ -190,17 +219,7 @@
     "Web后端开发日志/Druid案例.md",
     "DBMS/MySql/Mysql OF CodeWithMosh.md",
     "科学",
-    "快速翻墙命令.md",
-    "xie1997.blog.csdn.net/article/details/83316451.md",
     "xie1997.blog.csdn.net/article/details",
-    "Web前端开发日志/CSS/CSS备忘录.md",
-    "rustdesk中继服务器的docker镜像.md",
-    "Web前端开发日志/CSS/CSS3笔记.md",
-    "Dokcer 安装.md",
-    "笔记文档.md",
-    "服务器备忘.md",
-    "安装nvm方式.md",
-    "其它/chatgpt/绕过GPT安全限制.md",
     "其它/chatgpt/六步提问法.canvas",
     "其它/chatgpt/六部提问发.canvas",
     "学习路线.canvas",
