@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "7399c02dedfe10bb",
+        "id": "731eeea4504c56ca",
         "type": "tabs",
         "children": [
           {
-            "id": "141340de5e15cd8d",
+            "id": "3ca535c6248d1536",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -149,12 +149,16 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "141340de5e15cd8d",
+  "active": "3ca535c6248d1536",
   "lastOpenFiles": [
+    "其它/chatgpt/GPT工作原理.md",
+    "其它/chatgpt/绕过GPT安全限制.md",
+    "其它/chatgpt/六步提问法.canvas",
+    "博客/WordPress博客搭建.md",
+    "WebFrontend/关于HTTP请求.md",
+    "其它/时间管理.md",
     "WebFrontend/执行流程.md",
     "WebBackend/Java 项目模块化管理.md",
-    "未整理/时间管理.md",
-    "未整理/关于HTTP请求.md",
     "WebBackend/Druid案例.md",
     "WebBackend/SSM/MyBatis研究.md",
     "WebBackend/SSM/SSM框架.md",
@@ -174,9 +178,6 @@
     "网络安全/wifi安全渗透.md",
     "网络安全/HRACK攻击原理解析.md",
     "算法&数据结构/时间空间复杂度分析.md",
-    "科学/人文社会科学/日语.md",
-    "WebFrontend/vue/Vue项目初始化.md",
-    "WebFrontend/UI/CSS3笔记.md",
     "WebFrontend/UI",
     "WebFrontend/tools",
     "tool",
@@ -201,7 +202,6 @@
     "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.svg",
     "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.svg",
     "未命名.canvas",
-    "其它/chatgpt/六步提问法.canvas",
     "其它/chatgpt/六部提问发.canvas"
   ]
 }
