@@ -93,8 +93,20 @@ updated: 2023-04-17 15:56:04
 
 ```bash
 #!/bin/sh
+# pre-commit
+
+echo -e "\033[1;35mRunning pre-commit checks\033[0m"
+
+# Run your compile command here
 hexo clean && hexo g
-echo ========== 静态资源生成成功 ==========
+
+# Add the compiled files
+git add .
+
+echo -e "\033[1;35mStatic resource to generate success\033[0m"
+
+# If all checks have passed, run git commit with the original commit message
+exec git commit -C HEAD --no-verify
 ```
 
 
