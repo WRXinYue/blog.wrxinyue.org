@@ -1,5 +1,5 @@
 ---
-title: OBSIDIAN 初始化 以及设置
+title: Hexo+OBSIDIAN插件配置
 categories:
  - 博客
 tags:
