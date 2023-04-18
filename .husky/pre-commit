@@ -12,4 +12,5 @@ git add .
 echo -e "\033[1;35mStatic resource to generate success\033[0m"
 
 # If all checks have passed, run git commit with the original commit message
-exec git commit -C HEAD --no-verify
+# exec git commit -C HEAD --no-verify
+exec git commit -m "Auto commit at $(date)" --no-verify
