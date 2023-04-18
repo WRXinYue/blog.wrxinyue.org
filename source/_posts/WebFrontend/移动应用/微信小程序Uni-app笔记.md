@@ -1,6 +1,11 @@
 ---
+title: 微信小程序Uni-app笔记
+categories:
+ - WebFrontend/移动应用
+tags:
+ - ''
 data: 2023-04-10 12:24:21
-updated: 2023-04-10 12:24:21
+updated: 2023-04-18 15:30:59
 ---
 
 ## 全局配置

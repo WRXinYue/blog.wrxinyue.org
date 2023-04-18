@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "731eeea4504c56ca",
+        "id": "a3249c89f95447f1",
         "type": "tabs",
         "children": [
           {
-            "id": "3ca535c6248d1536",
+            "id": "d9d0e0a1d0a86039",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "WebFrontend/Node.js/npm 包管理器.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "WebFrontend/Node.js/npm 包管理器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "WebFrontend/Node.js/npm 包管理器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "WebFrontend/Node.js/npm 包管理器.md"
+              }
             }
           }
         ],
@@ -134,8 +142,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -149,35 +156,35 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "3ca535c6248d1536",
+  "active": "d9d0e0a1d0a86039",
   "lastOpenFiles": [
+    "WebFrontend/Node.js/node.js global.md",
+    "WebFrontend/Node.js/npm 包管理器.md",
+    "WebFrontend/Node.js/node.js包管理器-npm.md",
+    "WebFrontend/Node.js/nodejs初识.md",
+    "WebFrontend/Node.js/node.js(学习日志).md",
+    "WebFrontend/Node.js/node.js fs模块.md",
+    "WebFrontend/JavaScript/BOM.md",
+    "WebFrontend/JavaScript/jQuery.md",
+    "WebFrontend/Node.js/安装nvm方式.md",
+    "WebFrontend/vue/Vite框架常用.md",
+    "WebFrontend/vue/Vue项目初始化.md",
+    "WebFrontend/移动应用/微信小程序Uni-app笔记.md",
+    "WebFrontend/vue/Vue3常用技巧.md",
+    "WebBackend/Java/执行流程.md",
+    "WebBackend/Java/MyBatis研究.md",
+    "WebBackend/Java/Spring研究.md",
+    "WebBackend/SSM/SSM框架.md",
+    "其它/NAS.md",
     "其它/chatgpt/GPT工作原理.md",
     "其它/chatgpt/绕过GPT安全限制.md",
     "其它/chatgpt/六步提问法.canvas",
     "博客/WordPress博客搭建.md",
     "WebFrontend/关于HTTP请求.md",
     "其它/时间管理.md",
-    "WebFrontend/执行流程.md",
-    "WebBackend/Java 项目模块化管理.md",
-    "WebBackend/Druid案例.md",
-    "WebBackend/SSM/MyBatis研究.md",
-    "WebBackend/SSM/SSM框架.md",
-    "WebBackend/SSM/Spring研究.md",
-    "WebBackend/Java基础/String、StringBuffer和StringBuilder.md",
-    "WebBackend/Java基础/目录结构实例.md",
-    "WebBackend/SSM/SpringMvc.md",
-    "WebBackend/Java基础/Servlet.md",
-    "WebBackend/Java基础/Java继承.md",
-    "WebBackend/Java基础/Java笔记.md",
-    "WebBackend/Java基础/Java集合.md",
-    "WebBackend/Java基础/Java内部类.md",
-    "WebBackend/Java基础/Java collections (集合).md",
-    "WebBackend/Java基础/IO流.md",
-    "WebBackend/Java基础/File类.md",
-    "网络安全/路由器的加密算法.md",
-    "网络安全/wifi安全渗透.md",
-    "网络安全/HRACK攻击原理解析.md",
-    "算法&数据结构/时间空间复杂度分析.md",
+    "WebBackend/Java/Java 项目模块化管理.md",
+    "WebBackend/Java/Druid案例.md",
+    "WebBackend/Java/String、StringBuffer和StringBuilder.md",
     "WebFrontend/UI",
     "WebFrontend/tools",
     "tool",
