@@ -18,7 +18,7 @@ updated: 2023-04-18 10:30:18
 ### 插件配置
 
 **本次用到的插件：**
-* Image auto upload Plugin (PicGo图床上传)\
+* Image auto upload Plugin (PicGo图床上传)
 * Obsidian Git (快速Git上传)
 * Templater (文件元数据模板)
 * Update time on edit (自动更新时间)
@@ -87,12 +87,6 @@ updated: 2023-04-17 15:56:04
 ![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417190820.png)
 
 
-
-### 下一步打算
-
-当然是写一个自己的博客系统了，最重要的实现和hexo博客实时同步功能，这样就可以实现一个博客编写多个博客同步了
-
-
 ### 设置钩子函数自动生成静态资源
 
 `.git\hooks` 创建一个名为pre-commit的文件，内容如下：
@@ -102,6 +96,11 @@ updated: 2023-04-17 15:56:04
 hexo clean && hexo g
 echo ========== 静态资源生成成功 ==========
 ```
+
+
+### 下一步打算
+
+当然是写一个自己的博客系统了，最重要的实现和hexo博客实时同步功能，这样就可以实现一个博客编写多个博客同步了
 
 ### 相关链接
 
