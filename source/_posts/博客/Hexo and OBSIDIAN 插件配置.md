@@ -34,8 +34,6 @@ updated: 2023-04-18 10:30:18
 
 安装插件：Obsidian Git
 
-///
-
 根据喜好可以设置自动git推送 (推荐手动)
 
 ![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417184729.png)
