@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 212.5,
+    "collapsed": true
   },
   "right": {
     "id": "6c0cfb67854d1c5a",
@@ -143,7 +144,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -159,17 +161,17 @@
   },
   "active": "f56e19b0663f34ce",
   "lastOpenFiles": [
-    "public/css",
-    "db.json",
     "public/2021/11/21/Web前端开发日志/HTML/关于如何HTML嵌入CSS样式（四种方法）/index.html",
-    "public/2021/11/21/Web前端开发日志/HTML/关于如何HTML嵌入CSS样式（四种方法）",
     "public/2021/11/22/其它/关于 GIt、GitHub和GitLab/index.html",
-    "public/2021/11/10/博客/Github&hexo网站搭建/index.html",
     "public/2021/11/20/博客/Markdown语法/index.html",
-    "public/2021/11/21/Web前端开发日志/HTML",
-    "public/2021/11/22/其它/关于 GIt、GitHub和GitLab",
-    "public/2021/11/10/博客/Github&hexo网站搭建",
+    "public/2021/11/21/Web前端开发日志/HTML/关于如何HTML嵌入CSS样式（四种方法）",
+    "public/2021/11/10/博客/Github&hexo网站搭建/index.html",
     "public/2021/11/20/博客/Markdown语法",
+    "public/2021/11/22/其它/关于 GIt、GitHub和GitLab",
+    "public/2021/11/21/Web前端开发日志/HTML",
+    "public/2021/11/10/博客/Github&hexo网站搭建",
+    "public/2021/11/22/其它",
+    "public/2021/11/21/Web前端开发日志",
     "source/_posts/Web前端开发日志/CSS/CSS备忘录.md",
     "Template/Template MOC.md",
     "Template/Templater Plugin.md",
