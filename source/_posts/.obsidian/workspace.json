@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "90c11beb335e17a5",
+        "id": "cb0bcf33ca90647a",
         "type": "tabs",
         "children": [
           {
-            "id": "64734ec7337087df",
+            "id": "280e36e6f46829a3",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -148,7 +148,7 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "64734ec7337087df",
+  "active": "280e36e6f46829a3",
   "lastOpenFiles": [
     "WebFrontend/Node.js/npm 包管理器.md",
     "软件/Office Tool Plus.md",
