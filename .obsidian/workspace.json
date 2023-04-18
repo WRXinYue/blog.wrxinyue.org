@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -159,17 +160,17 @@
   },
   "active": "f56e19b0663f34ce",
   "lastOpenFiles": [
-    "public/categories/WEBbackend",
-    "public/categories/WebFrontend",
-    "public/categories",
-    "public/2023/01/23/Web后端开发日志/SSM/SpringMvc/index.html",
-    "public/2023/01/13/Web后端开发日志/SSM/MyBatis研究/index.html",
-    "public/2023/03/11/Web前端开发日志/移动应用/APP 常用开发模式/index.html",
-    "public/2023/01/11/Web后端开发日志/SSM/Spring研究/index.html",
-    "public/2023/04/18/Web前端开发日志/Node.js/node.js包管理器-npm/index.html",
-    "public/2023/04/18/Web前端开发日志/Node.js/node.js fs模块/index.html",
-    "public/2023/04/18/Web前端开发日志/Node.js/node.js(学习日志)/index.html",
-    "public/2023/04/18/其它/chatgpt/绕过GPT安全限制/index.html",
+    "public/categories/WebFrontend/page/2/index.html",
+    "public/categories/WEBbackend/page/2/index.html",
+    "public/categories/WebFrontend/page/2",
+    "public/categories/WEBbackend/page/2",
+    "public/categories/软件/index.html",
+    "public/categories/阿里云ACA/index.html",
+    "public/categories/玩转服务器/index.html",
+    "public/categories/网络安全/index.html",
+    "public/categories/算法/index.html",
+    "public/categories/玩机/index.html",
+    "public/categories/博客搭建/index.html",
     "source/_posts/博客/Hexo and OBSIDIAN 插件配置.md",
     "node_modules/browser-sync/node_modules/connect/SECURITY.md",
     "node_modules/browser-sync/node_modules/connect/HISTORY.md",
