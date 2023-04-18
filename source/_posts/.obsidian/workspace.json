@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "ce7f45101559b49b",
+    "type": "split",
+    "children": [
+      {
+        "id": "7399c02dedfe10bb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "141340de5e15cd8d",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "38b1d81626cb0f94",
+    "type": "split",
+    "children": [
+      {
+        "id": "509c78d1312eac7b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a9ebe5d959100313",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "99c2fc3c663f41e9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "eaf96fd7658bdbb9",
+            "type": "leaf",
+            "state": {
+              "type": "starred",
+              "state": {}
+            }
+          },
+          {
+            "id": "a4d40791d948cca9",
+            "type": "leaf",
+            "state": {
+              "type": "file-tree-view",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 212.5
+  },
+  "right": {
+    "id": "6c0cfb67854d1c5a",
+    "type": "split",
+    "children": [
+      {
+        "id": "ac6c3efed7ad8176",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "429e238bf90bc078",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "06bcc84dbcc2e979",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "c387f4eee5761e59",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "f5ae8c145263fd83",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "file-tree-alternative:File Tree Alternative Plugin": false
+    }
+  },
+  "active": "141340de5e15cd8d",
+  "lastOpenFiles": [
+    "WebFrontend/执行流程.md",
+    "WebBackend/Java 项目模块化管理.md",
+    "未整理/时间管理.md",
+    "未整理/关于HTTP请求.md",
+    "WebBackend/Druid案例.md",
+    "WebBackend/SSM/MyBatis研究.md",
+    "WebBackend/SSM/SSM框架.md",
+    "WebBackend/SSM/Spring研究.md",
+    "WebBackend/Java基础/String、StringBuffer和StringBuilder.md",
+    "WebBackend/Java基础/目录结构实例.md",
+    "WebBackend/SSM/SpringMvc.md",
+    "WebBackend/Java基础/Servlet.md",
+    "WebBackend/Java基础/Java继承.md",
+    "WebBackend/Java基础/Java笔记.md",
+    "WebBackend/Java基础/Java集合.md",
+    "WebBackend/Java基础/Java内部类.md",
+    "WebBackend/Java基础/Java collections (集合).md",
+    "WebBackend/Java基础/IO流.md",
+    "WebBackend/Java基础/File类.md",
+    "网络安全/路由器的加密算法.md",
+    "网络安全/wifi安全渗透.md",
+    "网络安全/HRACK攻击原理解析.md",
+    "算法&数据结构/时间空间复杂度分析.md",
+    "科学/人文社会科学/日语.md",
+    "WebFrontend/vue/Vue项目初始化.md",
+    "WebFrontend/UI/CSS3笔记.md",
+    "WebFrontend/UI",
+    "WebFrontend/tools",
+    "tool",
+    "学习路线.canvas",
+    "未命名 2.canvas",
+    "未命名 1.canvas",
+    "template",
+    "scripts/get_guid.js",
+    "scripts",
+    "Template",
+    "Scripts/get_guid.js",
+    "Scripts",
+    "public/2021/11/21/Web前端开发日志/HTML/关于如何HTML嵌入CSS样式（四种方法）/index.html",
+    "themes/arknights/support.jpg",
+    "themes/arknights/demo.jpg",
+    "arknights/support.jpg",
+    "arknights/demo.jpg",
+    "themes/support.jpg",
+    "themes/demo.jpg",
+    "node_modules/browser-sync-ui/public/img/icons/icons.svg",
+    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.svg",
+    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.svg",
+    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.svg",
+    "未命名.canvas",
+    "其它/chatgpt/六步提问法.canvas",
+    "其它/chatgpt/六部提问发.canvas"
+  ]
+}

@@ -6,7 +6,7 @@ tags:
  - hexo
  - obsidian
 data: 2023-04-17 18:03:23
-updated: 2023-04-18 10:30:18
+updated: 2023-04-18 14:17:32
 ---
 
 ### 前言
@@ -74,7 +74,7 @@ categories:
 tags:
  - ''
 data: <% tp.date.now(format="YYYY-MM-DD HH:mm:ss") %>
-updated: 2023-04-17 15:56:04
+updated: ''
 ---
 ```
 
@@ -106,7 +106,7 @@ git add .
 echo -e "\033[1;35mStatic resource to generate success\033[0m"
 
 # If all checks have passed, run git commit with the original commit message
-exec git commit -C HEAD --no-verify
+exec git commit -m "Auto commit at $(date)" --no-verify
 ```
 
 
