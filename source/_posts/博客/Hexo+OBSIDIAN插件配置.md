@@ -18,7 +18,7 @@ updated: 2023-04-18 10:30:18
 ### 插件配置
 
 **本次用到的插件：**
-* Image auto upload Plugin (PicGo图床上传)
+* Image auto upload Plugin (PicGo图床上传)\
 * Obsidian Git (快速Git上传)
 * Templater (文件元数据模板)
 * Update time on edit (自动更新时间)
