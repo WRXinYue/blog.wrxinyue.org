@@ -1,12 +1,11 @@
 ---
 title: Java面试八股文（Company）
 date: 2022-11-25 09:35:27.061
-updated: 2022-11-25 10:32:27.965
+updated: 2023-04-18 17:32:48
 categories: 
 - 其他
 tags: 
-- java
-- 八股文
+- Java
 ---
 
 ### 1. jdk和jre的区别

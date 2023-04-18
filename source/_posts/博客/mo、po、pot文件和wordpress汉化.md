@@ -1,7 +1,7 @@
 ---
 title: .mo、po、.pot文件和wordpress汉化
 date: 2022-08-07 18:24:44.0
-updated: 2022-10-26 23:11:29.002
+updated: 2023-04-18 18:02:50
 url: /archives/mopopot-wen-jian-he-wordpress-han-hua
 categories: 
 - 博客

@@ -2,6 +2,8 @@
 title: MyBatis
 date: 2023-01-13 10:32:48
 tags:
+ - MyBatis
+ - Java
 updated: 2023-04-18 15:09:43
 ---
 

@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "ce7f45101559b49b",
+    "id": "2b41cbe8d297d2ae",
     "type": "split",
     "children": [
       {
-        "id": "22f6afb714d48b76",
+        "id": "aab5d6522ef131a4",
         "type": "tabs",
         "children": [
           {
-            "id": "370ec77aa625790c",
+            "id": "5acba7ebcdb85907",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -25,15 +25,15 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "38b1d81626cb0f94",
+    "id": "f6818c8ead5f08a0",
     "type": "split",
     "children": [
       {
-        "id": "509c78d1312eac7b",
+        "id": "c337fdb4d036621e",
         "type": "tabs",
         "children": [
           {
-            "id": "a9ebe5d959100313",
+            "id": "c73c0d479cd6c833",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -43,7 +43,7 @@
             }
           },
           {
-            "id": "99c2fc3c663f41e9",
+            "id": "9e779629715861e5",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -58,7 +58,7 @@
             }
           },
           {
-            "id": "eaf96fd7658bdbb9",
+            "id": "3eed47f18e10f102",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -66,7 +66,7 @@
             }
           },
           {
-            "id": "a4d40791d948cca9",
+            "id": "efd80986324fcadd",
             "type": "leaf",
             "state": {
               "type": "file-tree-view",
@@ -77,18 +77,18 @@
       }
     ],
     "direction": "horizontal",
-    "width": 212.5
+    "width": 300
   },
   "right": {
-    "id": "6c0cfb67854d1c5a",
+    "id": "b0f53977483e2010",
     "type": "split",
     "children": [
       {
-        "id": "ac6c3efed7ad8176",
+        "id": "12ade412c893f51f",
         "type": "tabs",
         "children": [
           {
-            "id": "429e238bf90bc078",
+            "id": "c9195ce4e50806de",
             "type": "leaf",
             "state": {
               "type": "backlink",
@@ -105,7 +105,7 @@
             }
           },
           {
-            "id": "06bcc84dbcc2e979",
+            "id": "e8920b7f65df77e7",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
@@ -117,7 +117,7 @@
             }
           },
           {
-            "id": "c387f4eee5761e59",
+            "id": "561b20fbdeec5a5e",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -128,7 +128,7 @@
             }
           },
           {
-            "id": "f5ae8c145263fd83",
+            "id": "b2486251681c3fd1",
             "type": "leaf",
             "state": {
               "type": "outline",
@@ -137,8 +137,7 @@
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -152,63 +151,16 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "templater-obsidian:Templater": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "templater-obsidian:Templater": false
     }
   },
-  "active": "370ec77aa625790c",
+  "active": "5acba7ebcdb85907",
   "lastOpenFiles": [
-    "博客/Github&hexo网站搭建.md",
-    "博客/HelloWord.md",
+    "DBMS/数据库基本概念.md",
+    "DBMS/SQL笔记.md",
     "DBMS/向量数据库.md",
-    "向量数据库.md",
-    "WebFrontend/Node.js/npm 包管理器.md",
-    "软件/Office Tool Plus.md",
-    "游戏开发/备忘录.md",
-    "游戏开发/像素教程.md",
-    "游戏开发/Unity/Unity笔记（系统学习）.md",
-    "游戏开发/Unity/黑魂复刻第一季（傅老师）.md",
-    "WebBackend/C#基础/未命名",
-    "WebBackend/C#/C#.md",
-    "WebBackend/C#/1C#与NET框架.md",
-    "WebBackend/C#/3.C#编程概述.md",
-    "WebBackend/C#/5.类的基本概念.md",
-    "WebFrontend/UI/HTML5布局.md",
-    "Unity开发日志/第三方（插件）/~$ity插件汇总.docx",
-    "WebFrontend/UI/CSS备忘录.md",
-    "WebFrontend/UI/CSS3笔记.md",
-    "WebFrontend/Node.js/node.js global.md",
-    "WebFrontend/Node.js/node.js包管理器-npm.md",
-    "WebFrontend/Node.js/nodejs初识.md",
-    "WebFrontend/Node.js/node.js(学习日志).md",
-    "WebFrontend/Node.js/node.js fs模块.md",
-    "WebFrontend/JavaScript/BOM.md",
-    "WebFrontend/JavaScript/jQuery.md",
-    "WebFrontend/Node.js/安装nvm方式.md",
-    "WebFrontend/vue/Vite框架常用.md",
-    "其它/chatgpt/六步提问法.canvas",
-    "WebFrontend/UI",
-    "WebFrontend/tools",
-    "tool",
-    "学习路线.canvas",
-    "未命名 2.canvas",
-    "未命名 1.canvas",
-    "template",
-    "scripts/get_guid.js",
-    "scripts",
-    "Template",
-    "Scripts/get_guid.js",
-    "themes/arknights/support.jpg",
-    "themes/arknights/demo.jpg",
-    "arknights/support.jpg",
-    "arknights/demo.jpg",
-    "themes/support.jpg",
-    "themes/demo.jpg",
-    "node_modules/browser-sync-ui/public/img/icons/icons.svg",
-    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-regular-webfont.svg",
-    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-it-webfont.svg",
-    "node_modules/browser-sync-ui/public/fonts/source-sans/sourcesanspro-bold-webfont.svg",
-    "未命名.canvas",
-    "其它/chatgpt/六部提问发.canvas"
+    "博客/mo、po、pot文件和wordpress汉化.md",
+    "游戏开发/像素教程.md"
   ]
 }

@@ -6,7 +6,7 @@ url: /archives/java-inner-classes
 categories: 
 - WEBbackend
 tags: 
-- java
+- Java
 ---
 
 ## Java Inner Classes (Nested Classes)

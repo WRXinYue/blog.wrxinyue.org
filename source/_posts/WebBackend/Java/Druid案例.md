@@ -6,7 +6,7 @@ categories:
 - WEBbackend
 tags: 
 - mysql
-- java
+- Java
 ---
 
 Druid（德鲁伊）是由阿里巴巴开发，集合了c3p0、dbcp、proxool等连接池的优点，加入了日志监控，有效的监控DB池连接和SQL的执行情况
