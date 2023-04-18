@@ -9,7 +9,7 @@ hexo clean && hexo g
 # Add the compiled files
 git add .
 
-echo -e "\033[1;35mStatic resource to generate success\033[0m"
+echo -e "\033[1;35mStatic resource to generate success1234567\033[0m"
 
 # If all checks have passed, run git commit with the original commit message
 exec git commit -C HEAD --no-verify
