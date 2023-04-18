@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "385c58b5833dc16f",
+        "id": "4bb4cf0f4157c52c",
         "type": "tabs",
         "children": [
           {
-            "id": "9d8c3209e2473940",
+            "id": "c55e618163a76497",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "游戏开发/备忘录.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "游戏开发/备忘录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "游戏开发/备忘录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "游戏开发/备忘录.md"
+              }
             }
           }
         ],
@@ -150,6 +158,15 @@
   },
   "active": "a9ebe5d959100313",
   "lastOpenFiles": [
+    "游戏开发/像素教程.md",
+    "游戏开发/Unity/Unity笔记（系统学习）.md",
+    "游戏开发/Unity/黑魂复刻第一季（傅老师）.md",
+    "WebBackend/C#基础/未命名",
+    "WebBackend/C#/C#.md",
+    "WebBackend/C#/1C#与NET框架.md",
+    "WebBackend/C#/3.C#编程概述.md",
+    "WebBackend/C#/5.类的基本概念.md",
+    "WebFrontend/UI/HTML5布局.md",
     "Unity开发日志/第三方（插件）/~$ity插件汇总.docx",
     "WebFrontend/UI/CSS备忘录.md",
     "WebFrontend/UI/CSS3笔记.md",
@@ -169,14 +186,7 @@
     "WebBackend/Java/执行流程.md",
     "WebBackend/Java/MyBatis研究.md",
     "WebBackend/Java/Spring研究.md",
-    "WebBackend/SSM/SSM框架.md",
-    "其它/NAS.md",
-    "其它/chatgpt/GPT工作原理.md",
-    "其它/chatgpt/绕过GPT安全限制.md",
     "其它/chatgpt/六步提问法.canvas",
-    "博客/WordPress博客搭建.md",
-    "WebFrontend/关于HTTP请求.md",
-    "其它/时间管理.md",
     "WebFrontend/UI",
     "WebFrontend/tools",
     "tool",
@@ -188,8 +198,6 @@
     "scripts",
     "Template",
     "Scripts/get_guid.js",
-    "Scripts",
-    "public/2021/11/21/Web前端开发日志/HTML/关于如何HTML嵌入CSS样式（四种方法）/index.html",
     "themes/arknights/support.jpg",
     "themes/arknights/demo.jpg",
     "arknights/support.jpg",
