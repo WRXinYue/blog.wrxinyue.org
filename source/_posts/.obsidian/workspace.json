@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "cb0bcf33ca90647a",
+        "id": "22f6afb714d48b76",
         "type": "tabs",
         "children": [
           {
-            "id": "280e36e6f46829a3",
+            "id": "370ec77aa625790c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "DBMS/向量数据库.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "DBMS/向量数据库.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "DBMS/向量数据库.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "DBMS/向量数据库.md"
+              }
             }
           }
         ],
@@ -148,11 +156,14 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "280e36e6f46829a3",
+  "active": "370ec77aa625790c",
   "lastOpenFiles": [
+    "博客/Github&hexo网站搭建.md",
+    "博客/HelloWord.md",
+    "DBMS/向量数据库.md",
+    "向量数据库.md",
     "WebFrontend/Node.js/npm 包管理器.md",
     "软件/Office Tool Plus.md",
-    "博客/Github&hexo网站搭建.md",
     "游戏开发/备忘录.md",
     "游戏开发/像素教程.md",
     "游戏开发/Unity/Unity笔记（系统学习）.md",
@@ -175,9 +186,6 @@
     "WebFrontend/JavaScript/jQuery.md",
     "WebFrontend/Node.js/安装nvm方式.md",
     "WebFrontend/vue/Vite框架常用.md",
-    "WebFrontend/vue/Vue项目初始化.md",
-    "WebFrontend/移动应用/微信小程序Uni-app笔记.md",
-    "WebFrontend/vue/Vue3常用技巧.md",
     "其它/chatgpt/六步提问法.canvas",
     "WebFrontend/UI",
     "WebFrontend/tools",
