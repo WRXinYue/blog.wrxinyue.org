@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "a3249c89f95447f1",
+        "id": "385c58b5833dc16f",
         "type": "tabs",
         "children": [
           {
-            "id": "d9d0e0a1d0a86039",
+            "id": "9d8c3209e2473940",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "WebFrontend/Node.js/npm 包管理器.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebFrontend/Node.js/npm 包管理器.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebFrontend/Node.js/npm 包管理器.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "WebFrontend/Node.js/npm 包管理器.md"
-              }
+              "state": {}
             }
           }
         ],
@@ -156,10 +148,13 @@
       "file-tree-alternative:File Tree Alternative Plugin": false
     }
   },
-  "active": "d9d0e0a1d0a86039",
+  "active": "a9ebe5d959100313",
   "lastOpenFiles": [
-    "WebFrontend/Node.js/node.js global.md",
+    "Unity开发日志/第三方（插件）/~$ity插件汇总.docx",
+    "WebFrontend/UI/CSS备忘录.md",
+    "WebFrontend/UI/CSS3笔记.md",
     "WebFrontend/Node.js/npm 包管理器.md",
+    "WebFrontend/Node.js/node.js global.md",
     "WebFrontend/Node.js/node.js包管理器-npm.md",
     "WebFrontend/Node.js/nodejs初识.md",
     "WebFrontend/Node.js/node.js(学习日志).md",
@@ -182,9 +177,6 @@
     "博客/WordPress博客搭建.md",
     "WebFrontend/关于HTTP请求.md",
     "其它/时间管理.md",
-    "WebBackend/Java/Java 项目模块化管理.md",
-    "WebBackend/Java/Druid案例.md",
-    "WebBackend/Java/String、StringBuffer和StringBuilder.md",
     "WebFrontend/UI",
     "WebFrontend/tools",
     "tool",
