@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/Spring Boot WebSocket.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#版本的说明",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/Spring Boot WebSocket.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/Spring Boot WebSocket.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其它/代理设置.md"
+                "file": "WebBackend/Java/Spring Boot WebSocket.md"
               }
             }
           }
@@ -158,12 +158,16 @@
   },
   "active": "1894014bf7e09f7b",
   "lastOpenFiles": [
+    "WebBackend/Java/Spring Boot WebSorket.md",
+    "WebBackend/Java/Java collections (集合).md",
+    "其它/代理设置.md",
+    "网络安全/wifi安全渗透.md",
+    "WebBackend/Java/Spring Boot WebSocket.md",
     "软件/Office Tool Plus.md",
     "WebFrontend/UI/CSS备忘录.md",
     "WebFrontend/UI/CSS3笔记.md",
     "其它/WSL.md",
     "其它/Linux备忘录.md",
-    "其它/代理设置.md",
     "游戏开发/Unity/黑魂复刻第一季（傅老师）.md",
     "游戏开发/Unity/Update&FixedUpdate.md",
     "游戏开发/像素教程.md",

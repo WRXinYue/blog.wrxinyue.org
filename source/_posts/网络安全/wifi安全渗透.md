@@ -1,7 +1,7 @@
 ---
 title: wifi安全渗透
 date: 2022-08-28 8:38:01.0
-updated: 2023-04-18 15:07:50
+updated: 2023-04-21 14:38:15
 categories: 
 - 网络安全
 tags: 
@@ -281,7 +281,7 @@ aireplay-ng -0 30 -a C8:3A:35:30:3E:C8 -c B8:E8:56:09:CC:9C wlan0mon
 
 ## 参考
 
-[无线网络的加密方式：WEP、WPA和WPA2](xie1997.blog.csdn.net/article/details/83316451)
+[无线网络的加密方式：WEP、WPA和WPA2](https://xie1997.blog.csdn.net/article/details/83316451)
 
 [使用Reaver破解开启了WPS功能的wifi密码(wpa/wpa2)](https://ywnz.com/linuxaq/113.html)
 
