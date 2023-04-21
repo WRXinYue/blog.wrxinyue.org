@@ -6,7 +6,7 @@ tags:
  - hexo
  - obsidian
 data: 2023-04-17 18:03:23
-updated: 2023-04-18 14:17:32
+updated: 2023-04-19 11:03:38
 ---
 
 ### 前言
@@ -77,6 +77,8 @@ data: <% tp.date.now(format="YYYY-MM-DD HH:mm:ss") %>
 updated: ''
 ---
 ```
+
+Alt+ E 快捷键使用模板
 
 详细配置可以看[官方文档](https://silentvoid13.github.io/Templater/introduction.html)
 

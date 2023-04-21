@@ -1,7 +1,7 @@
 ---
 title: Linux备忘录
 date: 2022-10-17 23:59:52.0
-updated: 2022-10-27 00:04:01.879
+updated: 2023-04-19 18:36:24
 url: /archives/linux-bei-wang-lu
 categories: 
 - Linux
