@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebBackend/Java/Java继承.md",
+                "file": "其它/代理设置.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#版本的说明",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -73,7 +73,8 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -93,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebBackend/Java/Java继承.md",
+                "file": "其它/代理设置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebBackend/Java/Java继承.md",
+                "file": "其它/代理设置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebBackend/Java/Java继承.md"
+                "file": "其它/代理设置.md"
               }
             }
           }
@@ -158,14 +159,20 @@
   },
   "active": "1894014bf7e09f7b",
   "lastOpenFiles": [
+    "server/常用软件安装.md",
+    "server/面板.md",
+    "server/rustdesk中继服务器的docker镜像.md",
+    "博客/Github&hexo网站搭建.md",
+    "WebBackend/Java/OkHttp3.md",
+    "DBMS/向量数据库.md",
+    "WebBackend/Java/Java面试八股文（Company）.md",
+    "WebBackend/Java/Java继承.md",
+    "WebBackend/Java/Java collections (集合).md",
     "WebBackend/Java/Servlet.md",
     "WebBackend/Java/Spring研究.md",
     "WebBackend/Java/MyBatis研究.md",
-    "WebBackend/Java/Java面试八股文（Company）.md",
     "WebBackend/Java/Java内部类.md",
-    "WebBackend/Java/Spring Boot WebSocket.md",
     "WebBackend/Java/Spring Boot WebSorket.md",
-    "WebBackend/Java/Java collections (集合).md",
     "其它/代理设置.md",
     "网络安全/wifi安全渗透.md",
     "软件/Office Tool Plus.md",
@@ -177,12 +184,6 @@
     "游戏开发/Unity/Update&FixedUpdate.md",
     "游戏开发/像素教程.md",
     "其它/快捷键大全.md",
-    "博客/Hexo and OBSIDIAN 插件配置.md",
-    "其它/快捷键.md",
-    "Untitled.md",
-    "().md",
-    "WebBackend/Java 和 Python 异构模块数据传输.md",
-    "DBMS/向量数据库.md",
-    "DBMS/数据库基本概念.md"
+    "博客/Hexo and OBSIDIAN 插件配置.md"
   ]
 }
