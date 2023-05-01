@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/OkHttp3.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "okhttp",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,7 +74,7 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -94,7 +94,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/OkHttp3.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +111,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "WebBackend/Java/OkHttp3.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,7 +134,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其它/代理设置.md"
+                "file": "WebBackend/Java/OkHttp3.md"
               }
             }
           }
@@ -159,6 +159,13 @@
   },
   "active": "1894014bf7e09f7b",
   "lastOpenFiles": [
+    "WebFrontend/UI/BootStrap.md",
+    "WebFrontend/UI/CSS备忘录.md",
+    "WebFrontend/UI/CSS3笔记.md",
+    "其它/WSL.md",
+    "DBMS/SQL笔记.md",
+    "其它/关于 GIt、GitHub和GitLab.md",
+    "其它/代理设置.md",
     "server/常用软件安装.md",
     "server/面板.md",
     "server/rustdesk中继服务器的docker镜像.md",
@@ -173,17 +180,10 @@
     "WebBackend/Java/MyBatis研究.md",
     "WebBackend/Java/Java内部类.md",
     "WebBackend/Java/Spring Boot WebSorket.md",
-    "其它/代理设置.md",
     "网络安全/wifi安全渗透.md",
     "软件/Office Tool Plus.md",
-    "WebFrontend/UI/CSS备忘录.md",
-    "WebFrontend/UI/CSS3笔记.md",
-    "其它/WSL.md",
     "其它/Linux备忘录.md",
     "游戏开发/Unity/黑魂复刻第一季（傅老师）.md",
-    "游戏开发/Unity/Update&FixedUpdate.md",
-    "游戏开发/像素教程.md",
-    "其它/快捷键大全.md",
-    "博客/Hexo and OBSIDIAN 插件配置.md"
+    "游戏开发/Unity/Update&FixedUpdate.md"
   ]
 }
