@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "WebBackend/Java/OkHttp3.md",
+                "file": "其它/代理设置.md",
                 "mode": "source",
                 "source": false
               }
@@ -72,9 +72,17 @@
               "type": "file-tree-view",
               "state": {}
             }
+          },
+          {
+            "id": "f45de42c45bb406f",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -94,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "WebBackend/Java/OkHttp3.md",
+                "file": "其它/代理设置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -111,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "WebBackend/Java/OkHttp3.md",
+                "file": "其它/代理设置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -134,12 +142,11 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "WebBackend/Java/OkHttp3.md"
+                "file": "其它/代理设置.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -160,8 +167,12 @@
   "active": "1894014bf7e09f7b",
   "lastOpenFiles": [
     "WebFrontend/UI/BootStrap.md",
-    "WebFrontend/UI/CSS备忘录.md",
+    "未命名.md",
+    "WebFrontend/JavaScript/js解构赋值.md",
+    "游戏开发/像素教程.md",
     "WebFrontend/UI/CSS3笔记.md",
+    "WebBackend/Java/OkHttp3.md",
+    "WebFrontend/UI/CSS备忘录.md",
     "其它/WSL.md",
     "DBMS/SQL笔记.md",
     "其它/关于 GIt、GitHub和GitLab.md",
@@ -170,7 +181,6 @@
     "server/面板.md",
     "server/rustdesk中继服务器的docker镜像.md",
     "博客/Github&hexo网站搭建.md",
-    "WebBackend/Java/OkHttp3.md",
     "DBMS/向量数据库.md",
     "WebBackend/Java/Java面试八股文（Company）.md",
     "WebBackend/Java/Java继承.md",
@@ -181,9 +191,6 @@
     "WebBackend/Java/Java内部类.md",
     "WebBackend/Java/Spring Boot WebSorket.md",
     "网络安全/wifi安全渗透.md",
-    "软件/Office Tool Plus.md",
-    "其它/Linux备忘录.md",
-    "游戏开发/Unity/黑魂复刻第一季（傅老师）.md",
-    "游戏开发/Unity/Update&FixedUpdate.md"
+    "软件/Office Tool Plus.md"
   ]
 }
