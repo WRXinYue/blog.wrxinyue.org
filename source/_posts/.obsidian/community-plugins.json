@@ -4,5 +4,6 @@
   "obsidian-git",
   "templater-obsidian",
   "obsidian-style-settings",
-  "obsidian-linter"
+  "obsidian-linter",
+  "update-time-on-edit"
 ]

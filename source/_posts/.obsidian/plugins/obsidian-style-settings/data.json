@@ -4,7 +4,7 @@
   "blue-topaz-theme@@background-settings-workplace-background-image": false,
   "blue-topaz-theme@@background-settings-workplace-theme-light": "background-settings-workplace-theme-light-custom-option",
   "blue-topaz-theme@@background-notebook-liked-switch": false,
-  "blue-topaz-theme@@left-ribbon-style": "hide-left-ribbon-retention-drawer",
+  "blue-topaz-theme@@left-ribbon-style": "default-left-ribbon-style",
   "blue-topaz-theme@@layout-style-options": "layout-style-options-default",
   "blue-topaz-theme@@hide-vault-name": false,
   "blue-topaz-theme@@bt-status-on": false,

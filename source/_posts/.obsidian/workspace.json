@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "1fc7cefaeb1aa987",
+        "id": "e489a939599cfaa3",
         "type": "tabs",
         "children": [
           {
-            "id": "9f0f3f4c47716796",
+            "id": "b19a563e7c69a4c3",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Template/Template MOC.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -93,7 +89,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Template/Template MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +105,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Template/Template MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +126,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Template/Template MOC.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -154,11 +146,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9f0f3f4c47716796",
+  "active": "b19a563e7c69a4c3",
   "lastOpenFiles": [
+    "Template/Template MOC.md",
     "Template/Templater Time.md",
     "Template/Templater Plugin.md",
-    "Template/Template MOC.md",
     "DBMS/数据库基本概念.md",
     "WebFrontend/JavaScript/Web学习日志(office).md",
     "WebFrontend/JavaScript/Promise笔记.md",
