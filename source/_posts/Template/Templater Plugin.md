@@ -5,5 +5,5 @@ categories:
 tags:
  - ''
 data: <% tp.date.now(format="YYYY-MM-DD HH:mm:ss") %>
-updated: ''
+updated: <% tp.date.now(format="YYYY-MM-DD HH:mm:ss") %>
 ---

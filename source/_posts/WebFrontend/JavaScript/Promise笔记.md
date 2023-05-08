@@ -1,7 +1,7 @@
 ---
 title: Promise 笔记
 date: 2022-10-17 23:49:40.0
-updated: 2022-10-26 23:49:06.261
+updated: 2023-05-08 14:09:52
 categories: 
 - WebFrontend
 tags: 

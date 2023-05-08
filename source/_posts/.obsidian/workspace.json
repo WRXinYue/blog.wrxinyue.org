@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1f95b43f7dc2db5f",
+        "id": "1fc7cefaeb1aa987",
         "type": "tabs",
         "children": [
           {
-            "id": "1894014bf7e09f7b",
+            "id": "9f0f3f4c47716796",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "Template/Template MOC.md",
                 "mode": "source",
                 "source": false
               }
@@ -66,14 +66,6 @@
             }
           },
           {
-            "id": "efd80986324fcadd",
-            "type": "leaf",
-            "state": {
-              "type": "file-tree-view",
-              "state": {}
-            }
-          },
-          {
             "id": "f45de42c45bb406f",
             "type": "leaf",
             "state": {
@@ -81,8 +73,7 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -102,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "Template/Template MOC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -119,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "其它/代理设置.md",
+                "file": "Template/Template MOC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -142,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其它/代理设置.md"
+                "file": "Template/Template MOC.md"
               }
             }
           }
@@ -160,12 +151,19 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "1894014bf7e09f7b",
+  "active": "9f0f3f4c47716796",
   "lastOpenFiles": [
+    "Template/Templater Time.md",
+    "Template/Templater Plugin.md",
+    "Template/Template MOC.md",
+    "DBMS/数据库基本概念.md",
+    "WebFrontend/JavaScript/Web学习日志(office).md",
+    "WebFrontend/JavaScript/Promise笔记.md",
+    "WebFrontend/JavaScript/js(学习日志).md",
+    "其它/代理设置.md",
     "WebFrontend/UI/BootStrap.md",
     "未命名.md",
     "WebFrontend/JavaScript/js解构赋值.md",
@@ -176,7 +174,6 @@
     "其它/WSL.md",
     "DBMS/SQL笔记.md",
     "其它/关于 GIt、GitHub和GitLab.md",
-    "其它/代理设置.md",
     "server/常用软件安装.md",
     "server/面板.md",
     "server/rustdesk中继服务器的docker镜像.md",
@@ -184,13 +181,6 @@
     "DBMS/向量数据库.md",
     "WebBackend/Java/Java面试八股文（Company）.md",
     "WebBackend/Java/Java继承.md",
-    "WebBackend/Java/Java collections (集合).md",
-    "WebBackend/Java/Servlet.md",
-    "WebBackend/Java/Spring研究.md",
-    "WebBackend/Java/MyBatis研究.md",
-    "WebBackend/Java/Java内部类.md",
-    "WebBackend/Java/Spring Boot WebSorket.md",
-    "网络安全/wifi安全渗透.md",
-    "软件/Office Tool Plus.md"
+    "WebBackend/Java/Java collections (集合).md"
   ]
 }

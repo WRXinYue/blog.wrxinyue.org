@@ -1,10 +1,8 @@
 [
-  "file-tree-alternative",
   "obsidian-frontmatter-tag-suggest",
   "obsidian-image-auto-upload-plugin",
   "obsidian-git",
   "templater-obsidian",
-  "update-time-on-edit",
   "obsidian-style-settings",
   "obsidian-linter"
 ]
