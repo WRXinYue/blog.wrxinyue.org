@@ -4,15 +4,19 @@
     "type": "split",
     "children": [
       {
-        "id": "e489a939599cfaa3",
+        "id": "75455e6e40ffd5e1",
         "type": "tabs",
         "children": [
           {
-            "id": "b19a563e7c69a4c3",
+            "id": "0158cce4f7cb96a8",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "其它/Linux备忘录.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "其它/Linux备忘录.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "其它/Linux备忘录.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,10 +132,13 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "其它/Linux备忘录.md"
+              }
             }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "horizontal",
@@ -146,8 +155,12 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "b19a563e7c69a4c3",
+  "active": "0158cce4f7cb96a8",
   "lastOpenFiles": [
+    "其它/Linux备忘录.md",
+    "server/常用软件安装.md",
+    "server/快速翻墙命令.md",
+    "server/面板.md",
     "Template/Template MOC.md",
     "Template/Templater Time.md",
     "Template/Templater Plugin.md",
@@ -166,13 +179,9 @@
     "其它/WSL.md",
     "DBMS/SQL笔记.md",
     "其它/关于 GIt、GitHub和GitLab.md",
-    "server/常用软件安装.md",
-    "server/面板.md",
     "server/rustdesk中继服务器的docker镜像.md",
     "博客/Github&hexo网站搭建.md",
     "DBMS/向量数据库.md",
-    "WebBackend/Java/Java面试八股文（Company）.md",
-    "WebBackend/Java/Java继承.md",
-    "WebBackend/Java/Java collections (集合).md"
+    "WebBackend/Java/Java面试八股文（Company）.md"
   ]
 }

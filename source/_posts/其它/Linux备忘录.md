@@ -1,52 +1,14 @@
 ---
 title: Linux备忘录
 date: 2022-10-17 23:59:52.0
-updated: 2023-04-19 18:36:24
+updated: 2023-05-08 16:25:34
 url: /archives/linux-bei-wang-lu
 categories: 
 - Linux
 tags: 
 - linux
 ---
-
-# 常用命令
-
-## 解压
-
-### deb包
-
-进入到tools根目录下的终端，输入下面命令创建文件夹extract，并在extract文件夹下创建DEBIAN文件夹
-
-~~~shell
-mkdir -p extract/DEBIAN
-~~~
-
-将deb包解压到extract文件夹下
-
-~~~shell
-dpkg -X ./xxx.deb extract
-~~~
-
-
-
-dpkg解压：
-
-~~~shell
-dpkg -X ../openssh-client_6.1p1_i386.deb extract/
-~~~
-
-
-
-ar解压：
-
-~~~shell
-ar -x fileName.deb
-tar -zxvf data.tar.gz
-~~~
-
-
-
-### ar 命令安装
+### 安装命令
 
 ~~~shell
     -bash: ar: command not found
@@ -74,15 +36,6 @@ tar -zxvf data.tar.gz
 ~~~
 
 
-
-## 下载
-
-~~~
-wget
-~~~
-
-
-
 ## VI编辑器
 
 vi保存命令。
@@ -105,101 +58,8 @@ vi保存命令。
 >
 > :e! 放弃所有修改，从上次保存文件开始再编辑。
 
-# 查询指令
 
-## 查看框架版本
-
-~~~shell
-node -e "console.log(process.arch)"
-~~~
-
-- x32: 386
-- x64: amd64
-- arm64: arm64
-- arm: armv7
-
-# 安装
-
-
-
-## gcc和g++安装
-
-gcc：C编译器
-
-g++：C++编译器
-
-
-
-**gcc版本检查：**
-
-~~~shell
-gcc -v
-~~~
-
-**g++版本检查：**
-
-~~~shell
-g++ -v
-~~~
-
-
-
-**gcc安装：**
-
-~~~shell
-yum install gcc
-~~~
-
-**g++安装：**
-
-~~~shell
-yum install gcc-c++ libstdc++-devel
-~~~
-
-
-
-切换root用户执行
-
-~~~shell
-yum install gcc -c++
-~~~
-
-
-
-## yarn安装
-
-Node.js 自带名为 [npm](https://www.npmjs.com/) 的包管理器，我们可以直接使用它,[yarn](https://classic.yarnpkg.com/) 是功能非常强大的一个包管理器。
-
-
-
-**安装yarn：**
-
-~~~shell
-npm i -g yarn
-~~~
-
-查看版本：
-
-~~~shell
-yarn -v
-~~~
-
-
-
-## git安装
-
-git:分布式版本管理系统
-
-
-
-安装：
-
-~~~shell
-yum install git -y
-~~~
-
-
-### 信息查看
+## Docker
 
 1.  **查看发行版和版本信息**：
 
@@ -258,3 +118,88 @@ bash
 请注意，`lshw` 命令可能不是所有发行版的默认组件。如果尚未安装，请根据您的发行版使用相应的包管理器进行安装。
 
 通过使用这些命令，您可以查看 Linux 系统的详细信息，如发行版、版本、内核版本、硬件信息等。
+
+
+## 查看正在运行的容器
+
+  
+
+~~~shell
+docker ps
+~~~
+
+  
+
+包括停止的：
+
+  
+
+~~~shell
+docker ps -a
+~~~
+
+  
+
+## 进入容器
+
+  
+
+~~~shell
+docker exec -it 容器ID /bin/bash
+~~~
+
+  
+
+**alpine:**
+
+  
+
+~~~shell
+docker exec -it 容器ID /bin/sh
+~~~
+
+  
+
+>注：docker attach指令已经过时
+
+
+## Mysql of Dokcer
+~~~shell
+docker run -p 3306:3306 --name mysql \
+-v /mydata/mysql/log:/vat/log/mysql \
+-v /mydata/mysql/data:/var/lib/mysql \
+-v /mydata/mysql/conf:/etc/mysql/conf.d \
+-e MYSQL_ROOT_PASSWORD=root \
+-d mysql:5.7
+~~~
+  
+### Mysql 配置文件
+~~~shell
+[clinet]
+default-character-set=utf8
+  
+[mysql]
+default-character-set=utf8
+
+[mysqld]
+init_connect='SET collation_connection = utf8_unicode_ci'
+init_connect='SET NAMES utf8'
+character-set-server=utf8
+collation-server=utf8_unicode_ci
+skip-character-set-client-handshake
+skip-name-resolvnet
+~~~
+
+
+## Redis
+
+### Redis of Docker
+~~~shell
+mkdir -p /mydata/redis/conf && touch /mydata/redis/confredis.conf
+~~~
+
+~~~shell
+docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data \
+-v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
+-d redis redis-server /etc/redis/redis.conf
+~~~
