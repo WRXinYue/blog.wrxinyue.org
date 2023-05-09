@@ -1,7 +1,7 @@
 ---
 title: Mysql OF CodeWithMosh
 date: 2022-12-01 20:02:26.992
-updated: 2022-12-06 15:44:14.883
+updated: 2023-05-08 16:30:13
 categories: 
 - WEBbackend
 tags: 
