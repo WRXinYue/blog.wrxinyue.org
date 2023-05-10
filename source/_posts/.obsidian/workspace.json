@@ -4,14 +4,14 @@
     "type": "split",
     "children": [
       {
-        "id": "b47e7f8aefd203c4",
+        "id": "1eb2215f995817e3",
         "type": "tabs",
         "children": [
           {
-            "id": "ab99a936c44a3957",
+            "id": "4d67a095df072378",
             "type": "leaf",
             "state": {
-              "type": "graph",
+              "type": "empty",
               "state": {}
             }
           }
@@ -147,15 +147,19 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "ab99a936c44a3957",
+  "active": "4d67a095df072378",
   "lastOpenFiles": [
+    "server/DNS记录类型.md",
+    "server/快速翻墙命令.md",
+    "其它/代理设置.md",
+    "博客/Alist美化.md",
+    "server/面板.md",
+    "server/Linux备忘录.md",
+    "server/rustdesk中继服务器的docker镜像.md",
+    "server/常用软件安装.md",
     "DBMS/向量数据库.md",
     "其它/关于 GIt、GitHub和GitLab.md",
     "DBMS/MySql/Mysql OF CodeWithMosh.md",
-    "其它/Linux备忘录.md",
-    "server/常用软件安装.md",
-    "server/快速翻墙命令.md",
-    "server/面板.md",
     "Template/Template MOC.md",
     "Template/Templater Time.md",
     "Template/Templater Plugin.md",
@@ -163,7 +167,6 @@
     "WebFrontend/JavaScript/Web学习日志(office).md",
     "WebFrontend/JavaScript/Promise笔记.md",
     "WebFrontend/JavaScript/js(学习日志).md",
-    "其它/代理设置.md",
     "WebFrontend/UI/BootStrap.md",
     "未命名.md",
     "WebFrontend/JavaScript/js解构赋值.md",
@@ -171,9 +174,6 @@
     "WebFrontend/UI/CSS3笔记.md",
     "WebBackend/Java/OkHttp3.md",
     "WebFrontend/UI/CSS备忘录.md",
-    "其它/WSL.md",
-    "DBMS/SQL笔记.md",
-    "server/rustdesk中继服务器的docker镜像.md",
-    "博客/Github&hexo网站搭建.md"
+    "其它/WSL.md"
   ]
 }
