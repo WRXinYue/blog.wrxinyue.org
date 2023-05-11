@@ -11,8 +11,12 @@
             "id": "4d67a095df072378",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {}
+              "type": "markdown",
+              "state": {
+                "file": "server/快速翻墙命令.md",
+                "mode": "source",
+                "source": false
+              }
             }
           }
         ]
@@ -89,6 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
+                "file": "server/快速翻墙命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -105,6 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "server/快速翻墙命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +132,9 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {}
+              "state": {
+                "file": "server/快速翻墙命令.md"
+              }
             }
           }
         ],
@@ -149,14 +157,15 @@
   },
   "active": "4d67a095df072378",
   "lastOpenFiles": [
-    "server/DNS记录类型.md",
+    "server/防火墙.md",
+    "server/Linux备忘录.md",
+    "server/常用软件安装.md",
+    "server/面板.md",
     "server/快速翻墙命令.md",
+    "server/DNS记录类型.md",
     "其它/代理设置.md",
     "博客/Alist美化.md",
-    "server/面板.md",
-    "server/Linux备忘录.md",
     "server/rustdesk中继服务器的docker镜像.md",
-    "server/常用软件安装.md",
     "DBMS/向量数据库.md",
     "其它/关于 GIt、GitHub和GitLab.md",
     "DBMS/MySql/Mysql OF CodeWithMosh.md",
@@ -173,7 +182,6 @@
     "游戏开发/像素教程.md",
     "WebFrontend/UI/CSS3笔记.md",
     "WebBackend/Java/OkHttp3.md",
-    "WebFrontend/UI/CSS备忘录.md",
-    "其它/WSL.md"
+    "WebFrontend/UI/CSS备忘录.md"
   ]
 }

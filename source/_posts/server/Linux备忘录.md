@@ -1,7 +1,7 @@
 ---
 title: Linux备忘录
 date: 2022-10-17 23:59:52.0
-updated: 2023-05-08 16:25:34
+updated: 2023-05-10 22:48:45
 url: /archives/linux-bei-wang-lu
 categories: 
 - Linux
@@ -61,105 +61,49 @@ vi保存命令。
 
 ## Docker
 
-1.  **查看发行版和版本信息**：
+安装：
 
-有多个文件可以提供关于 Linux 发行版和版本的信息，这里列出了一些常见的文件：
+```bash
+curl -fsSL https://get.docker.com -o get-docker.sh  
+sudo sh get-docker.sh
+```
 
--   `/etc/os-release`：提供发行版的详细信息，如名称、版本等。
+**查看发行版和版本**：
 
-bash
-
-`cat /etc/os-release`
-
--   `/etc/*-release`：该命令可以显示发行版的信息。`*` 是通配符，表示可能的发行版名称，如 `centos-release`、`redhat-release`、`lsb-release` 等。
-
-bash
-
-`cat /etc/*-release`
+-   `cat /etc/os-release`
+-   `cat /etc/*-release`
 
 2.  **查看内核版本和系统架构**：
-
-使用 `uname` 命令可以查看内核版本、系统架构等详细信息。要查看所有可用信息，请使用 `-a`（all）选项：
-
-bash
-
-`uname -a`
-
-要仅查看内核版本，请使用 `-r`（release）选项：
-
-bash
-
-`uname -r`
-
-要仅查看系统架构，请使用 `-m`（machine）选项：
-
-bash
-
-`uname -m`
-
+    -   `uname -a` (全部信息)
+    -   `uname -r` (内核版本)
+    -   `uname -m` (系统架构)
 3.  **查看系统详细信息**：
-
-`lsb_release` 命令提供了有关 Linux 标准基础（LSB）的信息。要查看所有可用信息，请使用 `-a`（all）选项：
-
-bash
-
-`lsb_release -a`
-
-请注意，`lsb_release` 命令可能不是所有发行版的默认组件。如果尚未安装，请根据您的发行版使用相应的包管理器进行安装。
-
+    -   `lsb_release -a` (可能需安装)
 4.  **查看硬件信息**：
-
-使用 `lshw` 命令可以查看系统硬件信息。为了获得更易于阅读的输出，可以使用 `-short` 选项：
-
-bash
-
-`sudo lshw -short`
-
-请注意，`lshw` 命令可能不是所有发行版的默认组件。如果尚未安装，请根据您的发行版使用相应的包管理器进行安装。
-
-通过使用这些命令，您可以查看 Linux 系统的详细信息，如发行版、版本、内核版本、硬件信息等。
-
+    -   `sudo lshw -short` (可能需安装)
 
 ## 查看正在运行的容器
-
-  
 
 ~~~shell
 docker ps
 ~~~
 
-  
-
 包括停止的：
-
-  
-
 ~~~shell
 docker ps -a
 ~~~
 
-  
-
 ## 进入容器
-
-  
 
 ~~~shell
 docker exec -it 容器ID /bin/bash
 ~~~
 
-  
-
 **alpine:**
-
-  
 
 ~~~shell
 docker exec -it 容器ID /bin/sh
 ~~~
-
-  
-
 >注：docker attach指令已经过时
 
 
