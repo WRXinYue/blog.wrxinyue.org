@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Scripts/校园分享会.md",
+                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Scripts/校园分享会.md",
+                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Scripts/校园分享会.md",
+                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Scripts/校园分享会.md"
+                "file": "博客/Hexo and OBSIDIAN 插件配置.md"
               }
             }
           }
@@ -158,8 +158,11 @@
   },
   "active": "4d67a095df072378",
   "lastOpenFiles": [
-    "server/快速翻墙命令.md",
+    "博客/使用PicGo&Github&jsDelivr搭建图床（扩展Typora）.md",
+    "WebFrontend/UI/CSS备忘录.md",
+    "WebFrontend/UI/CSS3笔记.md",
     "Scripts/校园分享会.md",
+    "server/快速翻墙命令.md",
     "server/防火墙.md",
     "server/Linux备忘录.md",
     "server/常用软件安装.md",
@@ -180,9 +183,6 @@
     "WebFrontend/JavaScript/js(学习日志).md",
     "WebFrontend/UI/BootStrap.md",
     "未命名.md",
-    "WebFrontend/JavaScript/js解构赋值.md",
-    "游戏开发/像素教程.md",
-    "WebFrontend/UI/CSS3笔记.md",
-    "WebBackend/Java/OkHttp3.md"
+    "WebFrontend/JavaScript/js解构赋值.md"
   ]
 }

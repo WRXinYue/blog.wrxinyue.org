@@ -1,7 +1,7 @@
 ---
 title: 使用PicGo+Github+jsDelivr搭建图床（扩展Typora）
 date: 2022-07-17 20:26:50.0
-updated: 2022-10-26 22:25:17.138
+updated: 2023-05-14 18:34:29
 categories: 
 - 博客搭建
 tags: 
