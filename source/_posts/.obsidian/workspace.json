@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1eb2215f995817e3",
+        "id": "42ab8de79ea027c9",
         "type": "tabs",
         "children": [
           {
-            "id": "4d67a095df072378",
+            "id": "130f1551952a9afe",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
+                "file": "WebBackend/Python/环境搭建.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "okhttp",
+                "query": "tag:#Python",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
+                "file": "WebBackend/Python/环境搭建.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "博客/Hexo and OBSIDIAN 插件配置.md",
+                "file": "WebBackend/Python/环境搭建.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,56 +133,59 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "博客/Hexo and OBSIDIAN 插件配置.md"
+                "file": "WebBackend/Python/环境搭建.md"
               }
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "4d67a095df072378",
+  "active": "130f1551952a9afe",
   "lastOpenFiles": [
-    "博客/使用PicGo&Github&jsDelivr搭建图床（扩展Typora）.md",
-    "WebFrontend/UI/CSS备忘录.md",
-    "WebFrontend/UI/CSS3笔记.md",
-    "Scripts/校园分享会.md",
-    "server/快速翻墙命令.md",
-    "server/防火墙.md",
-    "server/Linux备忘录.md",
-    "server/常用软件安装.md",
-    "server/面板.md",
-    "server/DNS记录类型.md",
+    "WebBackend/Python/Python  orm 连接MySQL数据库.md",
     "其它/代理设置.md",
-    "博客/Alist美化.md",
-    "server/rustdesk中继服务器的docker镜像.md",
+    "WebBackend/Python/环境搭建.md",
+    "server/快速翻墙命令.md",
+    "server/面板.md",
+    "server/防火墙.md",
+    "Scripts/Untitled.md",
+    "其它/WSL.md",
     "DBMS/向量数据库.md",
-    "其它/关于 GIt、GitHub和GitLab.md",
-    "DBMS/MySql/Mysql OF CodeWithMosh.md",
-    "Template/Template MOC.md",
-    "Template/Templater Time.md",
-    "Template/Templater Plugin.md",
     "DBMS/数据库基本概念.md",
-    "WebFrontend/JavaScript/Web学习日志(office).md",
-    "WebFrontend/JavaScript/Promise笔记.md",
-    "WebFrontend/JavaScript/js(学习日志).md",
-    "WebFrontend/UI/BootStrap.md",
-    "未命名.md",
-    "WebFrontend/JavaScript/js解构赋值.md"
+    "其它/RESTful API.md",
+    "Scripts/视频剪辑思路.md",
+    "Scripts/这些实习期间的个人总结.md",
+    "WebBackend/Python",
+    "WebFrontend/Untitled",
+    "Scripts/校园分享会.md",
+    "WebBackend/Java/JVM.md",
+    "编程范式/编程范式的归类.md",
+    "编程范式/面向对象/MVC设计模式.md",
+    "编程范式/面向对象",
+    "编程范式/未命名.md",
+    "设计模式&架构模式/未命名.md",
+    "编程范式",
+    "WebBackend/Java/JVM原理.md",
+    "WebBackend/Java/Servlet.md",
+    "WebBackend/Java/File类.md",
+    "WebBackend/Java/Java collections (集合).md",
+    "WebBackend/Java/Java面试八股文（Company）.md",
+    "WebBackend/Java/basis",
+    "博客/Hexo and OBSIDIAN 插件配置.md",
+    "博客/使用PicGo&Github&jsDelivr搭建图床（扩展Typora）.md"
   ]
 }
