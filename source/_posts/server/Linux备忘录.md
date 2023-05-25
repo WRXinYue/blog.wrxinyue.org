@@ -1,7 +1,7 @@
 ---
 title: Linux备忘录
 date: 2022-10-17 23:59:52.0
-updated: 2023-05-10 22:48:45
+updated: 2023-05-24 21:53:26
 url: /archives/linux-bei-wang-lu
 categories: 
 - Linux
@@ -147,3 +147,25 @@ docker run -p 6379:6379 --name redis -v /mydata/redis/data:/data \
 -v /mydata/redis/conf/redis.conf:/etc/redis/redis.conf \
 -d redis redis-server /etc/redis/redis.conf
 ~~~
+
+
+## 清屏
+
+**解决乱码问题：**
+```bash
+reset
+```
+
+
+## 下载仓库
+官方的死蛇（deadsnake）仓库，这是一个流行的第三方Python仓库：
+
+```
+sudo add-apt-repository ppa:deadsnakes/ppa
+```
+
+更新系统包列表：
+
+```
+sudo apt-get update
+```

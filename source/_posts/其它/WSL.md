@@ -5,7 +5,7 @@ categories:
 tags:
  - ''
 data: 2023-04-19 14:57:25
-updated: 2023-04-19 14:58:06
+updated: 2023-05-25 22:39:07
 ---
 
 # 常用WSL命令
@@ -87,6 +87,27 @@ export all_proxy="socks5://${hostip}:7890"
 curl www.google.com
 ```
 
+## 设置开机自启
+
+打开命令提示符（不用使用管理员权限），然后运行以下命令：
+```bash
+wsl --list --verbose
+```
+
+找到正确的发行版名称后，使用以下命令替换`YourDistroName`：
+
+```bash
+C:\Windows\System32\wsl.exe -d YourDistroName -- sudo service ssh start
+```
+
+将此命令添加到开机自启动，请按照以下步骤操作：
+
+1. 按住 `Win` 键，然后按 `R` 键，输入 `shell:startup` 回车。这将打开"启动" 文件夹。
+2. 在"启动"文件夹中，右键单击空白处，选择 "新建" > "快捷方式"。
+3. 在 "创建快捷方式" 对话框中，将正确的命令粘贴到 "位置" 栏，然后单击 "下一步" 。
+4. 输入一个名称以识别该快捷方式，例如 `C:\Windows\System32\wsl.exe -d Ubuntu -- sudo service ssh start`，然后单击 "完成"。
+
+现在，将自动运行此快捷方式，启动 WSL 中的 SSH 服务器。
 
 # 扩展阅读
 
