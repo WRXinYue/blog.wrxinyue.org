@@ -60,6 +60,13 @@ nvcc可能不是强依赖，咱们安装2~4
 安装pytorch参考
 https://blog.csdn.net/qq_42257666/article/details/121361983?utm_medium=distribute.pc_relevant.none-task-blog-2~default~baidujs_baidulandingword~default-0-121361983-blog-127182762.235^v36^pc_relevant_default_base&spm=1001.2101.3001.4242.1&utm_relevant_index=3
 
+## Microsoft C++ Build Tools
+
+```bash
+sudo apt update
+sudo apt install g++ gdb make ninja-build rsync zip
+```
+
 
 
 ## 更换下载源
@@ -83,19 +90,19 @@ pip install scrapy -i https://pypi.tuna.tsinghua.edu.cn/simple
 [global]
 index-url = https://mirrors.aliyun.com/pypi/simple/
 ```
-   2. 在Windows系统中，在用户目录下创建一个名为`pip`的文件夹（例如：`C:\Users\xx\pip`），新建文件`pip.ini`，内容如下：
-```
-[global]
-index-url = https://pypi.tuna.tsinghua.edu.cn/simple
-```
+
 
 ## 版本切换
 
 https://blog.csdn.net/lly1122334/article/details/126846882
 
-
-
-
 ```
 python3.8-distutils
+```
+
+
+##  其他
+
+```bash
+ sudo apt install libmysqlclient-dev
 ```
