@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "其它/RESTful API.md",
+                "file": "server/快速翻墙命令.md",
                 "mode": "source",
                 "source": false
               }
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "其它/RESTful API.md",
+                "file": "server/快速翻墙命令.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "其它/RESTful API.md",
+                "file": "server/快速翻墙命令.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "其它/RESTful API.md"
+                "file": "server/快速翻墙命令.md"
               }
             }
           }
@@ -158,10 +158,11 @@
   },
   "active": "19c0af0a9bc1c285",
   "lastOpenFiles": [
+    "其它/WSL.md",
+    "其它/RESTful API.md",
     "WebBackend/Python/Streamlit App with PyCharm and WSL2.md",
     "WebBackend/Python/Python虚拟环境创建.md",
     "WebBackend/Python/Python环境搭建.md",
-    "其它/WSL.md",
     "其它/代理设置.md",
     "server/常用软件安装.md",
     "server/rustdesk中继服务器的docker镜像.md",
@@ -178,7 +179,6 @@
     "Scripts/校园分享会.md",
     "DBMS/向量数据库.md",
     "DBMS/数据库基本概念.md",
-    "其它/RESTful API.md",
     "WebBackend/Python",
     "WebFrontend/Untitled",
     "WebBackend/Java/JVM.md",
