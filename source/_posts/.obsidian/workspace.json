@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "1e3769a6475bd56d",
+        "id": "d39c8ceb0c6cea4e",
         "type": "tabs",
         "children": [
           {
-            "id": "19c0af0a9bc1c285",
+            "id": "87a51e6ae28e9e96",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "server/快速翻墙命令.md",
+                "file": "server/面板.md",
                 "mode": "source",
                 "source": false
               }
@@ -48,7 +48,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#Python",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -93,7 +93,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "server/快速翻墙命令.md",
+                "file": "server/面板.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -110,7 +110,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "server/快速翻墙命令.md",
+                "file": "server/面板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -133,7 +133,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "server/快速翻墙命令.md"
+                "file": "server/面板.md"
               }
             }
           }
@@ -147,46 +147,50 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
+      "templates:Insert template": false,
       "graph:Open graph view": false,
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
+      "switcher:Open quick switcher": false,
       "command-palette:Open command palette": false,
       "templater-obsidian:Templater": false
     }
   },
-  "active": "19c0af0a9bc1c285",
+  "active": "87a51e6ae28e9e96",
   "lastOpenFiles": [
-    "其它/WSL.md",
-    "其它/RESTful API.md",
-    "WebBackend/Python/Streamlit App with PyCharm and WSL2.md",
-    "WebBackend/Python/Python虚拟环境创建.md",
-    "WebBackend/Python/Python环境搭建.md",
-    "其它/代理设置.md",
     "server/常用软件安装.md",
-    "server/rustdesk中继服务器的docker镜像.md",
-    "server/Linux备忘录.md",
-    "server/DNS记录类型.md",
+    "server/快速翻墙命令.md",
     "server/面板.md",
     "server/防火墙.md",
-    "server/快速翻墙命令.md",
-    "Scripts/Untitled.md",
-    "Scripts/视频剪辑思路.md",
-    "Scripts/这些实习期间的个人总结.md",
+    "server/Linux备忘录.md",
+    "WebBackend/Python/LLMOps/LLMOps.md",
+    "其它/代理设置.md",
+    "server/rustdesk中继服务器的docker镜像.md",
+    "WebBackend/Python/Python环境搭建.md",
     "WebBackend/Python/Python  orm 连接MySQL数据库.md",
-    "WebBackend/Java 和 Python 异构模块数据传输.md",
-    "Scripts/校园分享会.md",
-    "DBMS/向量数据库.md",
-    "DBMS/数据库基本概念.md",
+    "WebBackend/Python/LLMOps/Vector database.md",
+    "WebBackend/Python/LLMOps/Sentence Embeddings.md",
+    "WebBackend/Python/Streamlit App with PyCharm and WSL2.md",
+    "WebBackend/Python/Python虚拟环境创建.md",
+    "其它/WSL.md",
+    "WebBackend/Python/LLMOps/NPL.md",
+    "WebBackend/Python/LLMOps/Langchain.md",
+    "WebBackend/Python/LLMOps/FAISS.md",
+    "2023-05-31.md",
+    "Untitled.canvas",
+    "WebBackend/Python/LLMOps/LLM方案.canvas",
+    "编程范式/编程范式的归类.md",
+    "WebBackend/Python/gpt/Untitled",
+    "().md",
+    "2023-05-29.md",
+    "WebBackend/Python/LLMOps",
+    "Scripts/视频剪辑思路.md",
+    "Scripts/数字人.md",
+    "Scripts/这些实习期间的个人总结.md",
+    "其它/RESTful API.md",
     "WebBackend/Python",
     "WebFrontend/Untitled",
-    "WebBackend/Java/JVM.md",
-    "编程范式/编程范式的归类.md",
-    "编程范式/面向对象/MVC设计模式.md",
     "编程范式/面向对象",
-    "编程范式/未命名.md",
-    "设计模式&架构模式/未命名.md",
     "编程范式",
     "WebBackend/Java/basis"
   ]

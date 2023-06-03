@@ -5,7 +5,7 @@ categories:
 tags:
  - ''
 data: 2023-05-28 20:46:27
-updated: 2023-05-28 20:46:27
+updated: 2023-05-29 12:33:08
 ---
 
 ## 运行Python脚本
@@ -31,5 +31,6 @@ run test.py [ARGUMENTS]
 8. 在 "Python interpreter" 下拉菜单中选择在 WSL 中设置的 Python 解释器。
 
 9. 点击 "OK" 以保存配置。
+
 
 ![image.png](https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/202305282048933.png)

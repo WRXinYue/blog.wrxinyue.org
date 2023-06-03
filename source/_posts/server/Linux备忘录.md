@@ -1,7 +1,7 @@
 ---
 title: Linux备忘录
 date: 2022-10-17 23:59:52.0
-updated: 2023-05-24 21:53:26
+updated: 2023-05-29 01:02:45
 url: /archives/linux-bei-wang-lu
 categories: 
 - Linux
@@ -66,6 +66,11 @@ vi保存命令。
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh  
 sudo sh get-docker.sh
+```
+
+国内镜像:
+```cpp
+curl -sSL http://acs-public-mirror.oss-cn-hangzhou.aliyuncs.com/docker-engine/internet | sh -
 ```
 
 **查看发行版和版本**：
