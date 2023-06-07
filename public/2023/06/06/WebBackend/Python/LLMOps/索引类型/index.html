@@ -1,0 +1,29 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>索引类型 | WRXinYue's Blog</title><script>var config = {"root":"/","search":{"preload":false,"activeHolder":"Enter here","blurHolder":"Search the blog","noResult":"Data \"$0\" not found"},"code":{"codeInfo":"$0 - $1 lines","copy":"copy","copyFinish":"copied","expand":"expand"}}</script><script src="//unpkg.com/mermaid@9.2.2/dist/mermaid.min.js"></script><script>mermaid.initialize({
+ startOnLoad: true
+ , theme: 'dark'
+});</script><link rel="stylesheet" href="/css/arknights.css"><link rel="stylesheet" href="//unpkg.com/@highlightjs/cdn-assets@11.6.0/styles/atom-one-dark-reasonable.min.css"><style>@font-face {
+ font-family: BenderLight;
+ src: local('Bender'), url("/font/BenderLight.ttf");
+}
+@font-face {
+ font-family: 'JetBrains Mono';
+ src: local('JetBrains Mono'), url('/font/JetBrainsMono-Regular.woff2') format('woff2');
+}</style><meta name="generator" content="Hexo 6.3.0"></head><body style="background-image:url(https://ak.hypergryph.com/assets/index/images/ak/pc/bk.jpg);"><main><header class="closed"><nav><div class="navBtn hide"><i class="navBtnIcon"><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span><span class="navBtnIconBar"></span></i></div><ol class="navContent"><li class="navItem" id="search-header"><span class="navItemTitle"><input autocomplete="off" autocorrect="off" autocapitalize="none" placeholder="Search the blog" spellcheck="false" maxlength="50" type="text" id="search-input"></span></li><li class="navItem"><a class="navBlock" href="/"><span class="navItemTitle">Home</span></a></li><li class="navItem" matchdata="categories,tags"><a class="navBlock" href="/archives/"><span class="navItemTitle">Archives</span></a></li><li class="navItem"><a class="navBlock" href="/about/"><span class="navItemTitle">About</span></a></li><li class="navItem"><a class="navBlock" href="/contact/"><span class="navItemTitle">Contact</span></a></li></ol></nav><div class="search-popup"><div id="search-result"></div></div></header><article><div id="post-bg"><div id="post-title"><h1>索引类型</h1><div id="post-info"><span>First Post: <div class="control"><time datetime="2023-06-06T08:03:02.805Z" id="date"> 2023-06-06</time></div></span><br><span>Last Update: <div class="control"><time datetime="2023-06-06T08:03:37.000Z" id="updated"> 2023-06-06</time></div></span></div></div><hr><div id="post-content"><p>索引类型：</p>
+<ul>
+<li>HNSW（Hierarchical Navigable Small World）：性能高、精确度高、内存消耗大。适用于需要同时追求性能和精确度，且有充足资金支持的大规模数据集。</li>
+<li>FLAT：不压缩向量，保证精确搜索结果，性能稍低但精确度最高，内存消耗次于HNSW。适用于对精确度要求高、对性能要求不高且数据集相对较小的情况（不建议在大规模数据集中使用，因为它会将所有数据一一比对）。</li>
+<li>IVF_FLAT：类似调表的索引，将向量数据划分为多个组，通过比较目标输入向量与每个聚类中心的距离来查询数据。查询时可以设置nprobe参数，选择最接近搜索向量的几个组进行逐个比对。相对节省资源，对精确度有一定损失。</li>
+<li>推荐参数设置：<ul>
+<li>nlist：建议设为4 × sqrt(n)，其中n表示数据集中的实体数量。</li>
+<li>nprobe：根据实际情况调节。</li>
+</ul>
+</li>
+</ul>
+<p>其他索引类型：</p>
+<ul>
+<li>IVF_SQ8：具有数据压缩功能（内存节省70-75%），适用于资源受限的情况下代替IVF_FLAT，但精确度会降低。</li>
+<li>IVF_PQ：将高维数据转化为多个低维数据，进一步节省资源，但精确度更低。</li>
+<li>ANNOY：树形索引，适用于低维度向量。关于其适用范围和特点没有具体介绍。</li>
+<li>DISKANN：磁盘索引，内存消耗最小，但需要高性能的SSD，并需要自行编译。实际上还是需要部分内存，大约是全部数据的1&#x2F;6。</li>
+</ul>
+<div id="paginator"></div></div><div id="post-footer"><div id="pages"><div class="footer-link" style="width: 50%;text-align:right;border-right:1px #fe2 solid"><a href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/">← Next 距离计算公式</a></div><div class="footer-link" style="width: 50%;right:1px;border-left:1px #fe2 solid"><a href="/2023/06/05/%E5%85%B6%E5%AE%83/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/">VIM常用命令 Prev →</a></div></div></div></div><div id="bottom-btn"><a id="to-index" href="#toc-div" title="Catalog">≡</a><a id="to-top" onClick="scrolls.scrolltop();" title="to top" style="opacity: 0; display: none;">∧</a></div></article><aside><div id="aside-top"><div id="about"><a href="/" id="logo"><img src="https://ak.hypergryph.com/assets/index/images/ak/pc/faction/1.png" alt="Logo"></a><h1 id="Dr"><a href="/">WRXinYue</a></h1><div id="description"><p></p></div></div><div id="aside-block"></div></div><footer><nobr>Published with <a target="_blank" rel="noopener" href="http://hexo.io">Hexo</a></nobr><wbr><nobr> Theme <a target="_blank" rel="noopener" href="https://github.com/Yue-plus/hexo-theme-arknights">Arknight</a></nobr><wbr><nobr>by <a target="_blank" rel="noopener" href="https://github.com/Yue-plus">Yue_plus</a></nobr></footer></aside></main><canvas id="canvas-dust"></canvas><script src="/js/search.js"></script><script class="pjax-js">reset=_=>{code.findCode();mermaid.init(undefined, ('.mermaid'));}</script><script src="/js/arknights.js"></script><script>window.addEventListener("load",()=>{reset()})</script></body></html>

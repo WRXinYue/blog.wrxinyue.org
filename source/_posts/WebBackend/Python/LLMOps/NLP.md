@@ -3,12 +3,12 @@ title: OpenAi Embeddings
 categories:
  - WebBackend/Python/LLMOps
 tags:
- - NPL
+ - NLP
 data: 2023-05-30 10:45:30
 updated: 2023-05-31 16:14:58
 ---
 
-##  什么是NPL
+##  什么是NLP
 不完全是。NLP（自然语言处理）是一个广泛的领域，研究计算机如何理解、分析和生成人类语言。词嵌入和上下文化词表示模型只是 NLP 领域的一部分。
 
 预训练词嵌入（如 Word2Vec、GloVe 和 FastText）将词汇转换为固定大小的数值向量，这些向量可以捕捉单词之间的语义和句法关系。它们通常是非语境化的，即每个单词都有一个固定的向量表示，而不考虑其在特定句子或上下文中的用法。
