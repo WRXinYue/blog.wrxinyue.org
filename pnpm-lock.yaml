@@ -1,5 +1,9 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   hexo:
     specifier: ^6.3.0
@@ -40,17 +44,15 @@ dependencies:
   hexo-util:
     specifier: ^3.0.1
     version: 3.0.1
+  husky:
+    specifier: ^8.0.3
+    version: 8.0.3
   pnpm:
     specifier: ^8.6.2
     version: 8.6.2
   save-dev:
     specifier: 0.0.1-security
     version: 0.0.1-security
-
-devDependencies:
-  husky:
-    specifier: ^8.0.3
-    version: 8.0.3
 
 packages:
 
@@ -1348,7 +1350,7 @@ packages:
     resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
     engines: {node: '>=14'}
     hasBin: true
-    dev: true
+    dev: false
 
   /iconv-lite@0.4.24:
     resolution: {integrity: sha512-v3MXnZAcvnywkTUEZomIActle7RXXeedOR31wwl7VlyoXO4Qi9arvSenNQWne1TcRwhCL1HwLI21bEqdpj8/rA==}

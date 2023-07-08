@@ -1,0 +1,188 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>向量数据库 | Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="向量数据库是一种专门用于存储和查询向量数据的数据库。它们可以处理高维度、大规模的向量数据，并提供高效的相似性搜索功能。在传统的关系型数据库中，数据通常以表格形式存储，而向量数据库则将数据表示为向量，这有助于更加准确地描述数据之间的相似性。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="向量数据库">
+<meta property="og:url" content="http://example.com/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:description" content="向量数据库是一种专门用于存储和查询向量数据的数据库。它们可以处理高维度、大规模的向量数据，并提供高效的相似性搜索功能。在传统的关系型数据库中，数据通常以表格形式存储，而向量数据库则将数据表示为向量，这有助于更加准确地描述数据之间的相似性。">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-04-18T08:39:20.315Z">
+<meta property="article:modified_time" content="2023-04-18T08:40:32.000Z">
+<meta property="article:author" content="user">
+<meta property="article:tag" content="ChatGpt">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: '向量数据库',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-18 16:40:32'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">向量数据库</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-18T08:39:20.315Z" title="Created 2023-04-18 16:39:20">2023-04-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-18T08:40:32.000Z" title="Updated 2023-04-18 16:40:32">2023-04-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/DBMS/">DBMS</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="向量数据库"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><p>向量数据库是一种专门用于存储和查询向量数据的数据库。它们可以处理高维度、大规模的向量数据，并提供高效的相似性搜索功能。在传统的关系型数据库中，数据通常以表格形式存储，而向量数据库则将数据表示为向量，这有助于更加准确地描述数据之间的相似性。</p>
+<span id="more"></span>
+
+<p>向量数据库可以应用于多个领域，如计算机视觉、自然语言处理、推荐系统等。例如，在图像搜索中，我们可以将每张图片表示为一个向量，然后使用向量数据库来快速找到与输入图片最相似的其他图片。在推荐系统中，我们也可以使用向量数据库来查找与用户喜好最相似的商品或内容。</p>
+<h1 id="向量数据库检索"><a href="#向量数据库检索" class="headerlink" title="向量数据库检索"></a>向量数据库检索</h1><p>向量数据库检索指的是在向量数据库中针对特定查询向量进行相似性搜索的过程。在向量数据库中，每个向量数据都被表示为一个向量，并且每个向量都有一个唯一的ID。当执行向量检索时，首先将查询向量转换为向量形式，然后通过相似性函数计算每个向量与查询向量之间的相似度。最后，将所有向量按照相似度排序，以找到最相似的向量。</p>
+<p>在执行向量检索时，需要选择相应的相似性函数来计算向量之间的相似度。常见的相似性函数包括余弦相似度、欧几里得距离、曼哈顿距离等。同时，还可以使用一些加速技术，如局部敏感哈希（LSH）和树型结构（如KD-Tree），来加快相似性搜索过程。</p>
+<h1 id="关于ANN"><a href="#关于ANN" class="headerlink" title="关于ANN"></a>关于ANN</h1><p>ANN是Approximate Nearest Neighbor的缩写，中文翻译为“近似最近邻”。它是一种基于向量相似度的搜索技术，用于在大规模高维度数据集中进行高效的相似性搜索。ANN可以解决传统最近邻搜索（exact nearest neighbor）难以应对的高维问题，即使是亿级别的数据集也能够快速检索。</p>
+<p>与传统精确最近邻搜索不同，ANN允许返回近似最近邻结果，这意味着虽然结果不是100%准确的，但其可能非常接近真实答案，并且差异可以被可控制和调整。通过牺牲一定的精确度，ANN可以显著提高查询速度和存储效率。</p>
+<p>ANN通常使用一些加速技术来实现高效的相似性搜索。其中一些方法包括局部敏感哈希（LSH）、树型结构（如KD-Tree、Ball-Tree）、保序回归等。这些方法都旨在将数据划分为多个子空间，以便更快地查找最相似的向量。</p>
+<h1 id="常见的向量数据库"><a href="#常见的向量数据库" class="headerlink" title="常见的向量数据库"></a>常见的向量数据库</h1><p>Faiss, Annoy<br>Milvus：世界上最快的向量数据库<br>Pinecone，这个提供 Google Cloud 或 AWS 的托管服务<br>Qdrant，开源版及商业版都有<br>pgvector，PostgreSQL 的扩展</p>
+<h1 id="实现ChatGPT与向量数据库的集成"><a href="#实现ChatGPT与向量数据库的集成" class="headerlink" title="实现ChatGPT与向量数据库的集成"></a>实现ChatGPT与向量数据库的集成</h1><ol>
+<li><p>选择一个向量数据库：首先选择一个向量数据库，如Faiss, Annoy, 或者Milvus。根据你的需求和场景，选择适合你项目的向量数据库。</p>
+</li>
+<li><p>使用OpenAI API：要使用ChatGPT，你需要访问OpenAI的API。在Java中，你可以使用Java的HTTP客户端（如Apache HttpClient或OkHttp）来与API进行交互。</p>
+</li>
+<li><p>将文本转换为向量：在将文本发送给ChatGPT之前，你需要将其转换为向量。这可以通过诸如Hugging Face的Transformers库实现。不过，Transformers库是Python的，因此你需要找到一个Java实现或使用类似于Jep的工具将Python代码嵌入到Java应用中。</p>
+</li>
+<li><p>存储向量：使用所选的向量数据库将生成的向量存储起来。这可能需要为Java编写或找到一个客户端库，以便与向量数据库进行交互。</p>
+</li>
+<li><p>查询向量数据库：根据需求，你可能需要查询向量数据库以找到与输入文本最相关的内容。这通常涉及计算输入文本向量与数据库中向量之间的相似度。向量数据库通常会提供查询功能来实现这一点。</p>
+</li>
+</ol>
+<p>以下是一个简化的Java实现示例，展示了如何与OpenAI API进行交互以及与向量数据库的集成：</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">import</span> okhttp3.*;<br><span class="hljs-keyword">import</span> org.json.*;<br><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">ChatGPTIntegration</span> &#123;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">prompt</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;你好，我想了解Java编程。&quot;</span>;<br>        <span class="hljs-type">String</span> <span class="hljs-variable">apiKey</span> <span class="hljs-operator">=</span> <span class="hljs-string">&quot;your_openai_api_key&quot;</span>;<br>        <br>        <span class="hljs-type">String</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> generateChatGPTResponse(prompt, apiKey);<br>        System.out.println(<span class="hljs-string">&quot;Generated response: &quot;</span> + response);<br><br>        <span class="hljs-comment">// 在此处将文本转换为向量，并将其存储到所选的向量数据库中</span><br>        <span class="hljs-comment">// 还可以在此处执行查询和其他向量数据库操作</span><br>    &#125;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> String <span class="hljs-title function_">generateChatGPTResponse</span><span class="hljs-params">(String prompt, String apiKey)</span> &#123;<br>        <span class="hljs-type">OkHttpClient</span> <span class="hljs-variable">client</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">OkHttpClient</span>();<br>        <span class="hljs-type">MediaType</span> <span class="hljs-variable">JSON</span> <span class="hljs-operator">=</span> MediaType.get(<span class="hljs-string">&quot;application/json; charset=utf-8&quot;</span>);<br>        <br>        <span class="hljs-type">JSONObject</span> <span class="hljs-variable">requestBodyJson</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JSONObject</span>()<br>            .put(<span class="hljs-string">&quot;prompt&quot;</span>, prompt)<br>            .put(<span class="hljs-string">&quot;max_tokens&quot;</span>, <span class="hljs-number">50</span>)<br>            .put(<span class="hljs-string">&quot;temperature&quot;</span>, <span class="hljs-number">0.5</span>);<br><br>        <span class="hljs-type">RequestBody</span> <span class="hljs-variable">requestBody</span> <span class="hljs-operator">=</span> RequestBody.create(requestBodyJson.toString(), JSON);<br>        <span class="hljs-type">Request</span> <span class="hljs-variable">request</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Request</span>.Builder()<br>            .url(<span class="hljs-string">&quot;https://api.openai.com/v1/engines/davinci-codex/completions&quot;</span>)<br>            .addHeader(<span class="hljs-string">&quot;Authorization&quot;</span>, <span class="hljs-string">&quot;Bearer &quot;</span> + apiKey)<br>            .post(requestBody)<br>            .build();<br><br>        <span class="hljs-keyword">try</span> (<span class="hljs-type">Response</span> <span class="hljs-variable">response</span> <span class="hljs-operator">=</span> client.newCall(request).execute()) &#123;<br>            <span class="hljs-type">JSONObject</span> <span class="hljs-variable">jsonResponse</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">JSONObject</span>(response.body().string());<br>            <span class="hljs-keyword">return</span> jsonResponse.getJSONArray(<span class="hljs-string">&quot;choices&quot;</span>).getJSONObject(<span class="hljs-number">0</span>).getString(<span class="hljs-string">&quot;text&quot;</span>);<br>        &#125; <span class="hljs-keyword">catch</span> (IOException e) &#123;<br>            e.printStackTrace();<br>            <span class="hljs-keyword">return</span> <span class="hljs-literal">null</span>;<br>        &#125;<br>    &#125;<br>&#125;<br><br></code></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">user</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/">http://example.com/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/ChatGpt/">ChatGpt</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/18/WebBackend/Java%20%E5%92%8C%20Python%20%E5%BC%82%E6%9E%84%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" title="Java 和 Python 异构模块数据传输"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Java 和 Python 异构模块数据传输</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/18/WebFrontend/Node.js/npm%20%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" title="npm 包管理器"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">npm 包管理器</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E6%A3%80%E7%B4%A2"><span class="toc-number">1.</span> <span class="toc-text">向量数据库检索</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%85%B3%E4%BA%8EANN"><span class="toc-number">2.</span> <span class="toc-text">关于ANN</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E7%9A%84%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93"><span class="toc-number">3.</span> <span class="toc-text">常见的向量数据库</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E7%8E%B0ChatGPT%E4%B8%8E%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93%E7%9A%84%E9%9B%86%E6%88%90"><span class="toc-number">4.</span> <span class="toc-text">实现ChatGPT与向量数据库的集成</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

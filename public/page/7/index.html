@@ -1,0 +1,334 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hello Blog">
+<meta property="og:url" content="http://example.com/page/7/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/7/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-08 23:56:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/25/WebBackend/Java/Java%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E6%96%87%EF%BC%88Company%EF%BC%89/" title="Java面试八股文（Company）">Java面试八股文（Company）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-25T01:35:27.061Z" title="Created 2022-11-25 09:35:27">2022-11-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="content">1. jdk和jre的区别
+jdk是开发工具
+jre是运行环境
+
+2. jdk目录？
+bin-&gt;可执行文件 javac.exe编译   java.exe执行
+lib-&gt;类库包   tools.jar公共类库
+db-&gt;数据库
+include-&gt;包含函数库
+src.zip-&gt;源代码
+
+3. java为什么能跨平台？JVM（java虚拟机）
+4. JVM的工作机制？*.java源文件通过javac.exe编译生成.class的字节码文件。再由java.exe解释执行字节码文件，生成中间代码，显示结果
+5. java是哪种语言派生？又是哪种语言衍生？oak派生，c语言衍生
+6. java有几种基本数据类型各占多少字节？
+
+
+数据类型1
+数据类型2
+占用字节
+
+
+
+byte
+boolean
+1字节
+
+
+char
+short
+2字节
+
+
+int
+float
+4字节
+
+
+long
+double
+8字节
+
+
+7. byte bvar &#x3D; 129;能编译通过吗？如果不能请说明？不能通过编译，因为byte类型的数据取值范围为-128-127，超范围了
+8. shor ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/24/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/MVC%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/" title="MVC设计模式">MVC设计模式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-24T09:56:54.103Z" title="Created 2022-11-24 17:56:54">2022-11-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="content">MVC介绍MVC(Model-View-Controller)是一种软件开发架构模式，包含：Observer(观察者模式),Composite(组合模式)和Strategy(策略模式) 
+MVC 模式的基本思想是数据，显示和处理相分离。模型(Model)负责数据管理，视图(View)负责数据显示，控制器(Controller)负责业务逻辑和响应策略。
+
+模型： 代表应用的业务层。   它是一个携带数据的对象，如果数据发生变化，它还可以包含更新控制器的逻辑。 
+视图： 它代表应用程序的表示层。   它用于可视化模型包含的数据。 
+控制器： 它适用于模型和视图。   它用于管理应用程序流，即模型对象中的数据流，并在数据更改时更新视图。
+
+在 Java 编程中，模型包含简单的 Java 类 ，用于显示数据的视图和包含 servlet的控制器。   由于这种分离，用户请求的处理如下： 
+
+
+客户端（浏览器）向服务器端的控制器发送页面请求。 
+
+然后控制器调用模型。  它收集请求的数据。 
+
+然后控制器将检索到的数据传输到视图层。 
+
+现在结果由视图发送回浏览器（客户端）
+
+
+
+MVC架构把数据 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/23/%E7%AE%97%E6%B3%95&amp;%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" title="时间空间复杂度分析">时间空间复杂度分析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-23T11:44:13.705Z" title="Created 2022-11-23 19:44:13">2022-11-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%AE%97%E6%B3%95/">算法</a></span></div><div class="content">时间复杂度「时间复杂度」(Time complexity)定性描述该算法的运行时间
+
+大O符号表示法(BigO))：
+
+T(n) &#x3D; O(f(n))表示一个算法的渐进时间复杂度，f(n)表示代码次数之和，O表示正比例关系
+123for (int i = 1; i &lt;= i;i++) &#123;    x++;&#125;
+
+因为循环次数为n，时间为n单位，所以算法的「时间复杂度」可以表示为：T (n) &#x3D; O(n)。
+O(n²)i总共需要n层循环，在每一次内层循环中，j 也会循环n次
+12345for (int i = 1; i &lt;= n; i++) &#123;    for (int j = 1; j &lt;= n; j++) &#123;        x++;    &#125;&#125;
+
+
+
+O(n + n²)上面两个算法并和：
+12345678for (int i = 1; i &lt;= n; i++) &#123;    x++;&#125;for (int i = 1; i &lt;= n; i++) &#123;    for ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/10/WebBackend/Java/Java%E7%BB%A7%E6%89%BF/" title="Java继承">Java继承</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-10T11:59:51.163Z" title="Created 2022-11-10 19:59:51">2022-11-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">Introduction继承（inheritance）。继承的基本思想是，可以基于已有的类创建新的类。继承已存在的类就是复用（继承）这些类的方法，而且可以增加一些新的方法和字段，是新类能够适应新的情况。
+Class、superclass and subclass定义subclass继承Employee类来定义Manager类，这里使用关键字extends表示继承。
+1234public class Manager extends Employee&#123;    added methods and fields&#125;
+
+
+C++&#x2F;C# 注：Java与C++定义继承的方式十分相似。Java用关键字替代了C++和C#中的冒号( : )。在Java中，所有继承都是公开继承。 
+
+关键字extends表明正在构造的新类派生于一个存在的类。
+已存在的类称为：超类(superclass)、基类(base class)或父类(parent class);
+新类称为：子类(subclass)、派生类(derived class)或孩子类(child class)
+
+注：前缀**超(s ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/03/WebBackend/Java/File%E7%B1%BB/" title="File类">File类</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-03T10:47:55.459Z" title="Created 2022-11-03 18:47:55">2022-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">构造方法12345678910111213//方式1 new File(String pathname)	//根据文件路径名String path = &quot;D:\\Demo\\new.txt&quot;;File file = new File(path); //方式2 new File(String parent, String child) //根据父目录+子路径构建String parentPath = &quot;D:\\Demo&quot;;String fileName = &quot;new.txt&quot;;File file = new File(parentPath, fileName);//方式3 new File(File parent,String child) //根据父目录文件+子路径构造File parentFile = new File(&quot;D:\\Demo&quot;);String fileName = &quot;new.txt&quot;;File file = new File(parentFile, fileName);
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/03/WebBackend/Java/Java%E6%B3%9B%E5%9E%8B/" title="Java泛型">Java泛型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-03T10:47:55.459Z" title="Created 2022-11-03 18:47:55">2022-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">java 中泛型标记符：
+
+E - Element (在集合中使用，因为集合中存放的是元素)
+T - Type（Java 类）
+K - Key（键）
+V - Value（值）
+N - Number（数值类型）
+？ - 表示不确定的 java 类型
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/03/WebBackend/Java/Java%E9%9B%86%E5%90%88/" title="Java集合">Java集合</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-03T10:47:55.459Z" title="Created 2022-11-03 18:47:55">2022-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">数组声明数组变量12dataType[] arrayRefVar;   // Java风格，首选方法dataType arrayRefVar[];   // C、C++风格，可以用但不是首选
+
+创建数组123arrayRefVar = new dataType[arraySize];//1、使用 dataType[arraySize] 创建了一个数组。//2、把新创建的数组的引用赋值给变量 arrayRefVar
+
+数组变量声明和创建数组一条语句实现
+123dataType[] arrayRefVar = new dataType[arraySize];dataType[] arrayRefVar = &#123;value0, value1, ..., valuek&#125;;
+
+For-Each循环1234for(type element: array)&#123;    System.out.println(element);&#125;
+
+等价于：
+123for(type element = 0; element &lt; array.size(); i++)&#123;   ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/11/03/WebBackend/Java/Java%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/" title="Java面向对象">Java面向对象</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-03T10:47:55.459Z" title="Created 2022-11-03 18:47:55">2022-11-03</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">简介
+面向对象程序设计(object-oriented programming,OPP)
+
+一个程序就是一个世界，有很多事物(对象[属性,行为])
+
+
+类(class)与对象(object)类：是对象一个模板（抽象的概念集合），定义属性和行为(方法)
+
+1234class 类名称 &#123;    属性（变量）;    行为（方法）;&#125;
+
+
+
+
+注：
+
+属性是类的组成部分，一般是基本数据类型，也可以是引用类型(对象，数组)
+
+属性的定义：set&#x2F;get方法名，去掉set&#x2F;get后，把剩余的部分首字母改为小写后，即为这个类的属性
+例如：
+1234567public class student&#123;　　public String getName()&#123;　　　　return &quot;Hello World&quot;;　　&#125;&#125;//成员变量：无//属性：name
+
+所以,成员变量!&#x3D;属性，还有个叫法实例字段(instance field)
+
+
+
+对象：是类的一个实例，每个对象拥有自己独立的属性(数据)，依靠属性来区 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/10/17/server/Linux%E5%A4%87%E5%BF%98%E5%BD%95/" title="Linux备忘录">Linux备忘录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-17T15:59:52.000Z" title="Created 2022-10-17 23:59:52">2022-10-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Linux/">Linux</a></span></div><div class="content">安装命令12345678910111213141516171819202122-bash: ar: command not found #Debianapt-get install binutils-aarch64-linux-gnu #Ubuntuapt-get install binutils-aarch64-linux-gnu #Arch Linuxpacman -S binutils-aarch64-linux-gnu #Kali Linuxapt-get install binutils-aarch64-linux-gnu #CentOSyum install binutils-aarch64-linux-gnu #Fedoradnf install binutils-aarch64-linux-gnu #Raspbianapt-get install binutils-aarch64-linux-gnu
+
+
+VI编辑器vi保存命令。
+
+按ESC键 跳到命令模式，然后：
+:w 保存文件但不退出vi
+:w file 将修改另外保存到file中，不退出vi
+:w! 强制保存，不推 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/10/17/WebFrontend/JavaScript/Promise%E7%AC%94%E8%AE%B0/" title="Promise 笔记">Promise 笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-17T15:49:40.000Z" title="Created 2022-10-17 23:49:40">2022-10-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">Promise介绍promise是一个异步编程的一种解决方式，专门用于解决回调函数出现的回调地狱情况。
+抽象表达：
+
+Promise是一门新的技术（ES6规范）
+Promise是JS中进行异步编程的新解决方法（旧方案是单纯使用回调函数）
+
+具体表达：
+
+从语法上来说：Promise是一个构造函数
+从功能上来说：promise对象用来封装一个异步操作并可以获取成功&#x2F;失败的结果值
+
+
+fs 文件操作
+1require(&#x27;fs&#x27;).readFile(&#x27;./index.html&#x27;,(err,data)=&gt;&#123;&#125;)
+
+数据库操作
+AJAX
+1$.get(&#x27;/server&#x27;,(data)=&gt;&#123;&#125;)
+
+定时器
+1setTimeout(()=&gt;&#123;&#125;,2000);
+
+Promise 初体验使用回调函数：
+12345678910111213141516171819202122232425262728293031323334353637383940&lt;!DOC ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/6/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/6/#content-inner">6</a><span class="page-number current">7</span><a class="page-number" href="/page/8/#content-inner">8</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/8/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

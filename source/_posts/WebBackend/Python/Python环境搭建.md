@@ -5,7 +5,7 @@ categories:
 tags:
  - ''
 data: 2023-05-24 10:34:45
-updated: 2023-05-25 18:57:09
+updated: 2023-06-29 20:41:28
 ---
 
 ## 安装CUDA + NVCC
@@ -106,3 +106,6 @@ python3.8-distutils
 ```bash
  sudo apt install libmysqlclient-dev
 ```
+
+
+1. [生成requirements.txt文件](https://blog.csdn.net/Xuanze_xx/article/details/107948638)

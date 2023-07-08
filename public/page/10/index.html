@@ -1,0 +1,399 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hello Blog">
+<meta property="og:url" content="http://example.com/page/10/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/10/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-08 23:56:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/05/WebFrontend/UI/BootStrap/" title="BootStrap">BootStrap</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-05T03:12:00.000Z" title="Created 2022-08-05 11:12:00">2022-08-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">BootStrapBootStrap 介绍Bootstrap是一套现成的CSS样式集合。
+BootStrap是最受欢迎的HTML、CSS和JS框架，用于开发响应式布局、移动设备优先的WEB项目。
+BootStrap 特点
+简洁、直观、强悍的前端开发框架，html、css、JavaScript工具集，让web开发更迅速，简单。
+基于html5、css3的bootstrap，具有大量的诱人特性：友好的学习曲线，卓越的兼容性，响应式设计，12列格网，样式向导文档。
+自定义jQuery插件，完整的类库，bootstrap3基于Less，bootstrap4基于Sass的CSS预处理技术
+Bootstrap响应式布局设计，让一个网站可以兼容不同分辨率的设备。Bootstrap响应式布局设计，给用户提供更好的视觉使用体验。
+丰富的组件
+
+下载与使用
+下载：https://getbootstrap.com/
+
+下载完成后
+拷贝dist&#x2F;css中的bootstrap.min.css到项目css中
+拷贝dist&#x2F;js中的bootstrap.min.js到项目的js中
+
+下载jQuer ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/05/WebFrontend/UI/HTML5%E5%B8%83%E5%B1%80/" title="HTML5布局">HTML5布局</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-04T18:37:33.000Z" title="Created 2022-08-05 02:37:33">2022-08-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">HTML5布局传统的HTML布局一直以来，网页设计人员都利用&lt;div&gt;元素将页面中的相关元素集中在一起（比如那些组成页眉、文章、页脚、侧边栏的元素），并使用class或id特性来指定&lt;div&gt;在页面结构中的作用
+
+新的HTML5布局元素HTML5引入了一组新的元素，这些元素允许对页面各个部分进行分割。它们的名称直接表明了其中包含的内容。
+
+页眉和页脚&lt;header&gt; &lt;footer&gt;&lt;header&gt; 和 &lt;footer&gt;元素可以用作：
+
+
+网站中出现在每个页面顶部的主页眉或底部的主页脚
+页面中单独的&lt;article&gt;或&lt;section&gt;中的页眉或页脚。
+
+
+123456789101112&lt;header&gt;    &lt;h1&gt;WRXinYue&#x27;s blog&lt;/h1&gt;    &lt;nav&gt;        &lt;ul&gt;            &lt;li&gt;&lt;a href=&quot;&quot; class= &quot;curr ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/05/WebFrontend/UI/CSS3%E7%AC%94%E8%AE%B0/" title="CSS3笔记">CSS3笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-04T17:44:58.000Z" title="Created 2022-08-05 01:44:58">2022-08-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">CSS简介理解CSS：设想元素周围有一个盒子CSS允许你创建规则，来控制每个盒子（以及盒子中的内容）的呈现方式。
+CSS将样式规则与HTML元素关联CSS通过将规则与HTML元素相关联的方式来工作。这些规则用来控制指定元素中的内容如何显示。一条CSS规则包含两个部分：一个选择器和一条声明
+
+这条规则表明所有&lt;p&gt;元素都应该用Arial字体来显示。
+选择器表明要应用规则的元素。同一条规则可以应用在多个元素上，前提是你需要将这些元素名用逗号隔开。
+声明用于表明应该如何显示选择器指明的元素。声明分为两个部分（属性和值）并以冒号作为分隔符。
+CSS属性会影响元素的显示方式CSS声明位于花括号中，而且每条声明都由两部分组成：属性和值，两者由冒号隔开。可在一条声明内指定多个属性，各属性之间用分号隔开。
+123h1, h2，h3 &#123;    font-family: Arial;    color: yellow;&#125;  /* 属性：值 */
+
+上面这条规则表明所有的&lt;h1&gt;元素、&lt;h2&gt;元素和&lt;h3&gt;元素将以黄色的Arial字体显示。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/31/%E5%8D%9A%E5%AE%A2/Alist%E7%BE%8E%E5%8C%96/" title="Alist美化">Alist美化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-31T15:30:40.000Z" title="Created 2022-07-31 23:30:40">2022-07-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">Alist官网
+效果:
+参考以下API：aplayer、metinglive2d-widget
+代码：head：
+1234567891011121314151617181920212223242526272829303132333435363738&lt;style&gt;    .chakra-ui-light&#123;      background-image: url(&quot;https://www.dmoe.cc/random.php&quot;) !important;      background-repeat:no-repeat;background-size:cover;background-attachment:fixed;background-position-x:center;    &#125;    .main-box &#123;      border-radius: 15px !important;    &#125;    .chakra-ui-light .main-box &#123;      background-color: #ff ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/31/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%83%8F%E7%B4%A0%E6%95%99%E7%A8%8B/" title="像素教程 84P">像素教程 84P</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-31T05:33:52.000Z" title="Created 2022-07-31 13:33:52">2022-07-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="content">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/30/WebFrontend/UI/HTML5%E7%AC%94%E8%AE%B0/" title="HTML5笔记">HTML5笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-29T16:00:04.000Z" title="Created 2022-07-30 00:00:04">2022-07-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">复习以下HTML和CSS基础知识，参考书籍：《HTML&amp;CSS设计与构造网站》
+结构HTML描述页面的结构HTML代码由包括含在尖括号种的字符构成，这些代码称为HTML元素。元素通常由两个标签构成：一个起始标签和一个结束标签（结束标签要多一个斜杠）。每个HTML元素都会向浏览器传达起始标签和结束标签之间的内容的结构信息。
+标签的作用就像是容器。它们告诉你起始标签和结束标签之间的内容的结构信息。
+
+
+
+特性特性提供有关元素中内容的附加信息。它们出现在元素起始标签中，并由特性名称和特性值组成，中间由等号隔开。
+
+文本
+结构化标记：用来描述标题和段落的元素。
+语义化标记：表达特定含义的标记。
+
+标题123&lt;h1&gt;&lt;/h1&gt;~&lt;h6&gt;
+
+粗体斜体12&lt;b&gt;&lt;/b&gt; //粗体&lt;i&gt;&lt;/i&gt;	//斜体
+
+上标和下标12&lt;sup&gt;&lt;/sup&gt;//如2²&lt;sub&gt;&lt;/sub&gt;//如H₂O
+
+空白当浏览器遇到两个或两个以上的连续空格时，只将其显示为一个空格。这一特性 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/25/WebBackend/C#/5.%E7%B1%BB%E7%9A%84%E5%9F%BA%E6%9C%AC%E6%A6%82%E5%BF%B5/" title="5.类的基本概念">5.类的基本概念</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-25T15:56:39.000Z" title="Created 2022-07-25 23:56:39">2022-07-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-NET/">C#/.NET</a></span></div><div class="content">类的概述类是一种活动的数据结构程序的数据和功能被组织为逻辑上相关的数据项和函数的封装集合，并成为类。
+类是一个能存储数据并执行代码的数据结构。它包含数据成员和函数成员：
+
+
+数据成员	它存储与类或类的实例相关的数据。
+函数成员    代码执行
+
+
+
+声明类类型int、double和char由C#定义。但像Dealer和Player这样的类不是由语言定义，如果使用它们就必须通过编写类的声明来定义它们：
+
+
+类的名称；
+类的成员；
+类的特征。
+
+
+实例：
+12345678关键字	类名&#123;    成员声明&#125;class MyExcellentClss&#123;    ...&#125;
+
+类成员字段和方式是最重要的类成员类型。字段是数据成员，方法是函数成员。
+C#在类型的外部不能声明全局变量（也就是变量或字段）。所有的字段都属于类型，而且必须在类型声明内部声明。
+字段字段是隶属于类的变量：
+
+
+它可以是任意类型，无论是预定义类型还是用户定义类型。
+和所有变量一样，字段用来保存数据，并具有如下特征：
+可以被写入；
+可以被读取。
+
+
+
+
+实例：
+12345678类型	字段名称; ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/24/WebBackend/C#/4.%E7%B1%BB%E5%9E%8B%E3%80%81%E5%AD%98%E5%82%A8%E9%87%8F%E5%92%8C%E5%8F%98%E9%87%8F/" title="4.类型、存储量和变量">4.类型、存储量和变量</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-24T15:03:58.000Z" title="Created 2022-07-24 23:03:58">2022-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-NET/">C#/.NET</a></span></div><div class="content">C#程序是一组类型声明C程序可以说是一组函数和数据类型，C++程序是一组函数和类，而C#程序是一组类型声明。
+
+C#程序或DLL的源代码是一组类型声明。
+对于可执行程序，类型声明中必须有一个包含Main方法的类
+命名空间是一种将相关的类型声明分组并命名的方法。因为程序是一组相关的类型声明，所以通常在你创建的命名空间内部声明程序类型。
+
+12345678910111213namespace MyProgram		//创建新的命名空间&#123;    DeclarationOfTypeA		//声明类型    DeclarationOfTypeB            class C				//声明类型    &#123;        static void Mian()        &#123;            ...        &#125;    &#125;&#125;
+
+类型（数据类型）是一种模板既然C#程序是一组类型声明，那么学习C#就是学习如何创建和使用类型。
+类型由下面的元素定义：
+
+名称；
+用于保存数据成员的数据结构；
+一些行为及约束条件。
+
+
+实例化类型从 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/24/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/Unity/Unity%E7%AC%94%E8%AE%B0%EF%BC%88%E7%B3%BB%E7%BB%9F%E5%AD%A6%E4%B9%A0%EF%BC%89/" title="Unity2017教程笔记（P1到P23，unity页面介绍）">Unity2017教程笔记（P1到P23，unity页面介绍）</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-24T11:54:17.000Z" title="Created 2022-07-24 19:54:17">2022-07-24</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity-%E8%99%9A%E5%B9%BB/">Unity/虚幻</a></span></div><div class="content">坐标
+坐标：X红色、Y绿色、Z蓝色
+世界坐标 ： 整个场景的固定坐标，不随物体旋转而改变
+本地坐标 ：物体自身坐标，随旋转而改变
+
+
+场景 Scenes
+一组相关联的游戏对象的集合，通常游戏中每个关卡就是一个场景，用于展现当前关卡中的所有物体。
+
+游戏对象 GameObject
+运行时出现在场景中的游戏物体
+例如：人物、地形、数目……
+
+是一种容器、可以挂载组件。
+
+父、子物体
+在Hierarchy面板中。将一个物体拖拽到另外一个物体中。
+子物体将继承父物体的移动，旋转和缩放属性，但子物体不影响父物体。
+
+
+组件 Component
+是游戏对象的功能模块。
+每个组件都是一个类的实例。
+Transform 变换组件：决定物体位置、旋转、缩放比。
+Mesh Filter 网络过滤器：用于从资源中获取网络信息。
+Mesh Renderer 网络渲染器 : 从网络过滤器中获得几何形状，对根据变化组件定义的位置进行渲染。
+网格过滤器 与 网格渲染器 联合使用 ，使模型显示到屏幕上。
+
+Project工程对象-Scene场景-GameObject游戏对象（容器）-Component组件（功能）
+材 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/07/23/WebBackend/C#/3.C#%E7%BC%96%E7%A8%8B%E6%A6%82%E8%BF%B0/" title="3.C#编程概述">3.C#编程概述</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-07-23T13:47:45.000Z" title="Created 2022-07-23 21:47:45">2022-07-23</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/C-NET/">C#/.NET</a></span></div><div class="content">一个简单的C#程序windows按下W+R，在运行窗口输入devenv调出VS，然后新建一个项目
+
+选择C#-Windows-控制台应用模板，名称改为SimpleProgram
+
+右键项目文件夹我们在新建一个SimpleProgram的C#脚本
+
+输入代码如下：
+123456789101112using System;	//诉编译器这个应用程序使用System命名空间的类型namespace Simple  //声明一个新命名空间，名称为Simple&#123;    class Program   //声明一个新的类类型，名称为Program    &#123;        static void Main()	//声明一个名称为Main的方法作为类Program的成员        &#123;            Console.WriteLine(&quot;Hello World&quot;);	//只包含一条单独的、简单的语句，这一行组成了Main的方法体        &#125;    &#125;&#125;
+
+标识符标识符是一种字符串，用来命名变量、方法、参数和 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/9/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/9/#content-inner">9</a><span class="page-number current">10</span><a class="page-number" href="/page/11/#content-inner">11</a><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/11/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

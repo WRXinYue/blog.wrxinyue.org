@@ -5,7 +5,7 @@ categories:
 tags:
  - Python
 data: 2023-05-24 22:21:06
-updated: 2023-05-27 14:07:03
+updated: 2023-06-25 12:36:47
 ---
 
 ## Python 虚拟环境
@@ -39,11 +39,16 @@ apt-cache show python3.8-venv
 python3 -m venv django-RESTfulAPI
 ```
 
-激活新的虚拟环境：
+**激活新的虚拟环境：**
 
 ```bash
 source django-RESTfulAPI/bin/activate
+
+[ or powershell ]
+
+.\venv\Scripts\Activate
 ```
+
 
 安装完成后，您可以继续使用这个虚拟环境进行项目开发。如果您要退出虚拟环境，请使用以下命令：
 
@@ -116,6 +121,13 @@ conda deactivate
 **线程性能测试：**
 ```bash
 sysbench cpu --threads=8 --time=0 run
+```
+
+### 添加代理
+
+```bash
+$env:http_proxy = "http://proxy.example.com:port"
+$env:https_proxy = "http://proxy.example.com:port"
 ```
 
 ### [Ubuntu 18.04 中 sudo apt update 的问题：如果 /usr/bin/test -w /var/lib/command-not-found/ 调用成功后](https://askubuntu.com/questions/1041226/problem-with-sudo-apt-update-in-ubuntu-18-04-post-invoke-success-if-usr-bin-te)

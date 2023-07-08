@@ -1,0 +1,191 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>LangChain通过LLM实现QA | Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="向量化: HuggingFaceEmbeddings1234567# Embedding running deviceEMBEDDING_DEVICE &#x3D; &amp;#x27;cuda&amp;#x27; if torch.cuda.is_available() else &amp;#x27;mps&amp;#x27; if torch.backends.mps.is_available() else &amp;#x27;cpu&amp;#x2">
+<meta property="og:type" content="article">
+<meta property="og:title" content="LangChain通过LLM实现QA">
+<meta property="og:url" content="http://example.com/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:description" content="向量化: HuggingFaceEmbeddings1234567# Embedding running deviceEMBEDDING_DEVICE &#x3D; &amp;#x27;cuda&amp;#x27; if torch.cuda.is_available() else &amp;#x27;mps&amp;#x27; if torch.backends.mps.is_available() else &amp;#x27;cpu&amp;#x2">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-06-08T03:10:15.785Z">
+<meta property="article:modified_time" content="2023-06-12T10:24:41.000Z">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'LangChain通过LLM实现QA',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-06-12 18:24:41'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">LangChain通过LLM实现QA</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-06-12T10:24:41.000Z" title="Updated 2023-06-12 18:24:41">2023-06-12</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="LangChain通过LLM实现QA"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="向量化-HuggingFaceEmbeddings"><a href="#向量化-HuggingFaceEmbeddings" class="headerlink" title="向量化: HuggingFaceEmbeddings"></a>向量化: HuggingFaceEmbeddings</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># Embedding running device</span><br>EMBEDDING_DEVICE = <span class="hljs-string">&#x27;cuda&#x27;</span> <span class="hljs-keyword">if</span> torch.cuda.is_available() <span class="hljs-keyword">else</span> <span class="hljs-string">&#x27;mps&#x27;</span> <span class="hljs-keyword">if</span> torch.backends.mps.is_available() <span class="hljs-keyword">else</span> <span class="hljs-string">&#x27;cpu&#x27;</span><br><br><span class="hljs-comment"># 加载本地向量编码器  </span><br>model_name = <span class="hljs-string">&quot;sentence-transformers/all-mpnet-base-v2&quot;</span>  <br>model_kwargs = &#123;<span class="hljs-string">&#x27;device&#x27;</span>: EMBEDDING_DEVICE&#125;  <br>embeddings = HuggingFaceEmbeddings(model_name=model_name, model_kwargs=model_kwargs)<br></code></pre></td></tr></table></figure>
+
+
+<h2 id="向量化存储-FAISS"><a href="#向量化存储-FAISS" class="headerlink" title="向量化存储(FAISS)"></a>向量化存储(FAISS)</h2><h3 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h3><ul>
+<li>创建词嵌入模型（embedding model）  </li>
+<li>可以参考以下链接获取模型：<a target="_blank" rel="noopener" href="https://huggingface.co/spaces/mteb/leaderboard">https://huggingface.co/spaces/mteb/leaderboard</a></li>
+<li>你也可以使用以下链接中的模型：<a target="_blank" rel="noopener" href="https://www.sbert.net/index.html">https://www.sbert.net/index.html</a> </li>
+<li>docs 为传入文本</li>
+</ul>
+<p>会创建新表，并插入数据，表字段是除pk与vactor外，其他需要metadata字段设置好</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># vector_store = FAISS.from_documents(docs, embeddings)</span><br><span class="hljs-comment"># vector_store = FAISS.from_texts(docs, embeddings)</span><br><br>vector_store = Milvus.from_documents(  <br>	chunks,  <span class="hljs-comment"># 切片文本</span><br>	embeddings_decoder,  <br>	connection_args=DEFAULT_MILVUS_CONNECTION,  <br>	collection_name=<span class="hljs-string">&quot;zhltest1234&quot;</span>  <br>)<br></code></pre></td></tr></table></figure>
+
+<h3 id="新增单个文档（add-document"><a href="#新增单个文档（add-document" class="headerlink" title="新增单个文档（add_document)"></a>新增单个文档（add_document)</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># vector_store.add_documents(doc)</span><br><span class="hljs-comment"># vector_store.save_local(self.vector_store_path)</span><br><br>vector_store = Milvus(  <br>	connection_args=DEFAULT_MILVUS_CONNECTION,  <br>	embedding_function=embeddings,  <br>	collection_name=<span class="hljs-string">&quot;zhl3&quot;</span><br>)<br>vector_store.add_texts([<span class="hljs-string">&quot;你好&quot;</span>],metadatas=[&#123;<span class="hljs-string">&#x27;source&#x27;</span>: <span class="hljs-string">&#x27;./test.txt&#x27;</span>&#125;])<br></code></pre></td></tr></table></figure>
+
+<h3 id="批量直接导入embedding（函数：load-vector-store）"><a href="#批量直接导入embedding（函数：load-vector-store）" class="headerlink" title="批量直接导入embedding（函数：load_vector_store）"></a>批量直接导入embedding（函数：load_vector_store）</h3><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-comment"># FAISS.load_local(self.vector_store_path, self.embeddings)</span><br></code></pre></td></tr></table></figure>
+
+<h3 id="连接指定的表（collection-name）进行查询"><a href="#连接指定的表（collection-name）进行查询" class="headerlink" title="连接指定的表（collection_name）进行查询"></a>连接指定的表（collection_name）进行查询</h3><p>目前langchain封装的查询接口参数两类，字符串与编码后的向量<br>相似度查询两类 similarity_search与max_marginal_relevance_search</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">query = <span class="hljs-string">&quot;需要常驻于内存?&quot;</span>  <br>query_embedding = embeddings.embed_query(query)  <br>docs1 = vector_store.similarity_search(query)  <br>docs2 = vector_store.similarity_search_with_score(query)  <br>docs3 = vector_store.similarity_search_by_vector(query_embedding, k=<span class="hljs-number">2</span>)  <br>docs4 = vector_store.similarity_search_with_score_by_vector(query_embedding, k=<span class="hljs-number">2</span>)  <br>docs5 = vector_store.max_marginal_relevance_search(query, k=<span class="hljs-number">30</span>)  <br>docs6 = vector_store.max_marginal_relevance_search_by_vector(query_embedding, k=<span class="hljs-number">30</span>)<br></code></pre></td></tr></table></figure>
+
+
+<h2 id="建立MILVUS数据库连接参数"><a href="#建立MILVUS数据库连接参数" class="headerlink" title="建立MILVUS数据库连接参数"></a>建立MILVUS数据库连接参数</h2><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><code class="hljs python">DEFAULT_MILVUS_CONNECTION = &#123;  <br>	<span class="hljs-string">&quot;host&quot;</span>: <span class="hljs-string">&quot;127.0.0.1&quot;</span>,  <br>	<span class="hljs-string">&quot;port&quot;</span>: <span class="hljs-number">19530</span>,  <br>	<span class="hljs-string">&quot;user&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,  <br>	<span class="hljs-string">&quot;password&quot;</span>: <span class="hljs-string">&quot;&quot;</span>,  <br>	<span class="hljs-string">&quot;secure&quot;</span>: <span class="hljs-literal">False</span>,  <br>&#125;<br></code></pre></td></tr></table></figure>
+
+
+
+
+
+
+<figure class="highlight md"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><code class="hljs md"><span class="hljs-section"># 插入数据，参数要求是列表，metadatas要求与表中字段一致。  </span><br><span class="hljs-section"># pk是主键，vector FloatVector向量类型，维度要与编码器的输出维度一致，openai是1500多，目前本地是768维</span><br></code></pre></td></tr></table></figure></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">user</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/">http://example.com/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">极客精神本质</div></div></a></div><div class="next-post pull-right"><a href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">距离计算公式</div></div></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8C%96-HuggingFaceEmbeddings"><span class="toc-number">1.</span> <span class="toc-text">向量化: HuggingFaceEmbeddings</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%90%91%E9%87%8F%E5%8C%96%E5%AD%98%E5%82%A8-FAISS"><span class="toc-number">2.</span> <span class="toc-text">向量化存储(FAISS)</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9D%E5%A7%8B%E5%8C%96"><span class="toc-number">2.1.</span> <span class="toc-text">初始化</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%96%B0%E5%A2%9E%E5%8D%95%E4%B8%AA%E6%96%87%E6%A1%A3%EF%BC%88add-document"><span class="toc-number">2.2.</span> <span class="toc-text">新增单个文档（add_document)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%89%B9%E9%87%8F%E7%9B%B4%E6%8E%A5%E5%AF%BC%E5%85%A5embedding%EF%BC%88%E5%87%BD%E6%95%B0%EF%BC%9Aload-vector-store%EF%BC%89"><span class="toc-number">2.3.</span> <span class="toc-text">批量直接导入embedding（函数：load_vector_store）</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%BF%9E%E6%8E%A5%E6%8C%87%E5%AE%9A%E7%9A%84%E8%A1%A8%EF%BC%88collection-name%EF%BC%89%E8%BF%9B%E8%A1%8C%E6%9F%A5%E8%AF%A2"><span class="toc-number">2.4.</span> <span class="toc-text">连接指定的表（collection_name）进行查询</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BB%BA%E7%AB%8BMILVUS%E6%95%B0%E6%8D%AE%E5%BA%93%E8%BF%9E%E6%8E%A5%E5%8F%82%E6%95%B0"><span class="toc-number">3.</span> <span class="toc-text">建立MILVUS数据库连接参数</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

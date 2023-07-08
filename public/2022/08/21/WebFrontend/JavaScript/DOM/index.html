@@ -1,0 +1,343 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>DOM | Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="初识DOM DOM（Document Object Model）文档对象模型，是W3C组织推荐的处理可扩展置标语言的标准编程接口。  获取节点DOM为我们提供了一个全局内置对象document，要操作HTML标签，我们可以调用document对象中的各种方法来获取页面中的标签（在js中我们可以称之为 元素 或者 节点）：  通过ID获取 eg：document.getElementById(&amp;qu">
+<meta property="og:type" content="article">
+<meta property="og:title" content="DOM">
+<meta property="og:url" content="http://example.com/2022/08/21/WebFrontend/JavaScript/DOM/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:description" content="初识DOM DOM（Document Object Model）文档对象模型，是W3C组织推荐的处理可扩展置标语言的标准编程接口。  获取节点DOM为我们提供了一个全局内置对象document，要操作HTML标签，我们可以调用document对象中的各种方法来获取页面中的标签（在js中我们可以称之为 元素 或者 节点）：  通过ID获取 eg：document.getElementById(&amp;qu">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2022-08-21T10:31:25.000Z">
+<meta property="article:modified_time" content="2023-04-18T03:51:31.193Z">
+<meta property="article:author" content="user">
+<meta property="article:tag" content="javascript">
+<meta property="article:tag" content="dom">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/08/21/WebFrontend/JavaScript/DOM/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'DOM',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-18 11:51:31'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">DOM</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-08-21T10:31:25.000Z" title="Created 2022-08-21 18:31:25">2022-08-21</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-18T03:51:31.193Z" title="Updated 2023-04-18 11:51:31">2023-04-18</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="DOM"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="初识DOM"><a href="#初识DOM" class="headerlink" title="初识DOM"></a>初识DOM</h1><blockquote>
+<p>DOM（Document Object Model）文档对象模型，是W3C组织推荐的处理可扩展置标语言的标准编程接口。</p>
+</blockquote>
+<h2 id="获取节点"><a href="#获取节点" class="headerlink" title="获取节点"></a>获取节点</h2><p>DOM为我们提供了一个全局内置对象<code>document</code>，要操作HTML标签，我们可以调用<code>document</code>对象中的各种方法来获取页面中的标签（在js中我们可以称之为 <strong>元素</strong> 或者 <strong>节点</strong>）：</p>
+<ul>
+<li><p>通过ID获取</p>
+<p>eg：<code>document.getElementById(&quot;ID&quot;)</code></p>
+</li>
+<li><p>通过name获取</p>
+<p>eg:  <code>document.getElementsByName(&quot;Name&quot;)</code></p>
+</li>
+<li><p>通过选择器获取</p>
+<p>eg：<code>document.querySelector(&quot;#main .nav&quot;)</code></p>
+<p>eg：<code>document.querySelectorAll(#banner li)</code></p>
+</li>
+<li><p>通过class名获取</p>
+<p>eg：<code>document.getElementsByClassName(&quot;className&quot;)</code></p>
+</li>
+<li><p>通过标签名获取</p>
+<p>eg：<code>document.getElementsByTagName(&quot;tagName&quot;)</code></p>
+</li>
+<li><p>特殊标签的获取</p>
+<p>获取html标签 <code>document.documentElement</code></p>
+<p>获取head标签 <code>document.hea</code></p>
+<p>获取body标签 <code>document.body</code></p>
+<p>获取title标签 <code>document.title</code></p>
+</li>
+</ul>
+<p>一般情况下，推荐使用 <strong>ID获取</strong> 或者 <strong>选择器获取</strong> ，比较方便。</p>
+<h2 id="操作HTML内容"><a href="#操作HTML内容" class="headerlink" title="操作HTML内容"></a>操作HTML内容</h2><p><code>节点.innerHTML</code> 获取&#x2F;修改 元素的HTML内容，</p>
+<p><code>节点.innerText</code> 获取&#x2F;修改 元素的文本内容（老版本FF不支持这个属性，使用 <code>.textContent</code> 代替）。</p>
+<h2 id="监听事件"><a href="#监听事件" class="headerlink" title="监听事件"></a>监听事件</h2><ul>
+<li><p>事件种类</p>
+<p>鼠标事件： <code>onclick 左键单击</code> <code>ondblclick 左键双击</code> <code>onmouseover onmouseenter 鼠标移入</code> <code>onmouseout onmouseleave鼠标移出</code> <code>onmousedown 鼠标按下</code> <code>onmousmove 鼠标移动</code> <code>onmouseup 鼠标抬起</code> <code>oncontextmenu 右键单击</code></p>
+<p>键盘事件：<code>onkeydown onkeypress 键按下</code> <code>onkeyup 键抬起</code></p>
+<p>系统事件： <code>onload 加载完成后</code> <code>onerror 加载出错后</code> <code>onresize 窗口调整大小时</code> <code>onscroll 滚动时</code></p>
+<p>表单事件： <code>onfocus 获取焦点后</code> <code>onblur 失去焦点后</code> <code>onchange 改变内容后</code> <code>onreset 重置后</code> <code>onselect 选择后</code> <code>onsubmit 提交后</code></p>
+</li>
+<li><p>监听事件写法</p>
+<p><code>节点.事件 = 函数</code>。</p>
+<p>eg：<code>document.getElementById(&quot;main&quot;).onclick = function()&#123;alert(1)&#125;;</code></p>
+<p>这里的函数称之为 <strong>事件函数</strong>，事件函数不会自执行，而是当事件触发时执行。</p>
+</li>
+<li><p>事件函数this指向</p>
+<p>在事件函数中，关键词 <code>this</code> 就表示触发事件的这个节点对象。</p>
+</li>
+</ul>
+<h2 id="操作节点的标签属性"><a href="#操作节点的标签属性" class="headerlink" title="操作节点的标签属性"></a>操作节点的标签属性</h2><ul>
+<li><p>合法标签属性</p>
+<p>直接使用 <code>节点.属性</code> 的方式。eg：<code>console.log(节点.id);</code> <code>节点.title = &quot;新的title&quot;</code>。</p>
+<p>class名字不能 <code>.class</code> ，而是使用 <code>.className</code> 代替。</p>
+</li>
+<li><p>自定义的标签属性</p>
+<p>不能直接使用 <code>.</code> 操作。</p>
+<p>设置<code>setAttribute</code> 获取<code>getAttribute</code> 移除<code>removeAttribute</code> 。</p>
+</li>
+</ul>
+<h2 id="操作样式"><a href="#操作样式" class="headerlink" title="操作样式"></a>操作样式</h2><ul>
+<li><p>修改样式</p>
+<p>元素样式由<code>css</code>控制，JavaScript想要改变元素的样式，那么就相当于要改变css。</p>
+<p>元素css样式的书写位置有三种：<strong>外部样式表</strong>、<strong>内部样式表</strong>、<strong>行内样式</strong>。js来操作样式时，本质上就相当于要操作这三种位置的css。</p>
+<ul>
+<li><strong>外部样式表</strong> ：前端的 js 不能修改一个外部的文件，所以无法通过直接修改外部样式来改变元素。</li>
+<li><strong>内部样式表</strong>：内部样式放置到<code>style</code>标签中，而style又在当前页面中，所以能够被js控制。但是操作来比较麻烦，所以不推荐。</li>
+<li><strong>行内样式</strong>：直接写在标签中，并且优先级最高。js操作样式的<strong>最常用</strong>方式。</li>
+</ul>
+<p><code>节点.style.属性</code> 来控制单个的行内样式。</p>
+<p><code>节点.style.cssText</code> 来控制节点的所有行内样式。</p>
+<p>当单个标签操作的样式比较多时，使用 <strong>改变class来改变样式</strong> 的形式会方便很多。</p>
+</li>
+<li><p>获取样式</p>
+<p><code>.style</code> 只能获取行内样式，要获取元素的最终显示样式使用 <code>getComputedStyle(节点)</code>。</p>
+</li>
+</ul>
+<h2 id="类名的操作"><a href="#类名的操作" class="headerlink" title="类名的操作"></a>类名的操作</h2><p>使用 <code>.className</code> 可以来操作标签的类名，但是需要新加一个类名，或者去掉某个类名时，使用<code>.className</code>较为麻烦。所以推荐使用新API<code>.classList</code> 来操作类名。</p>
+<p>添加：<code>节点.classList.add(&quot;类名&quot;)</code></p>
+<p>移除：<code>节点.classList.remove(&quot;类名&quot;)</code></p>
+<p>切换（有则删，无则加）：<code>节点.classList.toggle(&quot;类名&quot;)</code></p>
+<p>是否有某个类名（得到布尔值）：<code>节点.classList.contain(&quot;类名&quot;)</code></p>
+<h1 id="DOM节点"><a href="#DOM节点" class="headerlink" title="DOM节点"></a>DOM节点</h1><ul>
+<li>DOM 的节点我们一般分为常用的三大类 <strong>元素节点&#x2F;文本节点&#x2F;属性节点</strong></li>
+<li>什么是分类，比如我们在获取元素的时候，通过各种方法获取到的我们叫做元素节点（标签节点）</li>
+<li>比如我们标签里面写的文字，那么就是文本节点</li>
+<li>写在每一个标签上的属性，就是属性节点</li>
+</ul>
+<p><img src="https://cdn.jsdelivr.net/gh/WRXinYue/PictureCDN/img/image-20220815045709938.png" alt="image-20220815045709938"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/WRXinYue/PictureCDN/img/image-20220815045922963.png" alt="image-20220815045922963"></p>
+<p><img src="https://cdn.jsdelivr.net/gh/WRXinYue/PictureCDN/img/image-20220815050153499.png" alt="image-20220815050153499"></p>
+<h3 id="节点类型"><a href="#节点类型" class="headerlink" title="节点类型"></a>节点类型</h3><ul>
+<li><p>childNodes</p>
+<p>获取一个元素的所有子节点……</p>
+</li>
+<li><p>节点类型</p>
+<p>DOM包含了多种节点，我们通常获取的标签，只是节点中的一种：</p>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>节点名称</th>
+<th>nodeType</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><em>元素节点</em></td>
+<td><em>1</em></td>
+</tr>
+<tr>
+<td><em>属性节点</em></td>
+<td><em>2</em></td>
+</tr>
+<tr>
+<td><em>文本节点</em></td>
+<td><em>3</em></td>
+</tr>
+<tr>
+<td>CDATA节点</td>
+<td>4</td>
+</tr>
+<tr>
+<td>实体引用名称节点</td>
+<td>5</td>
+</tr>
+<tr>
+<td>实体名称节点</td>
+<td>6</td>
+</tr>
+<tr>
+<td>处理指令节点</td>
+<td>7</td>
+</tr>
+<tr>
+<td>注释节点</td>
+<td>8</td>
+</tr>
+<tr>
+<td>文档节点</td>
+<td>9</td>
+</tr>
+<tr>
+<td>文档类型节点</td>
+<td>10</td>
+</tr>
+<tr>
+<td>文档片段节点</td>
+<td>11</td>
+</tr>
+<tr>
+<td>DTD声明节点</td>
+<td>12</td>
+</tr>
+</tbody></table>
+<p>重点理解前三种节点。</p>
+<p>每个节点有<code>nodeName</code>属性，文本节点和属性节点的<code>nodeValue</code>属性。</p>
+<ul>
+<li><p>常见的节点获取API</p>
+<p>常用：children parentNode offsetParent</p>
+<p>不常用：firstElementChild &#x2F; firstChild lastElementChild &#x2F; lastChild nextElementSibling &#x2F; nextSibling previousElementSibling &#x2F; previouSibling</p>
+</li>
+</ul>
+<h3 id="创建、添加、删除节点"><a href="#创建、添加、删除节点" class="headerlink" title="创建、添加、删除节点"></a>创建、添加、删除节点</h3><ul>
+<li><p>创建节点</p>
+<p>createElement 创建一个元素节点；</p>
+<p>createTextNode 创建一个文本节点；</p>
+<p>createDocumentFragment 创建一个文档碎片，先将多个节点整合到这里面再统一添加。</p>
+</li>
+<li><p>添加节点</p>
+<p>appendChild 元素最后添加一个子节点；</p>
+<p>insertBefore 在元素某个子节点之前添加新子节点，第一个参数为新节点，第二个参数为已存在的子节点。</p>
+</li>
+<li><p>替换节点</p>
+<p>replaceChild 用新节点替换某个子节点，第一个参数为新节点，第二个参数为已存在的某个子节点。</p>
+</li>
+<li><p>删除节点</p>
+<p>removeChild 删除元素的某个子节点。</p>
+</li>
+</ul>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">user</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/08/21/WebFrontend/JavaScript/DOM/">http://example.com/2022/08/21/WebFrontend/JavaScript/DOM/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/javascript/">javascript</a><a class="post-meta__tags" href="/tags/dom/">dom</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/08/25/WebFrontend/JavaScript/Web%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97(office)/" title="Web学习日志(office)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Web学习日志(office)</div></div></a></div><div class="next-post pull-right"><a href="/2022/08/20/WebFrontend/JavaScript/js(%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97)/" title="js(学习日志)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">js(学习日志)</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/09/26/WebFrontend/JavaScript/DOM%E4%B8%8E%E6%95%B0%E6%8D%AE%E4%BA%A4%E4%BA%92(%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97)/" title="DOM与数据交互(学习日志)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-09-26</div><div class="title">DOM与数据交互(学习日志)</div></div></a></div><div><a href="/2022/08/15/WebFrontend/JavaScript/BOM/" title="BOM"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-15</div><div class="title">BOM</div></div></a></div><div><a href="/2022/10/17/WebFrontend/JavaScript/JS%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="JS 正则表达式"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-17</div><div class="title">JS 正则表达式</div></div></a></div><div><a href="/2022/10/17/WebFrontend/JavaScript/Promise%E7%AC%94%E8%AE%B0/" title="Promise 笔记"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-10-17</div><div class="title">Promise 笔记</div></div></a></div><div><a href="/2022/08/26/WebFrontend/JavaScript/js%E6%87%92%E5%8A%A0%E8%BD%BD/" title="js懒加载"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-26</div><div class="title">js懒加载</div></div></a></div><div><a href="/2022/08/25/WebFrontend/JavaScript/Web%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97(office)/" title="Web学习日志(office)"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-08-25</div><div class="title">Web学习日志(office)</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%88%9D%E8%AF%86DOM"><span class="toc-number">1.</span> <span class="toc-text">初识DOM</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%8E%B7%E5%8F%96%E8%8A%82%E7%82%B9"><span class="toc-number">1.1.</span> <span class="toc-text">获取节点</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9CHTML%E5%86%85%E5%AE%B9"><span class="toc-number">1.2.</span> <span class="toc-text">操作HTML内容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%9B%91%E5%90%AC%E4%BA%8B%E4%BB%B6"><span class="toc-number">1.3.</span> <span class="toc-text">监听事件</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E8%8A%82%E7%82%B9%E7%9A%84%E6%A0%87%E7%AD%BE%E5%B1%9E%E6%80%A7"><span class="toc-number">1.4.</span> <span class="toc-text">操作节点的标签属性</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%93%8D%E4%BD%9C%E6%A0%B7%E5%BC%8F"><span class="toc-number">1.5.</span> <span class="toc-text">操作样式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E7%B1%BB%E5%90%8D%E7%9A%84%E6%93%8D%E4%BD%9C"><span class="toc-number">1.6.</span> <span class="toc-text">类名的操作</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#DOM%E8%8A%82%E7%82%B9"><span class="toc-number">2.</span> <span class="toc-text">DOM节点</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%8A%82%E7%82%B9%E7%B1%BB%E5%9E%8B"><span class="toc-number">2.0.1.</span> <span class="toc-text">节点类型</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%88%9B%E5%BB%BA%E3%80%81%E6%B7%BB%E5%8A%A0%E3%80%81%E5%88%A0%E9%99%A4%E8%8A%82%E7%82%B9"><span class="toc-number">2.0.2.</span> <span class="toc-text">创建、添加、删除节点</span></a></li></ol></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

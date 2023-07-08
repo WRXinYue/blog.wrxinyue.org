@@ -1,0 +1,269 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hello Blog">
+<meta property="og:url" content="http://example.com/page/4/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/4/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-08 23:56:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E5%85%B6%E5%AE%83/%E6%97%B6%E9%97%B4%E7%AE%A1%E7%90%86/" title="时间管理">时间管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.247Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">1.时间管理原则:
+
+赶时间，而非等时间: 时间利用最大化
+遵守对时间的承诺: 尊重自己，尊重他人
+时间碎片: 零存整取
+时间保护: 任务管理与日程安排，以时间块高效处理分类事务
+时间黑洞: 全身心投入，专注
+
+2.纪录时间，完成记事:
+
+实时纪录而非事后补录，提升时间的感知能力
+发觉失去的时间，用以分析与调整
+
+3.GTD (Getting Things Done)时间管理法:
+
+收集: 工具用于纪录，大脑用思考
+处理: 分类，避免信息碎片化的累积，可用“重要─紧急”四象限法处理
+管理: 睡前设定三件事，起床后执行
+执行: 坚决专注，一心移用，番茄钟工作法
+回顾: 哪里做不好，调整计划使其更有效率地被执行
+可一月回顾一次
+
+References比爾蓋茨 7個 時間管理 方法，找回失去的時間！以秒计算時間！- YouTube
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebBackend/Java/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%AE%9E%E4%BE%8B/" title="目录结构实例">目录结构实例</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.247Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend/">WebBackend</a></span></div><div class="content">1标准的Java SSM（Spring + Spring MVC + MyBatis）项目：
+12345678910111213141516171819- src/main/java  - com.example.project    - controller      // Spring MVC控制器类    - dao             // MyBatis数据访问对象接口    - service         // Spring服务层接口      - impl          // Spring服务层实现类    - model           // 模型类和DTO（数据传输对象）  - resources    - mybatis         // MyBatis配置和映射文件    - spring          // Spring配置文件      - applicationContext.xml     // 应用程序上下文配置文件      - spring-mvc.xml             // Spring MVC配置文件    -  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebBackend/Java/%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" title="执行流程">执行流程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.246Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">Web前端历史Web1.0时代在web1.0时代，没有前后端之分。页面由 JSP、PHP 等工程师在服务端生成，浏览器负责展现。基本上是服务端给什么浏览器就展现什么，展现的控制在 Web Server 层。
+
+这种架构的好处就是简单快捷。但是，缺点也非常明显：JSP代码难以维护
+为了让开发更加便捷，代码更易维护，前后端职责更清晰。便衍生出MVC开发模式和框架，前端展示以模板的形式出现。典型的框架就是Spring，Suructs、Hibernate。整体框架如图所示：
+
+使用这种分层架构，职责清晰，代码易于维护。但这里的MVC仅限于后端，前后端形成了一定的分离，前端只完成了后端开发的view层
+Web2.0时代自从Gmail的出现，ajax技术开始风靡全球。有了ajax之后，前后端的职责就更加清晰了。因为前端可以通过Ajax与后端进行数据交互，因此，整体的架构图也变化成了下面这幅图：
+
+Ajax 技术与后台服务器进行数据交换，可以使得前端开发人员只需要专注于页面内容的开发，数据可以由后台提供，从而分工更加明确，提高了开发效率。而且，使用 Ajax 技术可以实现页面的部分刷新，减少了服务器 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E5%8D%9A%E5%AE%A2/Hexo%20and%20OBSIDIAN%20%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/" title="Hexo + OBSIDIAN 插件配置">Hexo + OBSIDIAN 插件配置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.236Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="content">前言写了很久博客了，原来halo搭建的博客又转移到hexo了，转移原因如下：
+
+写文章不方便。每次在本地Typora写完一次笔记，都要登录网站粘贴进去， 很麻烦。
+需要定期维护网站。网站稳定点还好，但是我那个腾讯服务器经常死机，哎真麻烦
+
+插件配置本次用到的插件：
+
+Image auto upload Plugin (PicGo图床上传)
+Obsidian Git (快速Git上传)
+Templater (文件元数据模板)
+Update time on edit (自动更新时间)
+
+PicGo图床上传前置条件：安装并配置PicGo安装插件：Image auto upload Plugin
+
+快速Git上传安装插件：Obsidian Git
+根据喜好可以设置自动git推送 (推荐手动)
+
+Ctrl + P 快捷键输入命令，如 输入git可以看到所有命令
+
+文件元数据模板安装插件：Templater
+这个是自动配置模板的，要开始使用 Templator，必须创建一个目录来存储模板的 markdown 文件，如 Templator 文件夹位置中所述。
+在我的环境中，还存放了核心插件的模板，所 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E5%85%B6%E5%AE%83/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Git 常用命令">Git 常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.231Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">Git 是一个版本控制系统。版本控制是一种用于记录一个或多个文件内容变化，方便我们查阅特定版本修订情况的系统。
+以前在没有使用版本控制的时候，我们通常在我们的项目根目录下这样命名项目：project_v1、project_v1.1、project_v2等等，通过这种方式记录我们项目的不同版本的修改，有的时候我们还会在不同版本的文件中写一个说明，记录此版本项目新增、修改，删除等操作。
+这样的操作是很繁杂的，有的时候还可能因为一些非人为因素导致文件丢失这样的事故。
+有了版本控制系统，我们就不用再手动进行一些繁杂的操作，并且对于文件丢失这种事故我们也不用再担心，你可以随便回到历史记录的某个时刻。
+版本控制系统早期出现的版本控制系统有：SVN、CVS等，它们是集中式版本控制系统，都有一个单一的集中管理的服务器，保存所有文件的修订版本，而协同合作的开发人员都通过客户端连接到这台服务器，取出最新的文件或者提交更新。
+而我们的主角 Git 是分布式版本控制系统。Git 已经成为越来越多开发者的青睐，因为分布式的优势是很显著的。
+集中式和分布式版本控制系统的区别集中式版本控制系统，版本库是集中存放在中 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/server/rustdesk%E4%B8%AD%E7%BB%A7%E6%9C%8D%E5%8A%A1%E5%99%A8%E7%9A%84docker%E9%95%9C%E5%83%8F/" title="rustdesk中继服务器的docker镜像">rustdesk中继服务器的docker镜像</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.227Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8E%A9%E8%BD%AC%E6%9C%8D%E5%8A%A1%E5%99%A8/">玩转服务器</a></span></div><div class="content">1、docker 拉取镜像
+1docker image pull rustdesk/rustdesk-server
+12、运行hbbs
+1docker run --name hbbs -p 21115:21115 -p 21116:21116 -p 21116:21116/udp -p 21118:21118 -v `pwd`:/root -it --net=host --rm rustdesk/rustdesk-server hbbs -r 自己的服务器IP
+
+3、运行hbbr
+1docker run --name hbbr -p 21117:21117 -p 21119:21119 -v `pwd`:/root -it --net=host --rm rustdesk/rustdesk-server hbbr
+
+4、配置防火墙与安全组TCP(21115, 21116, 21117, 21118, 21119)UDP(21116)网页客户端（21118，21119），对应端口可以不开。
+</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E5%85%B6%E5%AE%83/%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE/" title="代理设置">代理设置</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.227Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">git12git config --global https.proxy  http://127.0.0.1:10809git config --global http.proxy  http://127.0.0.1:10809
+
+
+socks5 代理12git config --global http.proxy &#x27;socks5://127.0.0.1:10808&#x27;git config --global https.proxy &#x27;socks5://127.0.0.1:10808&#x27;
+
+查看代理12git config --global  --get http.proxygit config --global  --get https.proxy
+
+如果没有设置代理，上述命令将什么也不会打印。
+清除代理12git config --global --unset http.proxygit config --global --unset https.proxy
+
+Yarn设置命令12yarn config set https-proxy http:/ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebFrontend/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/%E5%BE%AE%E4%BF%A1%E5%B0%8F%E7%A8%8B%E5%BA%8FUni-app%E7%AC%94%E8%AE%B0/" title="微信小程序Uni-app笔记">微信小程序Uni-app笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.214Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend-%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/">WebFrontend/移动应用</a></span></div><div class="content">全局配置pages.jsonpages.josn 文件用来对uni-app进行全局配置，决定页面文件的路径、窗口表现、设置多tab等。
+
+globalStyle设置默认页面的窗口表现。
+pages 设置页面路径及窗口表现。
+tabBar 设置底部 tab 的表现
+
+获取元素节点123456789    const query = uni.createSelectorQuery()    query.select(&#x27;#ion-heade&#x27;).boundingClientRect()    query.exec(res =&gt; &#123;        headerOffsetH.value = res[0].height    &#125;)
+
+Toast1        Toast(&#x27;获取项目列表失败!&#x27;)
+
+12345        uni.showLoading(&#123;            title: &#x27;请选择期望职位&#x27;,        &#125;)
+
+获取元素节点1&lt;view id=&quot;i ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebFrontend/UI/CSS%E5%A4%87%E5%BF%98%E5%BD%95/" title="CSS备忘录">CSS备忘录</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.188Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend-UI/">WebFrontend/UI</a></span></div><div class="content">div盒子水平垂直居中FlexBox布局居中：
+通过设置父容器的 display: flex; 和 justify-content: center; align-items: center; 样式，即可实现将子元素水平垂直居中。
+123456789101112&lt;div class=&quot;parent&quot;&gt;  &lt;div class=&quot;child&quot;&gt;Hello World!&lt;/div&gt;&lt;/div&gt;&lt;style&gt;  .parent &#123;    display: flex;    justify-content: center;    align-items: center;    height: 100vh; /* 可以根据实际需求调整 */  &#125;&lt;/style&gt;
+
+绝对定位居中：
+父容器添加 position: relative; 样式，并为子元素添加 position: absolute; 以将其从文档流中分离出来。然后可以使用 top, bottom, left, ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebFrontend/tools/%E6%88%91%E4%BD%BF%E7%94%A8Vite%E7%9A%84%E5%9D%91/" title="我使用Vite的坑">我使用Vite的坑</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.185Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/">/</a></span></div><div class="content">部分热重载失效问题如果您修改了一个组件的模板代码，但是在修改后，浏览器没有自动更新，这可能是因为该模板代码包含了组件实例状态（例如 v-model 绑定或者 ref 引用），导致组件无法被热更新。这种情况下，您可以尝试在组件模板外面添加一个包装元素，以将状态提取到外层组件，从而使得内层组件可以被热更新。
+例如，在以下示例中，我们将 v-model 绑定添加到一个名为 value 的属性上：
+123&lt;template&gt;  &lt;input :value=&quot;value&quot; @input=&quot;$emit(&#x27;update:value&#x27;, $event.target.value)&quot;&gt;&lt;/template&gt;
+
+在这种情况下，如果您想要热更新组件，您可以尝试在组件模板外面添加一个 &lt;div&gt; 元素，从而将 value 提取到外层组件中：
+12345&lt;template&gt;  &lt;div&gt;    &lt;input :value=&quot;value&quot; @input=&qu ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/#content-inner">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/#content-inner">5</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/5/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

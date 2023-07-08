@@ -1,0 +1,273 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hello Blog">
+<meta property="og:url" content="http://example.com/page/5/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/5/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-08 23:56:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/%E5%A4%87%E5%BF%98%E5%BD%95/" title="No title">No title</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:30.601Z" title="Created 2023-04-18 11:51:30">2023-04-18</time></span></div><div class="content">我好像一直在等你，又好像一直在忘记你参考：(43条消息) time、deltaTime、fixedTime、fixedDeltatime的区别_qq_39887964的博客-CSDN博客_deltatime和fixeddeltatime
+deltaTlme代表两帧之间的间隔时间
+应该是fixedDeltaTime
+资源网站推荐一些不错的Unity游戏开发素材资源 - 知乎 (zhihu.com)
+收藏必看！Unity游戏开发素材资源合集 - 知乎 (zhihu.com)
+Unity里一般用Shader来做，常用的有ShaderGraph和AES
+Time.timeScale &#x3D; 0f;	&#x2F;&#x2F;游戏暂停函数
+快捷键V 网格吸附
+选中main camera按下 ctrl+shfit+f 变成当前场景的角度坐标
+编程方法1234567891011using System.Collections;using System.Collections.Generic;using UnityEngine;using UnityEngine.Events;[System.Se ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/%E6%B8%B8%E6%88%8F%E5%BC%80%E5%8F%91/Unity/Update&amp;FixedUpdate/" title="Update&amp;FixedUpdate">Update&amp;FixedUpdate</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:30.594Z" title="Created 2023-04-18 11:51:30">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/Unity/">Unity</a></span></div><div class="content">Updata 和 FixedUpdatarigbody组件不能写在Update函数里，要写在FixedUpdata里面
+
+Update()：每帧被调用一次
+FixedUpdate()：每隔Time.fixedDeltaTime被调用一次。
+MonoBehaviour.LateUpdate  晚于更新   当Behaviour启用时，其LateUpdate在每一帧被调用。LateUpdate是在所有Update函数调用后被调用。这可用于调整脚本执行顺序。例如:当物体在Update里移动时，跟随物体的相机可以在LateUpdate里实现。
+
+Update 和 FixedUpdate 区别update跟当前平台的帧数有关，而FixedUpdate是真实时间，所以处理物理逻辑的时候要把代码放在FixedUpdate而不是Update.
+​     Update是在每次渲染新的一帧的时候才会调用，也就是说，这个函数的更新频率和设备的性能有关以及被渲染的物体（可以认为是三角形的数量）。在性能好的机器上可能fps 30，差的可能小些。这会导致同一个游戏在不同的机器上效果不一致，有的快有的慢。因为Up ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/07/server/%E5%BF%AB%E9%80%9F%E7%BF%BB%E5%A2%99%E5%91%BD%E4%BB%A4/" title="快速翻墙命令">快速翻墙命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-06T18:12:00.000Z" title="Created 2023-04-07 02:12:00">2023-04-07</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/server/">server</a></span></div><div class="content">Google BBR 一键加速VPS1wget https://raw.githubusercontent.com/bannedbook/fanqiang/master/v2ss/server-cfg/sysctl.conf -O -&gt; /etc/sysctl.conf
+
+1sysctl -p
+
+V2ray官方一键安装脚本12apt-get install -y curlbash &lt;(curl -L https://raw.githubusercontent.com/v2fly/fhs-install-v2ray/master/install-release.sh)
+
+下载参考配置文件：
+1wget https://raw.githubusercontent.com/bannedbook/fanqiang/master/v2ss/server-cfg/v2/config.json  -O -&gt; /usr/local/etc/v2ray/config.json
+
+安装完成后，运行 service v2ray restart 启动
+vultr debian 10 默认只开 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/04/WebBackend/Java/Java%20%E9%A1%B9%E7%9B%AE%E6%A8%A1%E5%9D%97%E5%8C%96%E7%AE%A1%E7%90%86/" title="Java 项目模块化管理">Java 项目模块化管理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-04T11:50:16.000Z" title="Created 2023-04-04 19:50:16">2023-04-04</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">父项目子模块Git 子模块是一种特殊的 Git 仓库，它保存在主项目中的一个独立目录中。当您使用 git submodule add 命令添加一个子模块时，Git 会在主项目的 .gitmodules 文件中添加一个条目，用于记录子模块的 Git URL 和保存位置等信息。同时，Git 会将子模块的代码克隆到主项目的子目录中，这个子目录就是您指定的子模块保存位置。
+因此，当您执行 Git 命令时，应该在主项目目录中执行命令，而不是在子模块目录或 .git 目录中执行。如果您需要在子模块中执行 Git 命令，可以使用 cd 命令切换到子模块目录中。
+例如，如果您需要更新子模块的代码，可以按照以下步骤执行 Git 命令：
+
+切换到主项目目录中： cd /path/to/main/project
+初始化子模块： git submodule init
+拉取子模块的最新代码： git submodule update
+切换到子模块目录中： cd path/to/submodule
+在子模块目录中执行 Git 命令，例如： git pull 更新子模块的代码。
+
+请注意，在使用 Git 子模块时， ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/03/11/WebFrontend/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/APP%20%E5%B8%B8%E7%94%A8%E5%BC%80%E5%8F%91%E6%A8%A1%E5%BC%8F/" title="微信小程序技术">微信小程序技术</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-03-11T03:39:00.000Z" title="Created 2023-03-11 11:39:00">2023-03-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">简介小程序本质来说是前端，都是开发页面交互，以及数据请求业务逻辑
+如何学习看开发文档是最好且最快的学习方式，其次就是官方的视频教程，生动有趣
+APP常用开发模式
+Native App – 原生开发
+WebApp – H5应用
+Hyriid App – 混合开发
+
+
+微信小程序技术栈
+ui库：WeUI，有赞的vantUI
+Vue框架：腾讯Wepy，Uniapp，美团MpVue(停止维护)
+react框架(多端支持)：阿里Remax，京东Taro
+跨端开发：Uniapp，Chameleon
+其它：低代码、云开发
+
+123456789101112131415161718192021222324252627282930313233343536373839@GetMapping(&quot;/getSrmAreaTemplateByProjectId&quot;)  @ApiOperation(&quot;获得SRM区域数据映射列表&quot;)  @PreAuthorize(&quot;@ss.hasPermission(&#x27;biz:srm-area:query&#x27;)&quot ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/13/WebBackend/Java/MyBatis%E7%A0%94%E7%A9%B6/" title="MyBatis">MyBatis</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-13T02:32:48.000Z" title="Created 2023-01-13 10:32:48">2023-01-13</time></span></div><div class="content">Preface记录知识是一个重要的习惯，尤其是对于一个技术框架来说，Mybatis虽然简单易用，但是为了更好地理解其基本概念和原理，我决定在2023年1月13日开始编写这篇笔记。这将不仅仅是使用API字典。在导师（项目经理）的指导下，我将自己的理解与导师的讲解相结合，当然我也References(借鉴)了网上一些优秀的文章，这样做不仅有助于我自己未来复习回顾，同时也希望对阅读这篇文章的人有所帮助。
+SynopsisMyBatis是一个开源、轻量级的持久层框架，它内部封装了JDBC，可以简化JDBC加载驱动、创建连接、创建statement等繁杂过程，使开发人员更专注于SQL语句本身。
+
+PS：MyBatis不是专门用于ORM映射，而是为了简化和优化JDBC操作而设计的，所以严格意义上来讲，MyBatis不是ORM框架。
+
+总结要点：
+
+MyBatis是一款优秀的持久层框架，主要通过XML或注解来配置和映射原始类型、接口和Java POJO（Plain Old Java Objects，普通老式Java对象）为数据库中的记录。它支持自定义SQL、存储过程以及高级映射，可以在实体类和SQL ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/11/%E5%85%B6%E5%AE%83/%E7%A0%94%E7%A9%B6cgi-bin/" title="研究cgi-bin">研究cgi-bin</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-11T09:01:51.000Z" title="Created 2023-01-11 17:01:51">2023-01-11</time></span></div><div class="content">What is CGI
+CGI虽然已经被业界主流淘汰，但是通过学习它可以加深WebServer通信、Http协议的深成认识，了解CGI之后就可以学习Servlet，我打算深入学习并打固基础。
+
+通用网关接口 (Common Gateway Interface，CGI), 是在1990年代早期创建的一个用来在Web服务器和应用程序之间传递信息的标准。
+CommonCGI是一种用于在Web服务器和其它应用程序之间传递信息的标准，具有较高的通用性。
+CGI程序可以是任意的可执行程序，例如Java、Perl、Python、Ruby和C&#x2F;C++等。理论上来说，所有支持标准输入和输出、支持获取环境变量的编程语言都能用来编写CGI程序。
+Servlet、WSGI（Web Server Gateway Interface，Web 服务器网关接口）等都可以实现类似CGI的功能。
+CGI的通用性是一个显著特性，它可以用于各种编程语言，并且可以用来实现各种功能。
+GatewayCGI可以看作是一个软件网关或者协议翻译机，它负责在Web服务器和应用程序之间通信。通常情况下，Web服务器和应用程序使用 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/11/WebBackend/Java/Spring%E7%A0%94%E7%A9%B6/" title="Spring">Spring</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-11T07:17:00.000Z" title="Created 2023-01-11 15:17:00">2023-01-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">Preface当我第一次接触Spring框架时，我的导师(项目经理)以迅雷不及掩耳之势，在短短三天内讲完了整个Spring框架。尽管当时我对很多概念还有疑问，但我决定将我的学习过程记录下来，这就是这篇研究Spring框架的笔记。这篇文章于2023年1月11日开始编写。快过年了我可以摸几天鱼吗…
+SynopsisSpring是最受欢迎的企业级Java应用程序开发框架。它是一个开源的Java平台，轻量级且灵活，可以用于开发各种类型的Java应用程序。其中最常用的是基于Spring MVC构建Web应用程序。Spring框架的目标是使J2EE(企业版)开发变得更容易使用，通过启用基于POJO编程模型来促进良好的编程实践。
+
+POJO 是 Plain Old Java Object 的缩写，意思是“纯粹的旧Java对象”。在Java中，POJO指的是没有任何特殊要求的Java类，也就是没有任何继承自特定父类或实现特定接口的类。
+Spring框架采用了POJO编程模型，它提供了一种简洁而直观的方式来管理应用程序对象之间的关系。使用POJO编程模型，开发人员可以将业务逻辑与框架相分离，使得应用程序 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/10/WebBackend/Java/Servlet/" title="Servlet">Servlet</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-09T23:58:16.916Z" title="Created 2023-01-10 07:58:16">2023-01-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">简述
+Servlet是一种基于组件的技术，它可以在多种Web服务器上运行，并且独立于平台。
+Servlet可以访问整个Java API系列，包括JDBC用于访问企业数据库。
+Servlet可以通过表单从用户那里收集输入，显示来自数据库或其他来源的记录，并动态创建网页。
+Servlet通常认为是CGI程序的高效替代品。Servlet相比CGI有很多种优点，如更高的性能。
+Servlet 是平台无关的，因为它们是用 Java 编写的。
+Java安全管理器强制执行限制以保护服务器资源，可以使用Java类库全部功能（依赖于容器和服务器支持的功能）。
+Servlet需要运行在Servlet容器（如 Tomcat）上，然后才能在Web服务器上工作。
+
+
+环境Java Servlet是由支持Java Servlet规范的解释器（通常是Web容器）在服务器端运行的Java类。这些类可以使用 javax.servlet 和 javax.servlet.http包中的类来创建，这些包是Java企业版标准部分，可以支持大型开发项目。
+Servlet的创建和编译基本上就像其他Java类一样，需要将Servle ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/01/09/%E5%8D%9A%E5%AE%A2/hugo&amp;github&amp;vercel%E5%AF%BC%E8%88%AA%E6%90%AD%E5%BB%BA/" title="hugo+github+vercel导航搭建">hugo+github+vercel导航搭建</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-01-09T15:51:12.000Z" title="Created 2023-01-09 23:51:12">2023-01-09</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA/">博客搭建</a></span></div><div class="content">安装hugo注：再此之前需要安装choco包管理器
+1choco install hugo -confirm
+
+
+
+使用Hugo创建博客12# 创建名为navigation的博客hugo new site navigation
+
+
+
+下载博客主题
+进入themes文件夹，并打开cmd
+
+输入git clone https://github.com/shenweiyan/WebStack-Hugo.git
+
+themes&#x2F;WebStack-Hugo&#x2F;exampleSite 目录下的所有文件复制到 hugo 站点根目录
+copy WebStack-Hugo/exampleSite/* .. -force &amp;&amp; cd..
+
+
+此时我们回到根目录发现，我们的文件已经复制成功。（ps：个人还是比较习惯用命令端）
+
+删除.git文件夹(如果有)
+注：如果git的主题有.git和.github文件夹，我们就需要手动删除，否则在推送的时候主题就会出现问题
+
+123# 删除 .git 和 .github 文件,注意！这里我用的是powershell，cmd命令：# r ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/4/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="page-number current">5</span><a class="page-number" href="/page/6/#content-inner">6</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/6/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

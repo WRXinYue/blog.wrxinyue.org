@@ -1,0 +1,540 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
+<meta property="og:title" content="Hello Blog">
+<meta property="og:url" content="http://example.com/page/8/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:author" content="user">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hello Blog',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2023-07-08 23:56:02'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/10/17/WebFrontend/JavaScript/JS%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F/" title="JS 正则表达式">JS 正则表达式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-17T15:47:36.000Z" title="Created 2022-10-17 23:47:36">2022-10-17</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">正则表达式正则表达式（regular expression）是一个描述字符模式的对象。JavaScript的RegExp类表示正则表达式。
+创建正则表达式的对象构造函数创建：
+1var 变量 = new RegExp(&quot;正则表达式&quot;,&quot;匹配模式&quot;);
+
+
+
+字面量方式创建：
+1var 变量 = /正则表达式/匹配模式;
+
+
+
+
+匹配模式参数:
+1234参数：i 忽略大小写g 全局匹配模式m 执行多行匹配
+
+1234var reg = new RegExp(&quot;a&quot;); //匹配任何含有“a”的字符串var reg = new RegExp(&quot;a$&quot;); //匹配任何以“a”结束的字符串var reg = new RegExp(&quot;a&quot;,&quot;i&quot;); //匹配任何含有“a”的字符串并不区分大小写var reg = /a/i; //匹配任何含有“a”的字符串并不区分大小写（字面量方式创建）
+
+
+
+直接量字符JavaScript正则表达式语法也支持非字母的字符匹配，这些字符需要通 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/09/26/WebFrontend/JavaScript/DOM%E4%B8%8E%E6%95%B0%E6%8D%AE%E4%BA%A4%E4%BA%92(%E5%AD%A6%E4%B9%A0%E6%97%A5%E5%BF%97)/" title="DOM与数据交互(学习日志)">DOM与数据交互(学习日志)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-25T16:56:34.000Z" title="Created 2022-09-26 00:56:34">2022-09-26</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">day1-初识domdom是什么DOM就是一个编程接口，就是一套API。
+DOM是针对标记语言（HTML文档、XML等文档）的一套API。
+JS由的三个组成部分
+
+ECMAscript (js的语法规范)
+DOM (文档对象模型)
+BOM (浏览器对象模型)
+
+
+注：
+
+api：学习浏览器向我们提供的操作页面和操作浏览器的api
+
+DOM：不是js提供的方法，而是html向js提供的api
+DOM树页面渲染完成以后，所有页面中的内容都会被抽象成一个树形结构
+
+
+
+DOM 基本名词
+
+文档：一个HTML页面就叫做一个文档
+节点：网页中所有内容都是一个节点（标签，元素，文本，注释节点）
+元素：元素中的标签节点
+属性：标签的属性
+
+api分类
+
+节点获取
+节点操作（修改节点内容的api）
+用户交互行为 - 事件
+
+页面中的元素都是有内置的类创建的
+HTMLElement 类 所有html元素的根类
+
+HTMLBodyElement
+HTMLInputElement
+
+123456789console.log(document.body.constructor.name) //HTMLBody ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/09/25/WebBackend/Java/DBMS/MySql/MySQL%E7%AC%94%E8%AE%B0(office)/" title="MySQL笔记(office)">MySQL笔记(office)</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-24T16:23:25.000Z" title="Created 2022-09-25 00:23:25">2022-09-25</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">数据库基本知识数据库介绍数据库概念
+数据库（Database）是按照数据结构来组织、存储和管理数据的仓库
+
+数据库的发展史
+最早期以穿孔卡片的方式，按照一定的排列方式记录数据
+
+数据库管理系统DBMS
+是一种操作和管理数据库的大型软件，用于建立，使用和维护数据库，简称DBSN
+它对数据库进行统一的管理和控制，以保证数据库的安全性和完整性
+数据库管理系统是数据库的核心，是管理数据库的软件
+我们一般说的数据库，就是DBMS，数据库管理系统
+
+常见的数据库
+
+Oracle ：运行稳定，可移植性高，功能齐全，性能超群，适用于大型企业领域
+DB2：速度快，可靠性好，适用于海量数据，恢复性极强，适用于大中型企业领域
+Mysql：开源，体积小，速度快，适用于中小型企业领域
+SQL Server：全面，效率高，界面友好，操作容易，但是不跨平台，适用于中小型企业领域
+
+专业术语表：具有固定的列数和任意的行数
+
+
+
+Sno
+SNAME
+Sgender
+Sheight
+
+
+
+1
+小红
+18
+165
+
+
+2
+小兰
+19
+170
+
+
+3
+刘德华
+25
+179
+
+
+4
+刘能
+20
+173
+
+
+5
+赵四
+30
+16 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/09/16/WebBackend/Java/Java%E7%AC%94%E8%AE%B0/" title="Java笔记">Java笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-15T19:20:02.000Z" title="Created 2022-09-16 03:20:02">2022-09-16</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">Java 程序设计概述简单性Java语法是C++语法的一个“纯净”版本。这里没有头文件、指针运算（甚至指针语法）、结构、联合、操作符重载、虚基类等。
+“简单”的另一个方面是小。Java的目标之一是支持开发能够在小型机器上独立运行的软件。
+面向对象简单来讲，面向对象设计是一种程序设计技术。它将重点放在数据（即对象）和对象的接口上。在本质上，Java的面向对象能力与C++是一样的。
+分布式Java有一个丰富的例程库，用于处理像HTTP和FTP之类的TCP&#x2F;IP 协议。
+Java应用程序能够通过URL打开和访问网络上的对象，其便捷程度就好像访问本地文件一样。
+健壮性Java的设计目标之一在于使得Java编写的程序具有多方面的可靠性。Java非常强调进行早期的问题检测、后期动态的（运行时）检测，以及消除容易出错的情况……Java与C&#x2F;C++最大的不同在于Java采用的指针模型可以消除重写内存和损坏数据的可能性。
+安全性Java要适用于网络&#x2F;分布式环境。为了实现这个目标，安全性颇受重视。使用Java可以构建防病毒、防篡改的系统。
+体系结构中立编译器生成一个体系结构中 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/09/14/WebBackend/Java/DBMS/SQL%E7%AC%94%E8%AE%B0/" title="SQL笔记">SQL笔记</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-13T17:38:43.000Z" title="Created 2022-09-14 01:38:43">2022-09-14</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">SQL简介
+英文：Structured Query Language，简称SQL
+结构化查询语言，一门操作关系型数据库的编程语言
+定义操作所有关系型数据库的统一标准
+对于同一个需求，每一种数据库操作的方式可能会存在一些不一样的地方，我们称为“方言”
+
+SQL通用语法
+SQL语句可以单行或多行书写，以分号结尾。
+MySQL数据库的SQL语句不区分大小写，关键字建议使用大写。
+注释
+单行注释：– 注释内容 或 # 注释内容（MySQL 特有）
+多行注释：&#x2F;* 注释 *&#x2F;
+
+
+
+SQL分类
+DDL(Data Definition Language)数据定义语言，用来定义数据库对象：数据库，表，列等
+DML(Data Manipulation Language)数据操作语言，用来对数据库中表的数据进行增删改
+DQL(Data Query Language)数据查询语言，用来查询数据库中表的记录（数据）
+DCL(Data Control Language)数据控制语言，用来定义数据库的访问权限和安全级别，及创建用户
+
+DDL操作数据库
+查询
+1SHOW DATABASES;
+ ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/09/11/WebBackend/Java/DBMS/MySql/Windows%E6%9C%AC%E5%9C%B0MySQL%E5%AE%89%E8%A3%85/" title="Windows本地MySQL安装">Windows本地MySQL安装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-09-11T12:09:59.000Z" title="Created 2022-09-11 20:09:59">2022-09-11</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WEBbackend/">WEBbackend</a></span></div><div class="content">Windows本地MySQL安装下载下载地址
+选择MySQL版本，以及计算机系统
+这里选择5.7.24，比较稳定
+
+安装(解压)解压到安装目录
+
+配置添加环境配置复制你MySQL的路径，变量名填MYSQL_HOME
+
+在系统变量，Path里添加：
+1%MYSQL_HOME%\bin
+
+
+新建配置文件在\mysql-5.7.24-winx64\bin 目录下新建my.ini文本文件
+
+右键记事本打开，内容如下：
+1234567[mysqld]default-character-set=utf8[mysqld]character-set-server=utf8default-storage-engine=INNODBsql_mode=STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION
+
+
+初始化MySQl1mysqld --initialize-insecure
+
+
+注册MySQL服务1mysqld -in ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/30/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/HRACK%E6%94%BB%E5%87%BB%E5%8E%9F%E7%90%86%E8%A7%A3%E6%9E%90/" title="HRACK攻击原理解析">HRACK攻击原理解析</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-30T12:15:21.000Z" title="Created 2022-08-30 20:15:21">2022-08-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">HRACK攻击(WPA1&#x2F;WP2)KRACKs（Key Reinstallation AttaCKs）是一系列WPA2 (Wi-Fi  Protected Access 2 )协定漏洞的总称
+四向交握(4-WAY HANDSHAKE)
+第一步(Msg1)，AP会发送一组初始化向量（ANonce）到客户端装置（STA）。
+第二步(Msg2)，STA接到ANonce，会产生一组PTK（Pairwise Transient  Key）和另一个初始化向量（SNonce）发送给AP，并且使用了名为MIC（Message Integrity Code）的验证码。
+第三步(Msg3)，AP收到SNonce后，也会导出一组PTK，并发送密钥GRK给STA。
+第四步(Msg4)，STA在安装本身PTK和GRK之后回复讯息（Ack）给AP。
+
+
+
+利用Wi-Fi握手协议漏洞，在四向交握中客户端没有收到AP的 讯息时，会要求讯息重传。
+当客户端收到AP发来的讯息(Msg3)后将会安装PTK和GTK，用 于加密正常的封包。但因为Msg3可能丢失或者被丢弃，AP没有 收到回应(Msg4)的话，AP将会 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/30/%E7%A7%91%E5%AD%A6/%E4%BA%BA%E6%96%87%E7%A4%BE%E4%BC%9A%E7%A7%91%E5%AD%A6/%E6%97%A5%E8%AF%AD/" title="日语">日语</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-30T03:44:51.000Z" title="Created 2022-08-30 11:44:51">2022-08-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="content">IT日语
+
+
+
+日本語
+英語
+中国語
+
+
+
+
+1
+ボタン
+button
+按钮
+
+
+
+2
+モバイル
+mobile
+移动通讯
+
+
+
+3
+インターネット
+internet
+因特网
+
+
+
+4
+アンインストール
+uninstall
+卸载
+
+
+
+5
+ダウンロード
+download
+下载
+
+
+
+6
+プラス
+plus
+加，正
+
+
+
+7
+ロック
+lock
+加锁
+
+
+
+8
+アンロック
+unlock
+解锁
+
+
+
+9
+リターン·キー
+return key
+回车键
+
+
+
+10
+フォーマット
+format
+格式
+
+
+
+11
+ベース
+base
+基极，库
+
+
+
+12
+スペース
+space
+空格
+
+
+
+13
+システム
+system
+系统
+
+
+
+14
+ツール
+tool
+工具
+
+
+
+15
+コントロール
+control
+控制
+
+
+
+16
+ドライブ
+drive
+驱动器
+
+
+
+17
+ハードウェア
+hardware
+硬件
+
+
+
+18
+リサイクル
+recycle
+再利用
+
+
+
+19
+メニュー
+menu
+菜单
+
+
+
+20
+オンライン
+online
+在线
+
+
+
+21
+パラメータ
+parameter
+参数
+
+
+
+22
+サポート
+suppo ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/29/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/%E8%B7%AF%E7%94%B1%E5%99%A8%E7%9A%84%E5%8A%A0%E5%AF%86%E7%AE%97%E6%B3%95/" title="路由器的加密算法">路由器的加密算法</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-29T09:39:01.000Z" title="Created 2022-08-29 17:39:01">2022-08-29</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">路由器的加密算法目前路由器的加破解途径主要有三种，WEP破解、WPA&#x2F;WPA2、WPS
+
+有线等效加密WEP（pre-RSNA）WEP（Wired Equivalent Privacy）加密是最早在无线加密中使用的技术。
+因为WEP出现了非常严重的漏洞，所以Wi-Fi协会于2004年宣布WEP正式退役。
+Wi-Fi保护设置WPA(TKIP)WPA采用TKIP协议（temporal key integrity protocol）作为加密协议。
+TKIP 是 WPA 的核心组件，设计初衷是全为对现有 WEP 设备进行固件升级。因此， WPA 必须重复利用 WEP 系统中的某些元素，最终也被黑客利用。
+Wi-Fi保护设置ⅡWPA2(CCMP-AES)Wi-Fi Protected Access II (WPA2)。WPA 标准于2006年正式被 WPA2 取代。 WPA 和 WPA2 之间最显着的变化之一是强制使用 AES 算法和引入 CCMP （计数器模式密码块链消息完整码协议）替代 TKIP 。
+
+KRACK攻击（Key Reinstallation Attacks，密钥重装攻 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2022/08/28/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/wifi%E5%AE%89%E5%85%A8%E6%B8%97%E9%80%8F/" title="wifi安全渗透">wifi安全渗透</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-08-28T00:38:01.000Z" title="Created 2022-08-28 08:38:01">2022-08-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%BD%91%E7%BB%9C%E5%AE%89%E5%85%A8/">网络安全</a></span></div><div class="content">序章最近流量没了，穷的吃土，研究了一下WIFI无线安全写出相关文章希望大家能对认识网络安全提供帮助
+（文章仅用于学习交流，请勿违法！)
+
+破解方式wifi的破解方式很多，在上面的文章说了如果无线路由器开启了WPS就可以使用pin码进行破解，除了pin码破解还有社会工程学抓包跑字典等方式
+pin码破解难度：⭐⭐
+时长：0~2小时，平均一小时
+条件：路由器WPS功能是否开启，路由器信号强度，路由器是否防PIN
+原理：WPS的pin码并没有加密。Reaver会暴力破解pin码，找到pin码也就找到了密码。
+环境要求：
+
+网卡支持数据包注入
+要求无线信号强
+
+注意事项：
+
+如果发送pin码过快，有可能造成路由器崩溃；就类似对服务器的DDOS攻击。
+此过程不能联网，虚拟器需要断开网络连接
+Reaver有很多其他选项，查看帮助：reaver ?
+
+查看网卡
+1airmon-ng
+
+
+上面命令列出了支持监控模式的无线网卡。一般是带wlan开头的，自带的网卡如eth0是不支持的，市面上90%笔记本网卡是不支持渗透测试的。
+开启监听模式
+1airmon-ng start wlan0
+
+
+执行成功之后网卡 ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/7/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/#content-inner">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/#content-inner">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/9/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            <a class="card-more-btn" href="/categories/" title="More">
+    <i class="fas fa-angle-right"></i></a>
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
+            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
+    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

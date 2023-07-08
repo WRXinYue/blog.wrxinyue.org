@@ -1,0 +1,207 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hexo + OBSIDIAN 插件配置 | Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="前言写了很久博客了，原来halo搭建的博客又转移到hexo了，转移原因如下：  写文章不方便。每次在本地Typora写完一次笔记，都要登录网站粘贴进去， 很麻烦。 需要定期维护网站。网站稳定点还好，但是我那个腾讯服务器经常死机，哎真麻烦  插件配置本次用到的插件：  Image auto upload Plugin (PicGo图床上传) Obsidian Git (快速Git上传) Templa">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo + OBSIDIAN 插件配置">
+<meta property="og:url" content="http://example.com/2023/04/18/%E5%8D%9A%E5%AE%A2/Hexo%20and%20OBSIDIAN%20%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:description" content="前言写了很久博客了，原来halo搭建的博客又转移到hexo了，转移原因如下：  写文章不方便。每次在本地Typora写完一次笔记，都要登录网站粘贴进去， 很麻烦。 需要定期维护网站。网站稳定点还好，但是我那个腾讯服务器经常死机，哎真麻烦  插件配置本次用到的插件：  Image auto upload Plugin (PicGo图床上传) Obsidian Git (快速Git上传) Templa">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2023-04-18T03:51:31.236Z">
+<meta property="article:modified_time" content="2023-04-19T03:03:38.000Z">
+<meta property="article:author" content="user">
+<meta property="article:tag" content="hexo">
+<meta property="article:tag" content="obsidian">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2023/04/18/%E5%8D%9A%E5%AE%A2/Hexo%20and%20OBSIDIAN%20%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Hexo + OBSIDIAN 插件配置',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-04-19 11:03:38'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">Hexo + OBSIDIAN 插件配置</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2023-04-18T03:51:31.236Z" title="Created 2023-04-18 11:51:31">2023-04-18</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-04-19T03:03:38.000Z" title="Updated 2023-04-19 11:03:38">2023-04-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%8D%9A%E5%AE%A2/">博客</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="Hexo + OBSIDIAN 插件配置"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>写了很久博客了，原来halo搭建的博客又转移到hexo了，转移原因如下：</p>
+<ol>
+<li>写文章不方便。每次在本地Typora写完一次笔记，都要登录网站粘贴进去， 很麻烦。</li>
+<li>需要定期维护网站。网站稳定点还好，但是我那个腾讯服务器经常死机，哎真麻烦</li>
+</ol>
+<h3 id="插件配置"><a href="#插件配置" class="headerlink" title="插件配置"></a>插件配置</h3><p><strong>本次用到的插件：</strong></p>
+<ul>
+<li>Image auto upload Plugin (PicGo图床上传)</li>
+<li>Obsidian Git (快速Git上传)</li>
+<li>Templater (文件元数据模板)</li>
+<li>Update time on edit (自动更新时间)</li>
+</ul>
+<h4 id="PicGo图床上传"><a href="#PicGo图床上传" class="headerlink" title="PicGo图床上传"></a>PicGo图床上传</h4><p>前置条件：安装并配置<a target="_blank" rel="noopener" href="https://github.com/Molunerfinn/PicGo">PicGo</a><br>安装插件：Image auto upload Plugin</p>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417184305.png" alt="image.png"></p>
+<h4 id="快速Git上传"><a href="#快速Git上传" class="headerlink" title="快速Git上传"></a>快速Git上传</h4><p>安装插件：Obsidian Git</p>
+<p>根据喜好可以设置自动git推送 (推荐手动)</p>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417184729.png" alt="image.png"></p>
+<p>Ctrl + P 快捷键输入命令，如 输入git可以看到所有命令</p>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417191104.png" alt="image.png"></p>
+<h4 id="文件元数据模板"><a href="#文件元数据模板" class="headerlink" title="文件元数据模板"></a>文件元数据模板</h4><p>安装插件：Templater</p>
+<p>这个是自动配置模板的，要开始使用 Templator，必须创建一个目录来存储模板的 markdown 文件，如 Templator 文件夹位置中所述。<br><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/63a78a3dd59149e65b5b0dbe.jpg" alt="63a78a3dd59149e65b5b0dbe.jpg"></p>
+<p>在我的环境中，还存放了核心插件的模板，所以目录结构如下。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs bash">Templates/<br>├── Template MOC.md <span class="hljs-comment"># 手册</span><br>├── Template/ <span class="hljs-comment"># 核心插件的模板</span><br>└── Templater Plugin/ <span class="hljs-comment"># 社区插件的模板</span><br></code></pre></td></tr></table></figure>
+
+<p><code>Template MOC.md</code>描述了模板文件以及如何使用它。 <code>Templater Plugin</code>将模板文件移动到目录后，在Template Plugin设置画面的Template Folder Location项目中输入路径。<br><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/50537c20f0744f1ba8edffd4.jpg" alt="50537c20f0744f1ba8edffd4.jpg"></p>
+<p>我的 Templater Plugin 配置如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">---<br>title: &lt;% tp.file.title %&gt;<br>categories:<br> - &lt;% tp.file.folder(relative=true) %&gt;<br>tags:<br> - &#x27;&#x27;<br>data: &lt;% tp.date.now(format=&quot;YYYY-MM-DD HH:mm:ss&quot;) %&gt;<br>updated: &#x27;&#x27;<br>---<br></code></pre></td></tr></table></figure>
+
+<p>Alt+ E 快捷键使用模板</p>
+<p>详细配置可以看<a target="_blank" rel="noopener" href="https://silentvoid13.github.io/Templater/introduction.html">官方文档</a></p>
+<h4 id="自动更新时间"><a href="#自动更新时间" class="headerlink" title="自动更新时间"></a>自动更新时间</h4><p>安装插件：Update time on edit</p>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/20230417190820.png" alt="image.png"></p>
+<h3 id="设置钩子函数自动生成静态资源"><a href="#设置钩子函数自动生成静态资源" class="headerlink" title="设置钩子函数自动生成静态资源"></a>设置钩子函数自动生成静态资源</h3><p><code>.git\hooks</code> 创建一个名为pre-commit的文件，内容如下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><code class="hljs bash"><span class="hljs-meta">#!/bin/sh</span><br><span class="hljs-comment"># pre-commit</span><br><br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;\033[1;35mRunning pre-commit checks\033[0m&quot;</span><br><br><span class="hljs-comment"># Run your compile command here</span><br>hexo clean &amp;&amp; hexo g<br><br><span class="hljs-comment"># Add the compiled files</span><br>git add .<br><br><span class="hljs-built_in">echo</span> -e <span class="hljs-string">&quot;\033[1;35mStatic resource to generate success\033[0m&quot;</span><br><br><span class="hljs-comment"># If all checks have passed, run git commit with the original commit message</span><br><span class="hljs-built_in">exec</span> git commit -m <span class="hljs-string">&quot;Auto commit at <span class="hljs-subst">$(date)</span>&quot;</span> --no-verify<br></code></pre></td></tr></table></figure>
+
+
+<h3 id="下一步打算"><a href="#下一步打算" class="headerlink" title="下一步打算"></a>下一步打算</h3><p>当然是写一个自己的博客系统了，最重要的实现和hexo博客实时同步功能，这样就可以实现一个博客编写多个博客同步了</p>
+<h3 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h3><ol>
+<li><a target="_blank" rel="noopener" href="https://publish.obsidian.md/chinesehelp/">Obsidian中文教程</a></li>
+<li><a target="_blank" rel="noopener" href="https://zenn.dev/estra/books/obsidian-dot-zenn/viewer/a-oz-add-plugins">プラグインを導入しよう｜Obsidian.Zenn</a></li>
+</ol>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">user</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2023/04/18/%E5%8D%9A%E5%AE%A2/Hexo%20and%20OBSIDIAN%20%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/">http://example.com/2023/04/18/%E5%8D%9A%E5%AE%A2/Hexo%20and%20OBSIDIAN%20%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/hexo/">hexo</a><a class="post-meta__tags" href="/tags/obsidian/">obsidian</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2023/04/18/WebBackend/Java/%E6%89%A7%E8%A1%8C%E6%B5%81%E7%A8%8B/" title="执行流程"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">执行流程</div></div></a></div><div class="next-post pull-right"><a href="/2023/04/18/%E5%85%B6%E5%AE%83/Git%20%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="Git 常用命令"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">Git 常用命令</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2021/11/10/%E5%8D%9A%E5%AE%A2/Github&hexo%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/" title="Github+hexo网站搭建"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2021-11-10</div><div class="title">Github+hexo网站搭建</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%89%8D%E8%A8%80"><span class="toc-number">1.</span> <span class="toc-text">前言</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E9%85%8D%E7%BD%AE"><span class="toc-number">2.</span> <span class="toc-text">插件配置</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#PicGo%E5%9B%BE%E5%BA%8A%E4%B8%8A%E4%BC%A0"><span class="toc-number">2.1.</span> <span class="toc-text">PicGo图床上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%BF%AB%E9%80%9FGit%E4%B8%8A%E4%BC%A0"><span class="toc-number">2.2.</span> <span class="toc-text">快速Git上传</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%96%87%E4%BB%B6%E5%85%83%E6%95%B0%E6%8D%AE%E6%A8%A1%E6%9D%BF"><span class="toc-number">2.3.</span> <span class="toc-text">文件元数据模板</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E8%87%AA%E5%8A%A8%E6%9B%B4%E6%96%B0%E6%97%B6%E9%97%B4"><span class="toc-number">2.4.</span> <span class="toc-text">自动更新时间</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%AE%BE%E7%BD%AE%E9%92%A9%E5%AD%90%E5%87%BD%E6%95%B0%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E9%9D%99%E6%80%81%E8%B5%84%E6%BA%90"><span class="toc-number">3.</span> <span class="toc-text">设置钩子函数自动生成静态资源</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%B8%8B%E4%B8%80%E6%AD%A5%E6%89%93%E7%AE%97"><span class="toc-number">4.</span> <span class="toc-text">下一步打算</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%B8%E5%85%B3%E9%93%BE%E6%8E%A5"><span class="toc-number">5.</span> <span class="toc-text">相关链接</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>

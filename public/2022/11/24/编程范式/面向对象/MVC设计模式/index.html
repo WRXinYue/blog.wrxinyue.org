@@ -1,0 +1,213 @@
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>MVC设计模式 | Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="MVC介绍MVC(Model-View-Controller)是一种软件开发架构模式，包含：Observer(观察者模式),Composite(组合模式)和Strategy(策略模式)  MVC 模式的基本思想是数据，显示和处理相分离。模型(Model)负责数据管理，视图(View)负责数据显示，控制器(Controller)负责业务逻辑和响应策略。  模型： 代表应用的业务层。   它是一个携带">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MVC设计模式">
+<meta property="og:url" content="http://example.com/2022/11/24/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/MVC%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html">
+<meta property="og:site_name" content="Hello Blog">
+<meta property="og:description" content="MVC介绍MVC(Model-View-Controller)是一种软件开发架构模式，包含：Observer(观察者模式),Composite(组合模式)和Strategy(策略模式)  MVC 模式的基本思想是数据，显示和处理相分离。模型(Model)负责数据管理，视图(View)负责数据显示，控制器(Controller)负责业务逻辑和响应策略。  模型： 代表应用的业务层。   它是一个携带">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
+<meta property="article:published_time" content="2022-11-24T09:56:54.103Z">
+<meta property="article:modified_time" content="2023-05-17T03:32:54.000Z">
+<meta property="article:author" content="user">
+<meta property="article:tag" content="java">
+<meta property="article:tag" content="架构模式">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/2022/11/24/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/MVC%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'MVC设计模式',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2023-05-17 11:32:54'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
+
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
+
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
+      const link = document.createElement('link')
+      link.rel = 'stylesheet'
+      link.href = url
+      if (id) link.id = id
+      link.onerror = reject
+      link.onload = link.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        link.onload = link.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(link)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
+        
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">MVC设计模式</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">Created</span><time class="post-meta-date-created" datetime="2022-11-24T09:56:54.103Z" title="Created 2022-11-24 17:56:54">2022-11-24</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">Updated</span><time class="post-meta-date-updated" datetime="2023-05-17T03:32:54.000Z" title="Updated 2023-05-17 11:32:54">2023-05-17</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E5%85%B6%E4%BB%96/">其他</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="MVC设计模式"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">Post View:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h2 id="MVC介绍"><a href="#MVC介绍" class="headerlink" title="MVC介绍"></a>MVC介绍</h2><p><strong>MVC(Model-View-Controller)<strong>是一种</strong>软件开发架构</strong>模式，包含：<strong>Observer(观察者模式)</strong>,<strong>Composite(组合模式)<strong>和</strong>Strategy(策略模式)</strong> </p>
+<p>MVC 模式的基本思想是数据，显示和处理相分离。模型(Model)负责<strong>数据管理</strong>，视图(View)负责<strong>数据显示</strong>，控制器(Controller)负责<strong>业务逻辑</strong>和<strong>响应策略</strong>。</p>
+<ul>
+<li><strong>模型：</strong> 代表应用的业务层。   它是一个携带数据的对象，如果数据发生变化，它还可以包含更新控制器的逻辑。 </li>
+<li><strong>视图：</strong> 它代表应用程序的表示层。   它用于可视化模型包含的数据。 </li>
+<li><strong>控制器：</strong> 它适用于模型和视图。   它用于管理应用程序流，即模型对象中的数据流，并在数据更改时更新视图。</li>
+</ul>
+<p>在 Java 编程中，模型包含简单的 Java 类 ，用于显示数据的视图和包含 servlet的控制器。   由于这种分离，用户请求的处理如下： </p>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20221124122932487.png" alt="image-20221124122932487"></p>
+<ol>
+<li><p>客户端（浏览器）向服务器端的控制器发送页面请求。 </p>
+</li>
+<li><p>然后控制器调用模型。  它收集请求的数据。 </p>
+</li>
+<li><p>然后控制器将检索到的数据传输到视图层。 </p>
+</li>
+<li><p>现在结果由视图发送回浏览器（客户端）</p>
+</li>
+</ol>
+<p><img src="https://wrxinyue.oss-cn-hongkong.aliyuncs.com/img/image-20221207111406179.png" alt="image-20221207111406179"></p>
+<p>MVC架构把数据处理，程序输入输出控制及数据显示分离开来，并且描述了不同部件的对象间的通信方式。使得软件可维护性，可扩展性，灵活性以及封装性大大提高；</p>
+<p>视图表示数据在屏幕上的显示。控制器提供处理过程控制，它在模型和视图之间起连接作用。控制器本身不输出任何信息和做任何处理，它只负责把用户的请求转成针对Model的操作，和调用相应的视图来显示Model处理后的数据。</p>
+<h2 id="为什么要在Web应用中使用MVC架构"><a href="#为什么要在Web应用中使用MVC架构" class="headerlink" title="为什么要在Web应用中使用MVC架构"></a>为什么要在Web应用中使用MVC架构</h2><h3 id="提高代码重用率"><a href="#提高代码重用率" class="headerlink" title="提高代码重用率"></a><em>提高代码重用率</em></h3><h3 id="提高程序的可维护性"><a href="#提高程序的可维护性" class="headerlink" title="提高程序的可维护性"></a><em>提高程序的可维护性</em></h3><h3 id="有利于团队开发"><a href="#有利于团队开发" class="headerlink" title="有利于团队开发"></a><em>有利于团队开发</em></h3><h2 id="Java简单实现MVC"><a href="#Java简单实现MVC" class="headerlink" title="Java简单实现MVC"></a>Java简单实现MVC</h2><ul>
+<li><strong>Employee Class</strong> —— model</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//表示模型的类</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">Employee</span> &#123;<br>    <span class="hljs-comment">//声明变量</span><br>    <span class="hljs-keyword">private</span> String employeeName;<br>    <span class="hljs-keyword">private</span> String employeeId;<br>    <span class="hljs-keyword">private</span> String employeeDepartment;<br>    <br>    <span class="hljs-comment">//定义get和set方法</span><br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeName</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> employeeName;<br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeName</span><span class="hljs-params">(String employeeName)</span> &#123;<br>        <span class="hljs-built_in">this</span>.employeeName = employeeName;<br>    &#125;<br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeId</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> employeeId;<br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeId</span><span class="hljs-params">(String employeeId)</span> &#123;<br>        <span class="hljs-built_in">this</span>.employeeId = employeeId;<br>    &#125;<br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeDepartment</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> employeeDepartment;<br>    &#125;<br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeDepartment</span><span class="hljs-params">(String employeeDepartment)</span> &#123;<br>        <span class="hljs-built_in">this</span>.employeeDepartment = employeeDepartment;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>EmployeeView Class</strong> —— view</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//表示视图的类 </span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EmployeeView</span> &#123;<br>    <br>  <span class="hljs-comment">//显示员工详细信息的方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">printEmployeeDetails</span><span class="hljs-params">(String employeeName,String employeeId,String employeeDepartment)</span> &#123;<br>        System.out.println(<span class="hljs-string">&quot;Employee Details：&quot;</span>);<br>        System.out.println(<span class="hljs-string">&quot;Name：&quot;</span> + employeeName);<br>        System.out.println(<span class="hljs-string">&quot;Employee ID：&quot;</span> + employeeId);<br>        System.out.println(<span class="hljs-string">&quot;Employee Department：&quot;</span> + employeeDepartment);<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li><strong>EmployeeContoller Class</strong> —— controller</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-comment">//代表控制器的类</span><br><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">EmployeeController</span> &#123;<br><br>    <span class="hljs-comment">// 声明变量模型和视图  </span><br>    <span class="hljs-keyword">private</span> Employee model;<br>    <span class="hljs-keyword">private</span> EmployeeView view;<br>    <br>    <span class="hljs-comment">// 要初始化的构造函数</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-title function_">EmployeeController</span><span class="hljs-params">(Employee model,EmployeeView view)</span> &#123;<br>        <span class="hljs-built_in">this</span>.model = model;<br>        <span class="hljs-built_in">this</span>.view = view;<br>    &#125;<br>    <br>    <span class="hljs-comment">// getter 和 setter 方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeName</span><span class="hljs-params">(String name)</span> &#123;<br>        model.setEmployeeName(name);<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeName</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> model.getEmployeeName();<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeId</span><span class="hljs-params">(String id)</span> &#123;<br>        model.setEmployeeId(id);<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeId</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> model.getEmployeeId();<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">setEmployeeDepartment</span><span class="hljs-params">(String department)</span> &#123;<br>        model.setEmployeeDepartment(department);<br>    &#125;<br>    <br>    <span class="hljs-keyword">public</span> String <span class="hljs-title function_">getEmployeeDepartment</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-keyword">return</span> model.getEmployeeDepartment();<br>    &#125;<br>    <br>    <span class="hljs-comment">// 更新视图的方法</span><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">updateView</span><span class="hljs-params">()</span> &#123;<br>        view.printEmployeeDetails(getEmployeeName(), getEmployeeId(), getEmployeeDepartment());<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>Main方法</li>
+</ul>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><code class="hljs java"><span class="hljs-keyword">public</span> <span class="hljs-keyword">class</span> <span class="hljs-title class_">MVCMain</span> &#123;<br><br>    <span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title function_">main</span><span class="hljs-params">(String[] args)</span> &#123;<br>        <span class="hljs-comment">// 根据 employee_id 从数据库中获取员工记录</span><br>        <span class="hljs-type">Employee</span> <span class="hljs-variable">model</span> <span class="hljs-operator">=</span> retriveEmployeeFromDatabase();<br>        <span class="hljs-comment">// 创建一个视图以在控制台上写入员工详细信息</span><br>        <span class="hljs-type">EmployeeView</span> <span class="hljs-variable">view</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">EmployeeView</span>();<br>        <span class="hljs-type">EmployeeController</span> <span class="hljs-variable">controller</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">EmployeeController</span>(model, view);<br>        controller.updateView();<br>        <br>        <span class="hljs-comment">//更新模型数据</span><br>        controller.setEmployeeName(<span class="hljs-string">&quot;XinYue&quot;</span>);<br>        System.out.println(<span class="hljs-string">&quot;\n&quot;</span> + <span class="hljs-string">&quot;Employee Details after updating: &quot;</span>);<br>        controller.updateView();<br>    &#125;<br>    <br>    <span class="hljs-keyword">private</span> <span class="hljs-keyword">static</span> Employee <span class="hljs-title function_">retriveEmployeeFromDatabase</span><span class="hljs-params">()</span> &#123;<br>        <span class="hljs-type">Employee</span> <span class="hljs-variable">employee</span> <span class="hljs-operator">=</span> <span class="hljs-keyword">new</span> <span class="hljs-title class_">Employee</span>();<br>        employee.setEmployeeName(<span class="hljs-string">&quot;NaiYaZi&quot;</span>);<br>        employee.setEmployeeId(<span class="hljs-string">&quot;7&quot;</span>);<br>        employee.setEmployeeDepartment(<span class="hljs-string">&quot;Salesforce&quot;</span>);<br>        <span class="hljs-keyword">return</span> employee;<br>    &#125;<br>&#125;<br></code></pre></td></tr></table></figure>
+
+<ul>
+<li>输出：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs plaintext">Employee Details：<br>Name：NaiYaZi<br>Employee ID：7<br>Employee Department：Salesforce<br><br>Employee Details after updating: <br>Employee Details：<br>Name：XinYue<br>Employee ID：7<br>Employee Department：Salesforce<br></code></pre></td></tr></table></figure>
+
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta">Author: </span><span class="post-copyright-info"><a href="http://example.com">user</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta">Link: </span><span class="post-copyright-info"><a href="http://example.com/2022/11/24/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/MVC%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/">http://example.com/2022/11/24/%E7%BC%96%E7%A8%8B%E8%8C%83%E5%BC%8F/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1/MVC%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta">Copyright Notice: </span><span class="post-copyright-info">All articles in this blog are licensed under <a target="_blank" rel="noopener" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a> unless stating additionally.</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/java/">java</a><a class="post-meta__tags" href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/">架构模式</a></div><div class="post_share"><div class="social-share" data-image="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><nav class="pagination-post" id="pagination"><div class="prev-post pull-left"><a href="/2022/11/25/WebBackend/Java/Java%E9%9D%A2%E8%AF%95%E5%85%AB%E8%82%A1%E6%96%87%EF%BC%88Company%EF%BC%89/" title="Java面试八股文（Company）"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Previous Post</div><div class="prev_info">Java面试八股文（Company）</div></div></a></div><div class="next-post pull-right"><a href="/2022/11/23/%E7%AE%97%E6%B3%95&amp;%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" title="时间空间复杂度分析"><div class="cover" style="background: var(--default-bg-color)"></div><div class="pagination-info"><div class="label">Next Post</div><div class="next_info">时间空间复杂度分析</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>Related Articles</span></div><div class="relatedPosts-list"><div><a href="/2022/11/23/%E7%AE%97%E6%B3%95&%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84/%E6%97%B6%E9%97%B4%E7%A9%BA%E9%97%B4%E5%A4%8D%E6%9D%82%E5%BA%A6%E5%88%86%E6%9E%90/" title="时间空间复杂度分析"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2022-11-23</div><div class="title">时间空间复杂度分析</div></div></a></div><div><a href="/2023/04/18/WebBackend/Java/%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84%E5%AE%9E%E4%BE%8B/" title="目录结构实例"><div class="cover" style="background: var(--default-bg-color)"></div><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-04-18</div><div class="title">目录结构实例</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>Catalog</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#MVC%E4%BB%8B%E7%BB%8D"><span class="toc-number">1.</span> <span class="toc-text">MVC介绍</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%9C%A8Web%E5%BA%94%E7%94%A8%E4%B8%AD%E4%BD%BF%E7%94%A8MVC%E6%9E%B6%E6%9E%84"><span class="toc-number">2.</span> <span class="toc-text">为什么要在Web应用中使用MVC架构</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E9%AB%98%E4%BB%A3%E7%A0%81%E9%87%8D%E7%94%A8%E7%8E%87"><span class="toc-number">2.1.</span> <span class="toc-text">提高代码重用率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%90%E9%AB%98%E7%A8%8B%E5%BA%8F%E7%9A%84%E5%8F%AF%E7%BB%B4%E6%8A%A4%E6%80%A7"><span class="toc-number">2.2.</span> <span class="toc-text">提高程序的可维护性</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%9C%89%E5%88%A9%E4%BA%8E%E5%9B%A2%E9%98%9F%E5%BC%80%E5%8F%91"><span class="toc-number">2.3.</span> <span class="toc-text">有利于团队开发</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Java%E7%AE%80%E5%8D%95%E5%AE%9E%E7%8E%B0MVC"><span class="toc-number">3.</span> <span class="toc-text">Java简单实现MVC</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="Read Mode"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="Table Of Contents"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
