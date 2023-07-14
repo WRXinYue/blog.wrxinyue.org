@@ -1,249 +1,340 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Hello Blog">
-<meta property="og:url" content="http://example.com/index.html">
-<meta property="og:site_name" content="Hello Blog">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
-<meta property="article:author" content="user">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Hello Blog',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2023-07-08 23:56:02'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = url
-      if (id) link.id = id
-      link.onerror = reject
-      link.onload = link.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        link.onload = link.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(link)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WRXinYue&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+    <meta name="author" content="WRXinYue"> 
+    <link rel="alternative" href="atom.xml" title="WRXinYue&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="WRXinYue&#39;s Blog"/>
+    
+    
+    
+    
+    
+    <meta property="og:site_name" content="WRXinYue&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="WRXinYue&#39;s Blog"/>
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">WRXinYue&#39;s Blog</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="https://wrxinyue.github.io/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2023 WRXinYue.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="https://github.com/WRXinYue/" target="_blank">WRXinYue</a>
+		
+    </p>
+</div>
+
+<div id="container">
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python/">WebBackend/Python</a></span></div><div class="content">配置设置创建一个名为.style.yapf的文件，并将其放在项目的根目录中
-123456789[style]based_on_style = googleindent_width = 2column_limit = 120split_before_logical_operator = true
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome/welcome3.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+        </div>
+    </div>
+    <div id="vibrant">
+        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
+    </div>
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+			<div class="iconfont icon-search switchsearch" href="/search/" title="搜索"></div>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
+    </div>
+    
+    <div id="post0">
+        <p>七月 09, 2023</p>
+        <h2><a href="/2023/07/09/server/Docker/" title="Docker" class="posttitle">Docker</a></h2>
+        <p class="summary">克隆与运行克隆Ubuntu为例：
+123docker commit c7b1021e0e3c ubuntu-tem...</p>
+    </div>
+    
+</div>
+
+    <div id="primary">
+        
+<div class="post">
+    <a href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>七月 01, 2023</p>
+        <h3><a href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化" class="posttitle">yapf代码格式化</a></h3>
+        <p>配置设置创建一个名为.style.yapf的文件，并将其放在项目的根目录中
+123456789[style]based_on_style = google...</p>
+    </div>
+</div>
 
 
-格式化全部代码PowerShell：
-1Get-ChildItem -Path . -Filter *.py -Recurse | ForEach-Object &#123; yapf -i --style=.style.yapf $_.FullName &#125;
-
-1Get-ChildItem -Path . -Filter *.py -Recurse -Exclude (Get-ChildItem -Path .\venv\ -Recurse -Include *.py | ForEach-Object &#123; $_.FullName &#125;) | ForEach-Object &#123; yapf -i --style=.style.yapf $_.FullName  ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%9A%8F%E5%86%99/">随写</a></span></div><div class="content">Geek避免为了赚钱什么姿势都能给的网站
+<div class="post">
+    <a href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 13, 2023</p>
+        <h3><a href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质" class="posttitle">极客精神本质</a></h3>
+        <p>Geek避免为了赚钱什么姿势都能给的网站
 
 实现财务自由
 
-极客大概不信邪，他们信自己，天生喜欢在各种规矩的边缘疯狂地试探。实际上，为了科学地“作死”，极客们总得研究最新的知识，于是在这个科技闪耀的时代，很多极客顺理成章地成为了科技爱好者。
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="content">向量化: HuggingFaceEmbeddings1234567# Embedding running deviceEMBEDDING_DEVICE = &#x27;cuda&#x27; if torch.cuda.is_available() else &#x27;mps&#x27; if torch.backends.mps.is_available() else &#x27;cpu&#x27;# 加载本地向量编码器  model_name = &quot;sentence-transformers/all-mpnet-base-v2&quot;  model_kwargs = &#123;&#x27;device&#x27;: EMBEDDING_DEVICE&#125;  embeddings = HuggingFaceEmbeddings(model_name=model_name, model_kwargs=model_kwargs)
+极客大概不信邪，他们信自己，天生喜欢在各种规矩的边缘疯狂地试探。实际上，为了科学地“作死”，极...</p>
+    </div>
+</div>
 
 
-向量化存储(FAISS)初始化
-创建词嵌入模型（embedding model）  
-可以参考以下链接获取模型：https://hug ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="content">当处理向量数据时，距离计算是一种常见的操作，用于衡量向量之间的相似度或差异程度。不同的距离计算公式适用于不同类型的向量数据。
-
-欧氏距离（L2距离）： 欧氏距离是最常见的距离度量方法之一，用于计算浮点型向量之间的距离。它计算的是向量之间的直线距离，即两个向量在每个维度上差值的平方和的平方根。欧氏距离主要应用于计算机视觉领域，例如图像相似性比较和目标检测。
-
-内积（IP）： 内积是另一种常见的距离度量方法，主要应用于处理浮点型向量的自然语言处理（NLP）领域。内积计算的是两个向量之间的点积，即对应维度上的元素相乘后求和。内积越大，表示两个向量越相似。
-
-
-对于二值型向量，常见的距离计算公式包括：
-
-汉明距离（Hamming距离）： 汉明距离用于比较两个等长的二进制向量，计算的是在相同位置上不同的位数。汉明距离越小，表示两个二进制向量越相似。在自然语言处理中，汉明距离常用于比较文本字符串的相似性。
-
-杰卡德距离（Jaccard距离）： 杰卡德距离衡量的是两个集合之间的不相交部分与总部分的比例。对于二值型向量，可以将其看作是包含的元素与整个元素集之间的相似度度量。杰卡德距离越小，表示两个向量 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="content">索引类型：
-
-HNSW（Hierarchical Navigable Small World）：性能高、精确度高、内存消耗大。适用于需要同时追求性能和精确度，且有充足资金支持的大规模数据集。
-FLAT：不压缩向量，保证精确搜索结果，性能稍低但精确度最高，内存消耗次于HNSW。适用于对精确度要求高、对性能要求不高且数据集相对较小的情况（不建议在大规模数据集中使用，因为它会将所有数据一一比对）。
-IVF_FLAT：类似调表的索引，将向量数据划分为多个组，通过比较目标输入向量与每个聚类中心的距离来查询数据。查询时可以设置nprobe参数，选择最接近搜索向量的几个组进行逐个比对。相对节省资源，对精确度有一定损失。
-推荐参数设置：
-nlist：建议设为4 × sqrt(n)，其中n表示数据集中的实体数量。
-nprobe：根据实际情况调节。
+<div class="post">
+    <a href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 08, 2023</p>
+        <h3><a href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA" class="posttitle">LangChain通过LLM实现QA</a></h3>
+        <p>向量化: HuggingFaceEmbeddings1234567# Embedding running deviceEMBEDDING_DEVICE =...</p>
+    </div>
+</div>
 
 
+<div class="post">
+    <a href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 06, 2023</p>
+        <h3><a href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式" class="posttitle">距离计算公式</a></h3>
+        <p>当处理向量数据时，距离计算是一种常见的操作，用于衡量向量之间的相似度或差异程度。不同的距离计算公式适用于不同类型的向量数据。
 
-其他索引类型：
+欧氏距离（L2距离）： 欧...</p>
+    </div>
+</div>
 
-IVF_SQ8：具有数据压缩功能（内存节省70-75%），适用于资源受限的情况下代替IVF_FLAT，但精确度会降低。
-IVF_PQ：将高维数据转化为多个低维数据，进一步节省资源，但精确度更低。
-ANNOY：树形索引，适用于低维度向量。 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/06/05/%E5%85%B6%E5%AE%83/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="VIM常用命令">VIM常用命令</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-06-05T11:09:31.009Z" title="Created 2023-06-05 19:09:31">2023-06-05</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">
+
+<div class="post">
+    <a href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 06, 2023</p>
+        <h3><a href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型" class="posttitle">索引类型</a></h3>
+        <p>索引类型：
+
+HNSW（Hierarchical Navigable Small World）：性能高、精确度高、内存消耗大。适用于需要同时追求性能和精确...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/06/05/%E5%85%B6%E5%AE%83/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="VIM常用命令">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>六月 05, 2023</p>
+        <h3><a href="/2023/06/05/%E5%85%B6%E5%AE%83/VIM%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/" title="VIM常用命令" class="posttitle">VIM常用命令</a></h3>
+        <p>
 viw 这将选中整个单词，包括其中的所有字符
 y 复制
 n来跳转到下一个匹配位置，按下N来跳转到上一个匹配位置
 
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/31/WebBackend/Python/LLMOps/Sentence%20Embeddings/" title="Sentence Embeddings">Sentence Embeddings</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-31T08:02:37.326Z" title="Created 2023-05-31 16:02:37">2023-05-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="content">关于Sentence Embeddings句子嵌入（Sentence Embeddings）是将一个句子转换为向量表示的技术。这种向量表示捕捉了句子的语义信息和上下文，可以用于下游自然语言处理（NLP）任务，如分类、聚类、相似度计算等。句子嵌入技术通常涉及将句子中的每个单词转换为向量，然后将这些向量汇总为代表整个句子的向量。有许多不同的方法可以生成句子向量，例如Word2Vec、GloVe、FastText模型以及最近的Transformer模型等。将句子嵌入用作特征向量可以大大简化许多NLP任务，并提高模型的准确性和效率。
-OpenAI Embeddings APIOpenAI Embeddings API提供了一种方便、高效的方式来生成文本表示
-扩展阅读
-LangChain - 打造自己的GPT（五）拥有本地高效、安全的Sentence Embeddings For Chinese &amp; English
+</p>
+    </div>
+</div>
 
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/30/WebBackend/Python/LLMOps/NLP/" title="OpenAi Embeddings">OpenAi Embeddings</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-30T02:45:05.952Z" title="Created 2023-05-30 10:45:05">2023-05-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-LLMOps/">WebBackend/Python/LLMOps</a></span></div><div class="content">什么是NLP不完全是。NLP（自然语言处理）是一个广泛的领域，研究计算机如何理解、分析和生成人类语言。词嵌入和上下文化词表示模型只是 NLP 领域的一部分。
-预训练词嵌入（如 Word2Vec、GloVe 和 FastText）将词汇转换为固定大小的数值向量，这些向量可以捕捉单词之间的语义和句法关系。它们通常是非语境化的，即每个单词都有一个固定的向量表示，而不考虑其在特定句子或上下文中的用法。
-与此相反，上下文化词表示模型（如 BERT、GPT 等）可以根据给定的输入序列生成单词的向量表示。这意味着相同的单词在不同上下文中可能具有不同的向量表示。这些模型通常基于Transformer架构，并通过大量文本数据进行预训练，从而有效地学习到更丰富的语言特征。
-所以，NLP 不仅限于预训练词嵌入和上下文化词表示模型。它还包括各种任务，如机器翻译、情感分析、实体识别、问答系统、文本摘要等。预训练词嵌入和上下文化词表示模型是 NLP 中的一种技术，用于学习有效的文本表示，以便计算机可以理解和处理自然语言数据。
-OpenAI Embeddings 是一个词嵌入模型，用于将文本中的单词转换为数值向量表 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/30/WebBackend/Python/LLMOps/LLMOps/" title="整理">整理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-29T16:49:33.388Z" title="Created 2023-05-30 00:49:33">2023-05-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-gpt/">WebBackend/Python/gpt</a></span></div><div class="content">相关资料
+
+<div class="post">
+    <a href="/2023/05/31/WebBackend/Python/LLMOps/Sentence%20Embeddings/" title="Sentence Embeddings">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 31, 2023</p>
+        <h3><a href="/2023/05/31/WebBackend/Python/LLMOps/Sentence%20Embeddings/" title="Sentence Embeddings" class="posttitle">Sentence Embeddings</a></h3>
+        <p>关于Sentence Embeddings句子嵌入（Sentence Embeddings）是将一个句子转换为向量表示的技术。这种向量表示捕捉了句子的语义...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/05/30/WebBackend/Python/LLMOps/NLP/" title="OpenAi Embeddings">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 30, 2023</p>
+        <h3><a href="/2023/05/30/WebBackend/Python/LLMOps/NLP/" title="OpenAi Embeddings" class="posttitle">OpenAi Embeddings</a></h3>
+        <p>什么是NLP不完全是。NLP（自然语言处理）是一个广泛的领域，研究计算机如何理解、分析和生成人类语言。词嵌入和上下文化词表示模型只是 NLP 领域的一部分...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/05/30/WebBackend/Python/LLMOps/LLMOps/" title="整理">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 30, 2023</p>
+        <h3><a href="/2023/05/30/WebBackend/Python/LLMOps/LLMOps/" title="整理" class="posttitle">整理</a></h3>
+        <p>相关资料
 LLMOps（Large Language Model Operations）简介
 LLMOps开源工具总结
 
-LLMOps（Large Language Model Operations）是一个新兴领域，专注于管理大型语言模型的整个生命周期，包括数据管理、模型开发、部署和伦理等方面。Hugging Face、Humanloop和NVIDIA等公司正在引领这一领域的发展。
+LLMOps（Large Lan...</p>
+    </div>
+</div>
 
-Arize-Phoenix：用于 LLM、视觉、语言和表格模型的 ML 可观察性工具。
 
-deeplake：流式处理大型多模态数据集的工具，可实现接近 100% 的 GPU 利用率。支持查询、可视化和版本控制数据，无需重新计算模型微调的嵌入即可访问数据。
+    </div>
+    
+    <div id="pager"><a href="/page/2/" class="more">加载更多</a></div>
+    
+</div>
+<div id="preview"></div>
 
-GPTCache：创建语义缓存以存储 LLM 查询的响应。
 
-Haystack：使用 LLM Agents、语义搜索、问答等功能快速组合应用程序的工具。
 
-langchain：通过可组合性构建使用 LLM 的应用程序的工具。
+</body>
 
-LlamaIndex：提供连接 LLM 与外部数据的中央接口。
 
-Weights &amp; Biases（提示）：开发者优先 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/30/WebBackend/Python/LLMOps/Langchain/" title="Langchain">Langchain</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-29T16:42:30.833Z" title="Created 2023-05-30 00:42:30">2023-05-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Python-gpt/">WebBackend/Python/gpt</a></span></div><div class="content">什么是LangchainLangchain 是指在计算机程序中进行语言处理的工具或方法。在这里，langchain被当作中间件来处理查询。  
-简单来说Langchain就是为了提升构建一个和大型语言模型相关软件的效率
-在LLM大语言模型里面，我们会用到一个东西，我们之前也介绍过prompts，那么这个地方针对prompts就讲了，怎么对prompts进行管理，进行优化。然后怎么去设定一个通用性质的一个接口，然后怎样去利用一些操作，让这个prompts更有效率。
-你可以把它看成一种指导意见，只不过这种知道意见是在做这个大型语言模型的时候，人们总结出来得到的一个东西，然后写成文章，你用了这套吗，就符合了Langchain所定义的这套规范。
-那么在这方面不仅有prompts，还能看到其他的概念；比如说这个data generation，agents，memory这些东西。未来可能还会出现另外一些新的概念出来。
-所以我们回过头过来看，这个Langchain其实做的一件事就是我把你在AI开发中会用到的相关的技术全部抽象成一个小元素，只要用到这些元素，就不必重复的去造轮子，不用去想从架构上我该怎 ...</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span><a class="page-number" href="/page/2/#content-inner">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/2/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>Categories</span>
-            <a class="card-more-btn" href="/categories/" title="More">
-    <i class="fas fa-angle-right"></i></a>
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

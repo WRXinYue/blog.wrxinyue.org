@@ -1,285 +1,347 @@
-<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Hello Blog</title><meta name="author" content="user"><meta name="copyright" content="user"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
-<meta property="og:title" content="Hello Blog">
-<meta property="og:url" content="http://example.com/page/3/index.html">
-<meta property="og:site_name" content="Hello Blog">
-<meta property="og:locale" content="en_US">
-<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
-<meta property="article:author" content="user">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/page/3/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: undefined,
-  translate: undefined,
-  noticeOutdate: undefined,
-  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
-  copy: {
-    success: 'Copy successfully',
-    error: 'Copy error',
-    noSupport: 'The browser does not support'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '',
-  dateSuffix: {
-    just: 'Just',
-    min: 'minutes ago',
-    hour: 'hours ago',
-    day: 'days ago',
-    month: 'months ago'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: undefined,
-  source: {
-    justifiedGallery: {
-      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
-      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
-    }
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: false,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: 'Hello Blog',
-  isPost: false,
-  isHome: true,
-  isHighlightShrink: false,
-  isToc: false,
-  postUpdate: '2023-07-08 23:56:02'
-}</script><noscript><style type="text/css">
-  #nav {
-    opacity: 1
-  }
-  .justified-gallery img {
-    opacity: 1
-  }
 
-  #recent-posts time,
-  #post-meta time {
-    display: inline !important
-  }
-</style></noscript><script>(win=>{
-    win.saveToLocal = {
-      set: function setWithExpiry(key, value, ttl) {
-        if (ttl === 0) return
-        const now = new Date()
-        const expiryDay = ttl * 86400000
-        const item = {
-          value: value,
-          expiry: now.getTime() + expiryDay,
-        }
-        localStorage.setItem(key, JSON.stringify(item))
-      },
-
-      get: function getWithExpiry(key) {
-        const itemStr = localStorage.getItem(key)
-
-        if (!itemStr) {
-          return undefined
-        }
-        const item = JSON.parse(itemStr)
-        const now = new Date()
-
-        if (now.getTime() > item.expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return item.value
-      }
-    }
-  
-    win.getScript = url => new Promise((resolve, reject) => {
-      const script = document.createElement('script')
-      script.src = url
-      script.async = true
-      script.onerror = reject
-      script.onload = script.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        script.onload = script.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(script)
-    })
-  
-    win.getCSS = (url,id = false) => new Promise((resolve, reject) => {
-      const link = document.createElement('link')
-      link.rel = 'stylesheet'
-      link.href = url
-      if (id) link.id = id
-      link.onerror = reject
-      link.onload = link.onreadystatechange = function() {
-        const loadState = this.readyState
-        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
-        link.onload = link.onreadystatechange = null
-        resolve()
-      }
-      document.head.appendChild(link)
-    })
-  
-      win.activateDarkMode = function () {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      win.activateLightMode = function () {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
-        }
-      }
-      const t = saveToLocal.get('theme')
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>WRXinYue&#39;s Blog</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
     
-          if (t === 'dark') activateDarkMode()
-          else if (t === 'light') activateLightMode()
+    <meta name="author" content="WRXinYue"> 
+    <link rel="alternative" href="atom.xml" title="WRXinYue&#39;s Blog" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="WRXinYue&#39;s Blog"/>
+    
+    
+    
+    
+    
+    <meta property="og:site_name" content="WRXinYue&#39;s Blog"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="WRXinYue&#39;s Blog"/>
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.3.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">WRXinYue&#39;s Blog</span>
+    <div id="loader"></div>
+    <div class="nav">
+    <ul id="menu-menu" class="menu">
         
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        if (asideStatus === 'hide') {
-          document.documentElement.classList.add('hide-aside')
-        } else {
-          document.documentElement.classList.remove('hide-aside')
-        }
-      }
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="//" title="首页" target="_blank" rel="noopener">首页</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/categories/" title="分类" target="_blank" rel="noopener">分类</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/tags/" title="标签" target="_blank" rel="noopener">标签</a>
+        </li>
+        
+        <li class="pview menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="/archives/" title="归档" target="_blank" rel="noopener">归档</a>
+        </li>
+        
+        <li class="  menu-item menu-item-type-post_type menu-item-object-page">
+            <a href="https://wrxinyue.github.io/" title="关于" target="_blank" rel="noopener">关于</a>
+        </li>
+        
+    </ul>
+	<span class="target"></span>
+	<center>
+	<div class="hitokoto">
+		<span class="typed" id="hitokoto" data-st="true"></span>
+	</div>
+	</center>
+	
+	<p class="footerlinks">
+		<a href="#" class="iconfont icon-null"></a>
+		
+            <a href="/" title="facebook" class="iconfont icon-facebook" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="twitter" class="iconfont icon-twitter" target="_blank" rel="noopener"> </a>
+        
+            <a href="/" title="github" class="iconfont icon-github" target="_blank" rel="noopener"> </a>
+        
+            <a href="/img/logo.png" title="wechat" class="iconfont icon-wechat" target="_blank" rel="noopener"> </a>
+        
+            <a href="mailto:xxxx@gmail.com" title="email" class="iconfont icon-email" target="_blank" rel="noopener"> </a>
+        
+		<a href="#" class="iconfont icon-null"></a>
+	</p>
+	
+    <p id="copyright">
+        &copy; 2023 WRXinYue.
+        <span> | </span>Powered by <a href="https://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a>
+        <span> | </span>Theme <a href="https://github.com/Fechin/hexo-theme-diaspora" title="Diaspora" target="_blank" rel="noopener">Diaspora</a> by Fechin
+		
+		<span> | </span><a rel="nofollow" href="https://github.com/WRXinYue/" target="_blank">WRXinYue</a>
+		
+    </p>
+</div>
+
+<div id="container">
     
-    const detectApple = () => {
-      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-    })(window)</script><meta name="generator" content="Hexo 6.3.0"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog-info"><a href="/" title="Hello Blog"><span class="site-name">Hello Blog</span></a></span><div id="menus"><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">Hello Blog</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/10/server/%E9%98%B2%E7%81%AB%E5%A2%99/" title="防火墙">防火墙</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-10T15:39:03.592Z" title="Created 2023-05-10 23:39:03">2023-05-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/server/">server</a></span></div><div class="content">版本查看：
+<div id="screen">
+    <div id="mark">
+        <div class="layer" data-depth="0.4">
+            <img src="/img/welcome/welcome3.jpg" id="cover" crossorigin="anonymous" width="1920" height="1080">
+        </div>
+    </div>
+    <div id="vibrant">
+        <svg viewbox="0 0 2880 1620" height="100%" preserveaspectratio="xMaxYMax slice">
+            <polygon opacity="0.7" points="2000,1620 0,1620 0,0 600,0 "/>
+        </svg>
+        <div></div>
+    </div>
+    <div id="header">
+        <div>
+            <a class="image-logo" href="/"></a>
+			
+			<div class="iconfont icon-search switchsearch" href="/search/" title="搜索"></div>
+			
+            <div class="iconfont icon-menu switchmenu"></div>
+        </div>
+    </div>
+    
+    <div id="post0">
+        <p>五月 17, 2023</p>
+        <h2><a href="/2023/05/17/WebBackend/Java/JVM%E5%8E%9F%E7%90%86/" title="JVM原理" class="posttitle">JVM原理</a></h2>
+        <p class="summary"></p>
+    </div>
+    
+</div>
+
+    <div id="primary">
+        
+<div class="post">
+    <a href="/2023/05/17/WebBackend/Java/JVM%E5%8E%9F%E7%90%86/" title="JVM原理">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 17, 2023</p>
+        <h3><a href="/2023/05/17/WebBackend/Java/JVM%E5%8E%9F%E7%90%86/" title="JVM原理" class="posttitle">JVM原理</a></h3>
+        <p></p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/05/10/server/%E9%98%B2%E7%81%AB%E5%A2%99/" title="防火墙">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 10, 2023</p>
+        <h3><a href="/2023/05/10/server/%E9%98%B2%E7%81%AB%E5%A2%99/" title="防火墙" class="posttitle">防火墙</a></h3>
+        <p>版本查看：
 1iptables --version
 
 安装：
-12sudo apt-get updatesudo apt-get install iptables
+12sudo apt-get updatesudo apt-get install ipta...</p>
+    </div>
+</div>
 
-当前的规则:
-1sudo iptables -L -n -v
 
--L 选项表示 “list”（列出），-n 选项表示 “numeric”（不要解析和显示主机名、网络名和端口名），而 -v 选项表示 “verbose”（显示详细信息）
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/05/10/server/DNS%E8%AE%B0%E5%BD%95%E7%B1%BB%E5%9E%8B/" title="DNS记录类型">DNS记录类型</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-05-10T11:17:58.391Z" title="Created 2023-05-10 19:17:58">2023-05-10</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/server/">server</a></span></div><div class="content">
+<div class="post">
+    <a href="/2023/05/10/server/DNS%E8%AE%B0%E5%BD%95%E7%B1%BB%E5%9E%8B/" title="DNS记录类型">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>五月 10, 2023</p>
+        <h3><a href="/2023/05/10/server/DNS%E8%AE%B0%E5%BD%95%E7%B1%BB%E5%9E%8B/" title="DNS记录类型" class="posttitle">DNS记录类型</a></h3>
+        <p>
 A 记录（Address Record）：将一个域名映射到一个IPv4地址。
 
-AAAA 记录（Quad A Record）：将一个域名映射到一个IPv6地址。与A记录类似，只是它们适用于IPv6地址而不是IPv4地址。
+AAAA 记录（Quad A Record）：将一个域名映射到一个IPv...</p>
+    </div>
+</div>
 
-CNAME 记录（Canonical Name Record）：将一个域名映射到另一个域名。它允许你创建别名，指向其他的DNS记录。
 
-MX 记录（Mail Exchange Record）：定义用于处理电子邮件的服务器。当你发送一封邮件到一个域名时，MX记录告诉邮件服务器应该向哪个服务器发送邮件。
+<div class="post">
+    <a href="/2023/04/21/WebBackend/Java/OkHttp3/" title="OkHttp WebSocket">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 21, 2023</p>
+        <h3><a href="/2023/04/21/WebBackend/Java/OkHttp3/" title="OkHttp WebSocket" class="posttitle">OkHttp WebSocket</a></h3>
+        <p>WebSocketWebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信，位于OSI模型的应用层。WebSocket使得客户端和服务器之...</p>
+    </div>
+</div>
 
-TXT 记录（Text Record）：提供关于域名的任何文本信息。这种类型的记录经常被用于各种目的，包括SPF记录（用于防止垃圾邮件）和域名验证（例如，Google的网站所有权验证）。
 
-SPF 记录（Sender Policy Framework Record）：用来防止垃圾邮件。它指定了哪些邮件服务器被允许发送你的域名的邮件。
+<div class="post">
+    <a href="/2023/04/19/%E5%85%B6%E5%AE%83/WSL/" title="WSL">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 19, 2023</p>
+        <h3><a href="/2023/04/19/%E5%85%B6%E5%AE%83/WSL/" title="WSL" class="posttitle">WSL</a></h3>
+        <p>常用WSL命令ssh连接WSL2重装SSH：
+12sudo apt-get remove openssh-serversudo apt-get insta...</p>
+    </div>
+</div>
 
-SRV 记录（Service Record）：定义提供特定服务的服务器。例如，SRV记录可以用来指定用于音频和视频通话的服务器。
 
- ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/21/WebBackend/Java/OkHttp3/" title="OkHttp WebSocket">OkHttp WebSocket</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-21T06:34:09.353Z" title="Created 2023-04-21 14:34:09">2023-04-21</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend-Java/">WebBackend/Java</a></span></div><div class="content">WebSocketWebSocket是一种网络传输协议，可在单个TCP连接上进行全双工通信，位于OSI模型的应用层。WebSocket使得客户端和服务器之间的数据交换变得更加简单，允许服务端主动向客户端推送数据。在WebSocket API中，浏览器和服务器只需要完成一次握手，两者之间就可以创建持久性的连接，并进行双向数据传输123
+<div class="post">
+    <a href="/2023/04/19/%E5%85%B6%E5%AE%83/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="快捷键大全">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 19, 2023</p>
+        <h3><a href="/2023/04/19/%E5%85%B6%E5%AE%83/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="快捷键大全" class="posttitle">快捷键大全</a></h3>
+        <p>Ctrl+N打开新窗口。Ctrl+T打开新标签页。Ctrl+Shift+N在隐身模式下打开新窗口。按&nbsp;Ctrl+O，然后选择文件。在谷歌浏览器中...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/04/18/WebBackend/Java%20%E5%92%8C%20Python%20%E5%BC%82%E6%9E%84%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" title="Java 和 Python 异构模块数据传输">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 18, 2023</p>
+        <h3><a href="/2023/04/18/WebBackend/Java%20%E5%92%8C%20Python%20%E5%BC%82%E6%9E%84%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" title="Java 和 Python 异构模块数据传输" class="posttitle">Java 和 Python 异构模块数据传输</a></h3>
+        <p>Java运行Python脚本，把数据放在参数里传递通过第三方文件做中转站消息队列方式流量消峰 应用解耦 异步处理
 扩展阅读
-Spring Boot教程(15) – 使用WebSocket
-
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/19/%E5%85%B6%E5%AE%83/WSL/" title="WSL">WSL</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-19T06:57:15.992Z" title="Created 2023-04-19 14:57:15">2023-04-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">常用WSL命令ssh连接WSL2重装SSH：
-12sudo apt-get remove openssh-serversudo apt-get install openssh-server
-
-编辑 shd_config
-1sudo vi /etc/ssh/sshd_config
-
-添加：
-123Port 22PermitRootLogin yesPasswordAuthentication yes
-
-编辑sudo vim &#x2F;etc&#x2F;hosts.allow
-1sudo vim /etc/hosts.allow
-
-添加：
-1sshd: ALL
-
-重启ssh服务：
-1sudo service ssh --full-restart
-
-查看wsl IP地址
-1ifconfig
-
-powershell输入命令将端口转发到WSL2：
-1netsh interface portproxy add v4tov4 listenaddress=0.0.0.0 listenport=22 connectaddress=xxx.xxx.xxx.xxx connectport=22
-此处xxx ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/19/%E5%85%B6%E5%AE%83/%E5%BF%AB%E6%8D%B7%E9%94%AE%E5%A4%A7%E5%85%A8/" title="快捷键大全">快捷键大全</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-19T03:04:13.912Z" title="Created 2023-04-19 11:04:13">2023-04-19</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E5%85%B6%E5%AE%83/">其它</a></span></div><div class="content">Ctrl+N打开新窗口。Ctrl+T打开新标签页。Ctrl+Shift+N在隐身模式下打开新窗口。按&nbsp;Ctrl+O，然后选择文件。在谷歌浏览器中打开计算机中的文件。按住&nbsp;Ctrl&nbsp;键的同时点击链接。或用鼠标中键（或鼠标滚轮）点击链接。从后台在新标签页中打开链接。按住&nbsp;Ctrl+Shift&nbsp;的同时点击链接。或按住Shift&nbsp;键的同时用鼠标中键（或鼠标滚轮）点击链接。在新标签页中打开链接并切换到刚打开的标签页。按住&nbsp;Shift&nbsp;键的同时点击链接。在新窗口中打开链接。Ctrl+Shift+T重新打开上次关闭的标签页。谷歌浏览器可记住最近关闭的 10 个标签页。将链接拖到标签页中。在标签页中打开链接。将链接拖到标签栏的空白区域。在新标签页中打开链接。将标签页拖出标签栏。在新窗口中打开标签页。将标签页从标签栏拖到现有窗口中。在现有窗口中打开标签页。拖动标签页时按&nbsp;Esc&nbsp;键。将标签页恢复到原先的位置。Ctrl+1&nbsp;到&nbsp;Ctrl+8切换到标签栏中指定位置编号所对应的标签页。Ctr ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebBackend/Java%20%E5%92%8C%20Python%20%E5%BC%82%E6%9E%84%E6%A8%A1%E5%9D%97%E6%95%B0%E6%8D%AE%E4%BC%A0%E8%BE%93/" title="Java 和 Python 异构模块数据传输">Java 和 Python 异构模块数据传输</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T09:30:20.148Z" title="Created 2023-04-18 17:30:20">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebBackend/">WebBackend</a></span></div><div class="content">Java运行Python脚本，把数据放在参数里传递通过第三方文件做中转站消息队列方式流量消峰 应用解耦 异步处理
-扩展阅读
-异构模块之间如何数据传输？举例java和python两种不同语言编写的模块之间数据交互的几种方式（入门消息队列RabbitMQ）_不同开发语言怎么传输文件_原来浙小商啊的博客-CSDN博客
-# RabbitMQ——第一篇：RabbitMQ介绍
-
-</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/" title="向量数据库">向量数据库</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T08:39:20.315Z" title="Created 2023-04-18 16:39:20">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/DBMS/">DBMS</a></span></div><div class="content">向量数据库是一种专门用于存储和查询向量数据的数据库。它们可以处理高维度、大规模的向量数据，并提供高效的相似性搜索功能。在传统的关系型数据库中，数据通常以表格形式存储，而向量数据库则将数据表示为向量，这有助于更加准确地描述数据之间的相似性。
+异构模块之间如何数据传输？举例...</p>
+    </div>
+</div>
 
 
-向量数据库可以应用于多个领域，如计算机视觉、自然语言处理、推荐系统等。例如，在图像搜索中，我们可以将每张图片表示为一个向量，然后使用向量数据库来快速找到与输入图片最相似的其他图片。在推荐系统中，我们也可以使用向量数据库来查找与用户喜好最相似的商品或内容。
-向量数据库检索向量数据库检索指的是在向量数据库中针对特定查询向量进行相似性搜索的过程。在向量数据库中，每个向量数据都被表示为一个向量，并且每个向量都有一个唯一的ID。当执行向量检索时，首先将查询向量转换为向量形式，然后通过相似性函数计算每个向量与查询向量之间的相似度。最后，将所有向量按照相似度排序，以找到最相似的向量。
-在执行向量检索时，需要选择相应的相似性函数来计算向量之间的相似度。常见的相似性函数包括余弦相似度、欧几里得距离、曼哈顿距离等。同时，还可以使用一些加速技术，如局部敏感哈希（LSH ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/WebFrontend/Node.js/npm%20%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" title="npm 包管理器">npm 包管理器</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T06:47:07.406Z" title="Created 2023-04-18 14:47:07">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/WebFrontend/">WebFrontend</a></span></div><div class="content">包 package
+<div class="post">
+    <a href="/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/" title="向量数据库">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 18, 2023</p>
+        <h3><a href="/2023/04/18/WebBackend/Java/DBMS/%E5%90%91%E9%87%8F%E6%95%B0%E6%8D%AE%E5%BA%93/" title="向量数据库" class="posttitle">向量数据库</a></h3>
+        <p>向量数据库是一种专门用于存储和查询向量数据的数据库。它们可以处理高维度、大规模的向量数据，并提供高效的相似性搜索功能。在传统的关系型数据库中，数据通常以表...</p>
+    </div>
+</div>
+
+
+<div class="post">
+    <a href="/2023/04/18/WebFrontend/Node.js/npm%20%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" title="npm 包管理器">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 18, 2023</p>
+        <h3><a href="/2023/04/18/WebFrontend/Node.js/npm%20%E5%8C%85%E7%AE%A1%E7%90%86%E5%99%A8/" title="npm 包管理器" class="posttitle">npm 包管理器</a></h3>
+        <p>包 package
 CommonJS的包规范允许我们将一组相关的模块组合到一起，形成一组完整的工具。
-CommonJS的包规范由包结构和包描述文件两个部分构成。
-包结构：用于组织包中的各种文件
-包描述文件：描述包的相关信息，以供外部读取分析
-
-NPM(Node Package Manager)
-CommonJS包规范是理论，NPM是其中一种实践。
-对于Node而言，NPM帮助其完成了第三方模块的发布、安装和依赖等。借助NPM，Node与第三方模块之间形成了很好的一个生态系统。
-
-NVM安装 (包版本控制工具)第一步下载nvm
-然后配置nvm的安装位置
-12345root: D:\64\nvmpath: D:\system64\nodejsnode_mirror: https://npm.taobao.org/mirrors/node/npm_mirror: https://npm.taobao.org/mirrors/npm/
-
-NPM命令查看npm版本
-1npm -v
-
-查看所有模块的版本
-1npm version
+CommonJS的包规范由包结构和包描述文件两个部分...</p>
+    </div>
+</div>
 
 
+<div class="post">
+    <a href="/2023/04/18/server/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="常用软件安装">
+        <img src="https://tuapi.eees.cc/api.php?category=%7Bdongman,fengjing%7D&type=302" class="cover" width="680" height="440">
+    </a>
+    <div class="else">
+        <p>四月 18, 2023</p>
+        <h3><a href="/2023/04/18/server/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="常用软件安装" class="posttitle">常用软件安装</a></h3>
+        <p>curl1apt-get update -y &amp;&amp; apt-get install _curl_ -y
 
-帮助说明
-1npm
-
-搜索模块包
-1npm search 包名 ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/server/%E5%B8%B8%E7%94%A8%E8%BD%AF%E4%BB%B6%E5%AE%89%E8%A3%85/" title="常用软件安装">常用软件安装</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T06:45:23.993Z" title="Created 2023-04-18 14:45:23">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8E%A9%E8%BD%AC%E6%9C%8D%E5%8A%A1%E5%99%A8/">玩转服务器</a></span></div><div class="content">curl1apt-get update -y &amp;&amp; apt-get install _curl_ -y
-
-Docker在Ubuntu上安装Docker有以下几个步骤：
-
-卸载旧版的Docker（如果适用），可以通过以下命令完成：
-
-1sudo apt-get remove docker docker-engine docker.io containerd runc
-
-
-安装Docker前必须更新apt包索引，可以使用下面的命令更新：
-
-1sudo apt-get update
+Docker在Ubuntu上安装...</p>
+    </div>
+</div>
 
 
-安装所需的软件包以使apt可以通过HTTPS使用存储库：
+    </div>
+    
+    <div id="pager"><a href="/page/4/" class="more">加载更多</a></div>
+    
+</div>
+<div id="preview"></div>
 
-1sudo apt-get install apt-transport-https ca-certificates curl gnupg lsb-release
 
 
-添加Docker的官方GPG密钥：
+</body>
 
-1curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo gpg --dearmor -o /usr/share/keyrings/docker-archive-k ...</div></div></div><div class="recent-post-item"><div class="recent-post-info no-cover"><a class="article-title" href="/2023/04/18/server/%E9%9D%A2%E6%9D%BF/" title="面板">面板</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2023-04-18T03:51:31.248Z" title="Created 2023-04-18 11:51:31">2023-04-18</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E7%8E%A9%E8%BD%AC%E6%9C%8D%E5%8A%A1%E5%99%A8/">玩转服务器</a></span></div><div class="content">portainer面板123docker stop portainerdocker pull portainer/portainer-ce:latestdocker run -d -p 8000:9000 --name portainer --restart always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce:latest
 
-远程连接：
-修改配置文件：
-1ExecStart=/usr/bin/dockerd -H fd:// -H tcp://0.0.0.0:2375 --containerd=/run/containerd/containerd.sock
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
 
-添加防火墙规则：
-123sudo iptables -A INPUT -p tcp --dport 2375 -s 39.105.2.205 -j ACCEPTsudo iptables -A INPUT -p tcp --dport 2375 -j DROP</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/2/#content-inner"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/#content-inner">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/#content-inner">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/#content-inner">12</a><a class="extend next" rel="next" href="/page/4/#content-inner"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">user</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">111</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">44</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">29</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/07/01/WebBackend/Python/yapf%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96/" title="yapf代码格式化">yapf代码格式化</a><time datetime="2023-07-01T07:17:06.220Z" title="Created 2023-07-01 15:17:06">2023-07-01</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/13/%E9%9A%8F%E5%86%99/%E6%9E%81%E5%AE%A2%E7%B2%BE%E7%A5%9E%E6%9C%AC%E8%B4%A8/" title="极客精神本质">极客精神本质</a><time datetime="2023-06-13T07:55:26.224Z" title="Created 2023-06-13 15:55:26">2023-06-13</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/08/WebBackend/Python/LLMOps/LangChain%E9%80%9A%E8%BF%87LLM%E5%AE%9E%E7%8E%B0QA/" title="LangChain通过LLM实现QA">LangChain通过LLM实现QA</a><time datetime="2023-06-08T03:10:15.785Z" title="Created 2023-06-08 11:10:15">2023-06-08</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E8%B7%9D%E7%A6%BB%E8%AE%A1%E7%AE%97%E5%85%AC%E5%BC%8F/" title="距离计算公式">距离计算公式</a><time datetime="2023-06-06T08:05:32.142Z" title="Created 2023-06-06 16:05:32">2023-06-06</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2023/06/06/WebBackend/Python/LLMOps/%E7%B4%A2%E5%BC%95%E7%B1%BB%E5%9E%8B/" title="索引类型">索引类型</a><time datetime="2023-06-06T08:03:02.805Z" title="Created 2023-06-06 16:03:02">2023-06-06</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
-            <i class="fas fa-folder-open"></i>
-            <span>Categories</span>
-            <a class="card-more-btn" href="/categories/" title="More">
-    <i class="fas fa-angle-right"></i></a>
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
             </div>
-            <ul class="card-category-list" id="aside-cat-list">
-            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/"><span class="card-category-list-name">/</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/C-NET/"><span class="card-category-list-name">C#/.NET</span><span class="card-category-list-count">6</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/DBMS/"><span class="card-category-list-name">DBMS</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Java/"><span class="card-category-list-name">Java</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Linux/"><span class="card-category-list-name">Linux</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Python/"><span class="card-category-list-name">Python</span><span class="card-category-list-count">4</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity/"><span class="card-category-list-name">Unity</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Unity-%E8%99%9A%E5%B9%BB/"><span class="card-category-list-name">Unity/虚幻</span><span class="card-category-list-count">2</span></a></li>
-            </ul></div><div class="card-widget card-tags"><div class="item-headline"><i class="fas fa-tags"></i><span>Tags</span></div><div class="card-tag-cloud"><a href="/tags/LLM/" style="font-size: 1.1em; color: #999">LLM</a> <a href="/tags/npm/" style="font-size: 1.1em; color: #999">npm</a> <a href="/tags/wordpress/" style="font-size: 1.1em; color: #999">wordpress</a> <a href="/tags/css/" style="font-size: 1.23em; color: #999ea6">css</a> <a href="/tags/ChatGpt/" style="font-size: 1.1em; color: #999">ChatGpt</a> <a href="/tags/mysql/" style="font-size: 1.37em; color: #99a4b2">mysql</a> <a href="/tags/bom/" style="font-size: 1.1em; color: #999">bom</a> <a href="/tags/%E7%8E%A9%E6%9C%BA/" style="font-size: 1.1em; color: #999">玩机</a> <a href="/tags/Http/" style="font-size: 1.1em; color: #999">Http</a> <a href="/tags/git/" style="font-size: 1.23em; color: #999ea6">git</a> <a href="/tags/%E6%9E%B6%E6%9E%84%E6%A8%A1%E5%BC%8F/" style="font-size: 1.1em; color: #999">架构模式</a> <a href="/tags/hugo/" style="font-size: 1.1em; color: #999">hugo</a> <a href="/tags/%E5%8D%9A%E5%AE%A2/" style="font-size: 1.1em; color: #999">博客</a> <a href="/tags/jsdelivr/" style="font-size: 1.1em; color: #999">jsdelivr</a> <a href="/tags/github/" style="font-size: 1.23em; color: #999ea6">github</a> <a href="/tags/hybrid/" style="font-size: 1.1em; color: #999">hybrid</a> <a href="/tags/NLP/" style="font-size: 1.17em; color: #999c9f">NLP</a> <a href="/tags/sql/" style="font-size: 1.17em; color: #999c9f">sql</a> <a href="/tags/%E7%A7%BB%E5%8A%A8%E5%BA%94%E7%94%A8/" style="font-size: 1.1em; color: #999">移动应用</a> <a href="/tags/hrack/" style="font-size: 1.1em; color: #999">hrack</a> <a href="/tags/hacker/" style="font-size: 1.1em; color: #999">hacker</a> <a href="/tags/javascript/" style="font-size: 1.5em; color: #99a9bf">javascript</a> <a href="/tags/hexo/" style="font-size: 1.17em; color: #999c9f">hexo</a> <a href="/tags/dom/" style="font-size: 1.17em; color: #999c9f">dom</a> <a href="/tags/office/" style="font-size: 1.17em; color: #999c9f">office</a> <a href="/tags/obsidian/" style="font-size: 1.1em; color: #999">obsidian</a> <a href="/tags/%E9%BB%91%E9%AD%82%E5%A4%8D%E5%88%BB-%E5%82%85%E8%80%81%E5%B8%88/" style="font-size: 1.1em; color: #999">黑魂复刻(傅老师)</a> <a href="/tags/html/" style="font-size: 1.3em; color: #99a1ac">html</a> <a href="/tags/jQuery/" style="font-size: 1.1em; color: #999">jQuery</a> <a href="/tags/linux/" style="font-size: 1.17em; color: #999c9f">linux</a> <a href="/tags/c/" style="font-size: 1.43em; color: #99a6b9">c#</a> <a href="/tags/Spring/" style="font-size: 1.3em; color: #99a1ac">Spring</a> <a href="/tags/MyBatis/" style="font-size: 1.17em; color: #999c9f">MyBatis</a> <a href="/tags/DBMS/" style="font-size: 1.17em; color: #999c9f">DBMS</a> <a href="/tags/DNS/" style="font-size: 1.1em; color: #999">DNS</a> <a href="/tags/Django/" style="font-size: 1.1em; color: #999">Django</a> <a href="/tags/JVM/" style="font-size: 1.1em; color: #999">JVM</a> <a href="/tags/Unity%E5%9F%BA%E7%A1%80/" style="font-size: 1.17em; color: #999c9f">Unity基础</a> <a href="/tags/net/" style="font-size: 1.23em; color: #999ea6">./net</a> <a href="/tags/java/" style="font-size: 1.23em; color: #999ea6">java</a></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span><a class="card-more-btn" href="/archives/" title="More">
-    <i class="fas fa-angle-right"></i></a></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/07/"><span class="card-archive-list-date">July 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/06/"><span class="card-archive-list-date">June 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/05/"><span class="card-archive-list-date">May 2023</span><span class="card-archive-list-count">16</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/04/"><span class="card-archive-list-date">April 2023</span><span class="card-archive-list-count">22</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/03/"><span class="card-archive-list-date">March 2023</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2023/01/"><span class="card-archive-list-date">January 2023</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/12/"><span class="card-archive-list-date">December 2022</span><span class="card-archive-list-count">5</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">13</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">111</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2023-07-08T15:56:01.672Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2023 By user</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
