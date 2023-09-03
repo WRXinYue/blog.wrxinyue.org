@@ -4,11 +4,23 @@
     "type": "split",
     "children": [
       {
-        "id": "d92d924c1a228847",
+        "id": "db04f0d185bd0629",
         "type": "tabs",
         "children": [
           {
-            "id": "3ce90d2f29005409",
+            "id": "ab5579ba4cddbeea",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "().md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7b5a5ff332bd25ee",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +31,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -156,34 +169,34 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "3ce90d2f29005409",
+  "active": "7b5a5ff332bd25ee",
   "lastOpenFiles": [
-    "其它/Git 常用命令.md",
-    "server/Docker.md",
-    "其它/刷步日志.md",
+    "其它/代理设置.md",
+    "手动安装主题.md",
+    "().md",
+    "随写/极客精神本质.md",
+    "WebFrontend/Untitled.md",
+    "辣眼睛.md",
+    "server/快速翻墙命令.md",
+    "server/常用软件安装.md",
+    "server/防火墙.md",
+    "server/Linux备忘录.md",
     "WebBackend/Python/Python虚拟环境创建.md",
     "WebBackend/Python/Python环境搭建.md",
-    "server/快速翻墙命令.md",
-    "server/防火墙.md",
-    "其它/代理设置.md",
+    "Scripts/这些实习期间的个人总结.md",
+    "Scripts/视频剪辑思路.md",
+    "Scripts/校园分享会.md",
+    "Scripts/数字人.md",
+    "server/Docker.md",
+    "其它/Git 常用命令.md",
+    "其它/刷步日志.md",
     "其它/时间管理.md",
     "网络安全/路由器的加密算法.md",
     "网络安全/wifi安全渗透.md",
     "server/rustdesk中继服务器的docker镜像.md",
-    "server/常用软件安装.md",
     "server/面板.md",
-    "server/Linux备忘录.md",
     "server/DNS记录类型.md",
     "WebBackend/Python/yapf代码格式化.md",
-    "WebBackend/Python/Python  orm 连接MySQL数据库.md",
-    "WebBackend/Python/Streamlit App with PyCharm and WSL2.md",
-    "WebBackend/Python/Python项.md",
-    "WebBackend/Python/项目构建常用.md",
-    "WebBackend/Java 和 Python 异构模块数据传输.md",
-    "其它/WSL.md",
-    "其它/快捷键大全.md",
-    "其它/Vim快捷键.md",
-    "WebFrontend/UI/关于如何HTML嵌入CSS样式（四种方法）.md",
     "随写",
     "WebBackend/Python/Untitled",
     "Untitled.canvas",
