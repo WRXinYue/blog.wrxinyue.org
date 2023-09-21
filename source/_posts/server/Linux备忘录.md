@@ -174,3 +174,9 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 ```
 sudo apt-get update
 ```
+
+
+## 查看登陆历史
+~~~
+last | grep 'still logged in'
+~~~P
