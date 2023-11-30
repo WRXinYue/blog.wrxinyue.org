@@ -88,3 +88,11 @@ sudo ufw allow 22
 完成以上步骤后，您的 SSH 服务器将可以接受外部访问。建议您根据自己的实际需要调整配置以保证安全性。
 
 
+### Docker使用代理进行构建
+
+~~~bash
+sudo docker build . \
+   --network host \
+   --build-arg HTTP_PROXY=http://127.0.0.1:7890 \
+   --build-arg HTTPS_PROXY=http://127.0.0.1:7890
+~~~
