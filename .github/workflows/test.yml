@@ -1,0 +1,17 @@
+on:
+  pull_request:
+    branches: [main]
+    paths-ignore:
+      - '*.md'
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    name: Run the action on a test graph
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Run github action
+        uses: logseq/publish-spa@main
+        with:
+          graph-directory: test/publish-test-graph
