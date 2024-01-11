@@ -1,0 +1,201 @@
+{:blocks (
+{:block/created-at 1704960511253
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 0
+:scale [1 1]
+:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [840 41.000025971484135]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "04577a40-b053-11ee-8420-d3ef99c9d7f4"
+:noFill false
+:point [208 424]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704958109991}}
+:block/updated-at 1704960511253} 
+{:block/created-at 1704961313615
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:rotation 0
+:index 4
+:scale [1 1]
+:type "iframe"
+:size [853 480]
+:id "65ea5ce0-b059-11ee-a77a-5328fda7d3f6"
+:url "https://codepen.io/WRXinYue"
+:isLocked false
+:point [2152 496]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:nonce 1704960851036}}
+:block/updated-at 1704961313615} 
+{:block/content "app.plane.so/wrxinyue"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa0c5-1084-4a09-8623-07d1f65af39f"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa277-a7d6-44aa-b9a7-57c153054680"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa02c-2e95-4098-98ac-46b3c38da0e3"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa04c-f521-4ed7-8f79-4c77068426a1"} 
+{:block/created-at 1704960523095
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 3
+:scale [1 1]
+:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [840 41.000025971484135]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "a053c840-b058-11ee-a77a-5328fda7d3f6"
+:noFill false
+:isLocked false
+:point [1184 424]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704958110065}}
+:block/updated-at 1704960523095} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa04c-f521-4ed7-8f79-4c77068426a1"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa0c5-1084-4a09-8623-07d1f65af39f"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa00d-13a1-499b-9b37-1c266a8d10e7"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa02c-2e95-4098-98ac-46b3c38da0e3"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa003-9a0b-45e5-aa9d-cd164f2652f3"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa00d-13a1-499b-9b37-1c266a8d10e7"} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659f989f-8e8a-4cf2-87d6-d05ec930cc09"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa003-9a0b-45e5-aa9d-cd164f2652f3"} 
+{:block/created-at 1704960448152
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 1
+:scale [1 1]
+:type "iframe"
+:size [853 480]
+:id "1a9495e0-b058-11ee-a77a-5328fda7d3f6"
+:url "https://www.wrxinyue.org/"
+:isLocked false
+:point [208 480]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:nonce 1704960294756}}
+:block/updated-at 1704960448152} 
+{:block/content "codepen"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/properties 
+{}
+:block/uuid #uuid "659f989f-8e8a-4cf2-87d6-d05ec930cc09"} 
+{:block/created-at 1704960471214
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:index 2
+:scale [1 1]
+:type "iframe"
+:size [853 480]
+:id "81418730-b058-11ee-a77a-5328fda7d3f6"
+:url "https://trello.com/b/bNN97Q6y/%E6%88%91%E7%9A%84-trello-%E7%9C%8B%E6%9D%BF"
+:isLocked false
+:point [1184 488]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:nonce 1704960466820}}
+:block/updated-at 1704960471214} 
+{:block/created-at 1704961357640
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:rotation 0
+:collapsed false
+:borderRadius 8
+:index 5
+:scale [1 1]
+:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [840 41.000025971484135]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "9135a020-b05a-11ee-ae20-e7b02763380c"
+:noFill false
+:isLocked false
+:point [2160 424]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704958110167}}
+:block/updated-at 1704961357640})
+:pages (
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:block/properties 
+{:ls-type :whiteboard-page
+:logseq.tldraw.page 
+{:id "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:name "web app"
+:bindings 
+{}
+:nonce 1
+:assets []
+:shapes-index ("04577a40-b053-11ee-8420-d3ef99c9d7f4" "1a9495e0-b058-11ee-a77a-5328fda7d3f6" "81418730-b058-11ee-a77a-5328fda7d3f6" "a053c840-b058-11ee-a77a-5328fda7d3f6" "65ea5ce0-b059-11ee-a77a-5328fda7d3f6" "9135a020-b05a-11ee-ae20-e7b02763380c")}}
+:block/updated-at 1704961372344
+:block/created-at 1704958026754
+:block/type "whiteboard"
+:block/name "web app"
+:block/original-name "WEB APP"})}
