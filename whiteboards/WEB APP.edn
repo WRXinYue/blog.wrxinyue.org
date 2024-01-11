@@ -1,38 +1,10 @@
 {:blocks (
-{:block/created-at 1704960511253
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:blockType "B"
-:stroke ""
-:rotation 0
-:collapsed false
-:borderRadius 8
-:index 0
-:scale [1 1]
-:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
-:scaleLevel "md"
-:fill ""
-:compact true
-:isAutoResizing true
-:type "logseq-portal"
-:size [840 41.000025971484135]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "04577a40-b053-11ee-8420-d3ef99c9d7f4"
-:noFill false
-:point [208 424]
-:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
-:collapsedHeight 0
-:nonce 1704958109991}}
-:block/updated-at 1704960511253} 
-{:block/created-at 1704961313615
+{:block/created-at 1704962065018
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:rotation 0
-:index 4
+:index 2
 :scale [1 1]
 :type "iframe"
 :size [853 480]
@@ -42,7 +14,7 @@
 :point [2152 496]
 :parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
 :nonce 1704960851036}}
-:block/updated-at 1704961313615} 
+:block/updated-at 1704962065018} 
 {:block/content "app.plane.so/wrxinyue"
 :block/format :markdown
 :block/left 
@@ -57,35 +29,6 @@
 :block/parent 
 {:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
 :block/uuid #uuid "659fa04c-f521-4ed7-8f79-4c77068426a1"} 
-{:block/created-at 1704960523095
-:block/properties 
-{:ls-type :whiteboard-shape
-:logseq.tldraw.shape 
-{:blockType "B"
-:stroke ""
-:rotation 0
-:collapsed false
-:borderRadius 8
-:index 3
-:scale [1 1]
-:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
-:scaleLevel "md"
-:fill ""
-:compact true
-:isAutoResizing true
-:type "logseq-portal"
-:size [840 41.000025971484135]
-:strokeType "line"
-:strokeWidth 2
-:opacity 1
-:id "a053c840-b058-11ee-a77a-5328fda7d3f6"
-:noFill false
-:isLocked false
-:point [1184 424]
-:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
-:collapsedHeight 0
-:nonce 1704958110065}}
-:block/updated-at 1704960523095} 
 {:block/content ""
 :block/format :markdown
 :block/left 
@@ -114,11 +57,11 @@
 :block/parent 
 {:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
 :block/uuid #uuid "659fa003-9a0b-45e5-aa9d-cd164f2652f3"} 
-{:block/created-at 1704960448152
+{:block/created-at 1704962065017
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 1
+{:index 0
 :scale [1 1]
 :type "iframe"
 :size [853 480]
@@ -128,7 +71,7 @@
 :point [208 480]
 :parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
 :nonce 1704960294756}}
-:block/updated-at 1704960448152} 
+:block/updated-at 1704962065017} 
 {:block/content "codepen"
 :block/format :markdown
 :block/left 
@@ -138,11 +81,11 @@
 :block/properties 
 {}
 :block/uuid #uuid "659f989f-8e8a-4cf2-87d6-d05ec930cc09"} 
-{:block/created-at 1704960471214
+{:block/created-at 1704962065018
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
-{:index 2
+{:index 1
 :scale [1 1]
 :type "iframe"
 :size [853 480]
@@ -152,36 +95,264 @@
 :point [1184 488]
 :parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
 :nonce 1704960466820}}
-:block/updated-at 1704960471214} 
-{:block/created-at 1704961357640
+:block/updated-at 1704962065018} 
+{:block/content "个人主页"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa277-a7d6-44aa-b9a7-57c153054680"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/properties 
+{}
+:block/uuid #uuid "659fa617-0209-4f9c-a732-62025f868062"} 
+{:block/created-at 1704962087471
 :block/properties 
 {:ls-type :whiteboard-shape
 :logseq.tldraw.shape 
 {:blockType "B"
 :stroke ""
-:rotation 0
 :collapsed false
 :borderRadius 8
-:index 5
+:index 3
 :scale [1 1]
-:pageId "659f989f-8e8a-4cf2-87d6-d05ec930cc09"
+:pageId "659fa617-0209-4f9c-a732-62025f868062"
 :scaleLevel "md"
 :fill ""
 :compact true
 :isAutoResizing true
 :type "logseq-portal"
-:size [840 41.000025971484135]
+:size [400 41.00000579158841]
 :strokeType "line"
 :strokeWidth 2
 :opacity 1
-:id "9135a020-b05a-11ee-ae20-e7b02763380c"
+:id "0bdc8d20-b05b-11ee-ae20-e7b02763380c"
 :noFill false
-:isLocked false
-:point [2160 424]
+:point [216 408]
 :parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
 :collapsedHeight 0
-:nonce 1704958110167}}
-:block/updated-at 1704961357640})
+:nonce 1704961558396}}
+:block/updated-at 1704962087471} 
+{:block/content "个人看板"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa617-0209-4f9c-a732-62025f868062"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/properties 
+{}
+:block/uuid #uuid "659fa623-0027-4073-ab93-69e519391e1f"} 
+{:block/created-at 1704962065018
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 4
+:scale [1 1]
+:pageId "659fa623-0027-4073-ab93-69e519391e1f"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 41.00000579158841]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "130aee20-b05b-11ee-ae20-e7b02763380c"
+:noFill false
+:point [1192 424]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704961570404}}
+:block/updated-at 1704962065018} 
+{:block/content "codepen"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa623-0027-4073-ab93-69e519391e1f"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/properties 
+{}
+:block/uuid #uuid "659fa62c-ea4a-4cf8-92b7-e89a2dd3b221"} 
+{:block/created-at 1704962065018
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 5
+:scale [1 1]
+:pageId "659fa62c-ea4a-4cf8-92b7-e89a2dd3b221"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 41.00000579158841]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "18c8a820-b05b-11ee-ae20-e7b02763380c"
+:noFill false
+:point [2160 440]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704961580040}}
+:block/updated-at 1704962065018} 
+{:block/content "https://trello.com/b/bNN97Q6y/%E6%88%91%E7%9A%84-trello-%E7%9C%8B%E6%9D%BF"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa62c-ea4a-4cf8-92b7-e89a2dd3b221"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa7d1-d80d-4016-ae16-4caf829ce099"} 
+{:block/created-at 1704962065018
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 6
+:scale [1 1]
+:pageId "659fa7d1-d80d-4016-ae16-4caf829ce099"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 65.00001281559156]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "141bcc70-b05c-11ee-ae20-e7b02763380c"
+:noFill false
+:isLocked false
+:point [1624 416]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704962001883}}
+:block/updated-at 1704962065018} 
+{:block/content ""
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa7d1-d80d-4016-ae16-4caf829ce099"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa802-6bca-4d52-99eb-c6520dd50d37"} 
+{:block/content "https://codepen.io/WRXinYue"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa802-6bca-4d52-99eb-c6520dd50d37"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa807-a758-4b49-be63-69c9480661da"} 
+{:block/content "https://codepen.io/WRXinYue"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa807-a758-4b49-be63-69c9480661da"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa815-686d-49bd-8e7b-d39537e7e175"} 
+{:block/created-at 1704962082648
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 7
+:scale [1 1]
+:pageId "659fa815-686d-49bd-8e7b-d39537e7e175"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 40.999956129585776]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "3cb50480-b05c-11ee-ae20-e7b02763380c"
+:noFill false
+:isLocked false
+:point [2592 440]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704962069787}}
+:block/updated-at 1704962082648} 
+{:block/content "https://www.wrxinyue.org/"
+:block/format :markdown
+:block/left 
+{:block/uuid #uuid "659fa815-686d-49bd-8e7b-d39537e7e175"}
+:block/parent 
+{:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"}
+:block/uuid #uuid "659fa836-6c52-48f1-9930-ae2eb158433d"} 
+{:block/created-at 1704962106882
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:blockType "B"
+:stroke ""
+:collapsed false
+:borderRadius 8
+:index 8
+:scale [1 1]
+:pageId "659fa836-6c52-48f1-9930-ae2eb158433d"
+:scaleLevel "md"
+:fill ""
+:compact true
+:isAutoResizing true
+:type "logseq-portal"
+:size [400 41.00000579158841]
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "502bc670-b05c-11ee-ae20-e7b02763380c"
+:noFill false
+:isLocked false
+:point [640 416]
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:collapsedHeight 0
+:nonce 1704962102444}}
+:block/updated-at 1704962106882} 
+{:block/created-at 1704962144525
+:block/properties 
+{:ls-type :whiteboard-shape
+:logseq.tldraw.shape 
+{:isSizeLocked true
+:stroke ""
+:rotation 0
+:borderRadius 0
+:index 9
+:scale [1 1]
+:scaleLevel "xxl"
+:fill ""
+:type "text"
+:size [287 82]
+:fontFamily "var(--ls-font-family)"
+:strokeType "line"
+:strokeWidth 2
+:opacity 1
+:id "59538670-b05c-11ee-ae20-e7b02763380c"
+:padding 4
+:fontWeight 700
+:noFill true
+:point [1424 128]
+:lineHeight 1.2
+:fontSize 60
+:parentId "659f984a-f8a6-468a-abb8-dc765e6f2775"
+:nonce 1704962117826
+:italic false
+:text "WEB APP"}}
+:block/updated-at 1704962144525})
 :pages (
 {:block/uuid #uuid "659f984a-f8a6-468a-abb8-dc765e6f2775"
 :block/properties 
@@ -193,9 +364,9 @@
 {}
 :nonce 1
 :assets []
-:shapes-index ("04577a40-b053-11ee-8420-d3ef99c9d7f4" "1a9495e0-b058-11ee-a77a-5328fda7d3f6" "81418730-b058-11ee-a77a-5328fda7d3f6" "a053c840-b058-11ee-a77a-5328fda7d3f6" "65ea5ce0-b059-11ee-a77a-5328fda7d3f6" "9135a020-b05a-11ee-ae20-e7b02763380c")}}
-:block/updated-at 1704961372344
+:shapes-index ("1a9495e0-b058-11ee-a77a-5328fda7d3f6" "81418730-b058-11ee-a77a-5328fda7d3f6" "65ea5ce0-b059-11ee-a77a-5328fda7d3f6" "0bdc8d20-b05b-11ee-ae20-e7b02763380c" "130aee20-b05b-11ee-ae20-e7b02763380c" "18c8a820-b05b-11ee-ae20-e7b02763380c" "141bcc70-b05c-11ee-ae20-e7b02763380c" "3cb50480-b05c-11ee-ae20-e7b02763380c" "502bc670-b05c-11ee-ae20-e7b02763380c" "59538670-b05c-11ee-ae20-e7b02763380c")}}
+:block/updated-at 1704962144525
 :block/created-at 1704958026754
 :block/type "whiteboard"
 :block/name "web app"
-:block/original-name "WEB APP"})}
+:block/original-name "web app"})}
